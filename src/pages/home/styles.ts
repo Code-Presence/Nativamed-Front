@@ -1,8 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import background from '../../assets/BG.png';
 
 export const Container = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
 
@@ -16,6 +17,7 @@ export const Wrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid red;
 `;
 
 export const Navbar = styled.div`
@@ -115,4 +117,72 @@ export const RightWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+`;
+
+
+export const SecondSection = styled.div`
+  width: 100%;
+  height: 600px;
+  background-color: white;
+`;
+
+export const SeconSectionDivider = styled.div`
+  width: 100%;
+  height: 550px;
+  background-color: #FAFAFA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const ThirdSection = styled.div`
+  width: 100%;
+  height: 970px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const FourthSection = styled.div`
+  width: 100%;
+  height: 1300px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+export const FifthSection = styled.section`
+  width: 100%;
+  height: 1280px;
+  max-height: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // background-image: url(${background});
+  // background-size: 115%;
+  // background-position: center;
+`;
+
+export const SixthSection = styled.section`
+  width: 100%;
+  height: 920px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+`;
+
+export const Text = styled.p`
+  font-family: Ubuntu, sans-serif;
+  font-size: 26px;
+  font-weight: lighter;
+  color: #33554B;
+`;
+
+export const Footer = styled.footer`
+  width: 100%;
+  height: 550px;
+  background-color: #33554B;
 `;
