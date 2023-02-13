@@ -19,6 +19,13 @@ export const Wrapper = styled.section`
   align-items: center;
   justify-content: center;
   //border: 1px solid red;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    & p {
+      display: none;
+    }
+  }
 `;
 
 export const Navbar = styled.div`
