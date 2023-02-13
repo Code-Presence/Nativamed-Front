@@ -26,13 +26,10 @@ import Muie from '../../assets/muie.png';
 import Woman from '../../assets/woman.png';
 import Laptop from '../../assets/laptop.png';
 // import {Slider} from '../components/Slider/Slider';
-import { Slider } from '../components/Slider/SliderTwo';
 
 function Home(): JSX.Element {
   return (
     <Container>
-      {/*<Slider onChange={(min, max) => 10} />*/}
-      <Slider onChange={(min, max) => 10} />
       {/*<Navbar>*/}
       {/*  <Wrapper*/}
       {/*    style={{*/}

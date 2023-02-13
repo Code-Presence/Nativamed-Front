@@ -32,7 +32,8 @@ const Container = styled.div`
     border-radius: 4px;
     background-color: #FAFAFA;
     border: 1px solid rgba(51, 85, 75, 0.20);
-      padding-left: 10px;
+    padding-left: 10px;
+    cursor: pointer;
   }
 `;
 

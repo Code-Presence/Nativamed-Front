@@ -23,6 +23,9 @@ const Container = styled.div`
   flex-direction: column;
   font-family: 'Montserrat', sans-serif;
   gap: 0.8rem;
+
+
+
   & h3 {
     margin: 0;
   }
@@ -33,6 +36,7 @@ const Container = styled.div`
     background-color: #FAFAFA;
     border: 1px solid rgba(51, 85, 75, 0.20);
       padding-left: 10px;
+    cursor: pointer;
   }
 `;
 

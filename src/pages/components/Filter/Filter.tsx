@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import {PriceSlider} from './Slider';
-import { BiSliderAlt } from 'react-icons/bi';
-import { PathologyInput } from './PathologyInput';
+import {BiSliderAlt} from 'react-icons/bi';
+import {PathologyInput} from './PathologyInput';
 import {SpecialityInput} from './SpecialityInput';
 
 function Filter(): JSX.Element {
@@ -17,9 +17,9 @@ function Filter(): JSX.Element {
         />
         <h1>Filtrar por:</h1>
       </TitleWrapper>
-      <PriceSlider />
-      <PathologyInput />
-      <SpecialityInput />
+      <PriceSlider/>
+      <PathologyInput/>
+      <SpecialityInput/>
     </Container>
   );
 }
@@ -46,7 +46,7 @@ const TitleWrapper = styled.div`
   justify-content: center;
   gap: 1rem;
 
-  & h1{
+  & h1 {
     font-family: 'Montserrat', sans-serif;
   }
 `;
@@ -60,10 +60,8 @@ const SearchHere = styled.input`
   padding-left: 10px;
   text-align: center;
   font-size: 16px;
-  font-lin
-  //font-family: 'Montserrat';
 `;
 
-export { Filter };
+export {Filter};
 
 
