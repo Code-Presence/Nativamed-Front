@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import background from '../../assets/BG.png';
+import backgroundUp from '../../assets/BG-upgraded.png';
 
 export const Container = styled.section`
   width: 100%;
@@ -17,7 +18,7 @@ export const Wrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+  //border: 1px solid red;
 `;
 
 export const Navbar = styled.div`
@@ -51,8 +52,8 @@ export const FirstSection = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  width: 540px;
-  height: 370px;
+  width: 500px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -74,7 +75,7 @@ export const Title = styled.h1`
   color: #425f4b;
 `;
 export const SubTitle = styled.h1`
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   color: #345249;
@@ -109,6 +110,7 @@ export const Button = styled.button`
   font-size: 20px;
   color: #fff;
   margin-top: 30px;
+  cursor: pointer;
 `;
 export const RightWrapper = styled.div`
   width: 50%;
@@ -147,22 +149,24 @@ export const ThirdSection = styled.div`
 export const FourthSection = styled.div`
   width: 100%;
   height: 1300px;
-  background-color: white;
+  background-color: #FAFAFA;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 export const FifthSection = styled.section`
   width: 100%;
-  height: 1280px;
+  height: 1000px;
   max-height: 1280px;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  // background-image: url(${background});
-  // background-size: 115%;
-  // background-position: center;
+  background-image: url(${backgroundUp});
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
 `;
 
 export const SixthSection = styled.section`
@@ -171,7 +175,7 @@ export const SixthSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-
+background-color: white;
 `;
 
 export const Text = styled.p`

@@ -22,6 +22,9 @@ import {
   Footer,
 } from './styles';
 import Logo from '../../assets/logo.png';
+import Muie from '../../assets/muie.png';
+import Woman from '../../assets/woman.png';
+import Laptop from '../../assets/laptop.png';
 
 function Home(): JSX.Element {
   return (
@@ -58,28 +61,31 @@ function Home(): JSX.Element {
                 Te acolheremos desde o agendamento da sua consulta médica até a
                 compra do medicamento. <b>Simples e prático!</b>
               </FooterTitle>
+              <Button>Agendar Consulta</Button>
             </TextWrapper>
-            <Button>Agendar Consulta</Button>
           </LeftWrapper>
-          <RightWrapper></RightWrapper>
+          <RightWrapper>
+            <img src={Muie} alt={'Mulher'} style={{width: '500px'}}/>
+          </RightWrapper>
         </Wrapper>
       </FirstSection>
       <SecondSection>
         <SeconSectionDivider>
-          <Wrapper
-            style={{
-              flexDirection: 'column',
-            }}
-          >
-            <Title>
-              Preencha o formulário para dar <br/>
-              o primeiro passo em direção ao <br/>
-              alívio dos seus sintomas
-            </Title>
-            <FooterTitle>
-              Entraremos em contato para te guiar por todo o caminho.
-            </FooterTitle>
-            <Button>Conheça o tratamento</Button>
+          <Wrapper>
+            <LeftWrapper>
+              <img src={Laptop} alt={'Laptop'} style={{width: '400px', marginTop: '220px', position: 'absolute', borderRadius: '8px'}}/>
+            </LeftWrapper>
+            <RightWrapper>
+              <Title>
+                Preencha o formulário para dar <br/>
+                o primeiro passo em direção ao <br/>
+                alívio dos seus sintomas
+              </Title>
+              <FooterTitle>
+                Entraremos em contato para te guiar por todo o caminho.
+              </FooterTitle>
+              <Button>Conheça o tratamento</Button>
+            </RightWrapper>
           </Wrapper>
         </SeconSectionDivider>
       </SecondSection>
@@ -94,33 +100,39 @@ function Home(): JSX.Element {
       </FifthSection>
       <SixthSection>
         <Wrapper>
-          <div
-            style={{
-              width: '500px',
-            }}
-          >
-            <Title>Conheça a nossa empresa</Title>
-            <Text>
-              Somos a nativamed, uma empresa que surgiu da possibilidade de
-              melhorar a qualidade de vida das pessoas.
-              <br/>
-              <br/>
-              ‘’Depois que a mãe de uma criança pediu ajuda para importar a
-              medicação e vimos os benefícios e resultados positivos que esse
-              tipo de tratamento traz nós soubemos – temos que facilitar o
-              acesso da população a esse medicamento‘’.
-              <br/>
-              <br/>
-              Hoje já atendemos e ajudamos dezenas de pessoas a amezinar seus
-              sintomas crônicos e a melhorar sua qualidade de vida.
-              <br/>
-              <br/>
-              Através do nosso ecossistema de profissionais contamos com
-              diversos médicos especialistas para lhe orientar, consultar e
-              prescrever os medicamentos de acordo com sua condição e patologia,
-              facilitando o acesso ao tratamento e seus benefícios.
-            </Text>
-          </div>
+          <LeftWrapper>
+            <img src={Woman} alt={'Ôta muié'} style={{width: '500px', borderRadius: '8px'}}/>
+          </LeftWrapper>
+          <RightWrapper>
+            <div
+              style={{
+                width: '500px',
+              }}
+            >
+              <Title>Conheça a nossa empresa</Title>
+              <Text>
+                Somos a nativamed, uma empresa que surgiu da possibilidade de
+                melhorar a qualidade de vida das pessoas.
+                <br/>
+                <br/>
+                ‘’Depois que a mãe de uma criança pediu ajuda para importar a
+                medicação e vimos os benefícios e resultados positivos que esse
+                tipo de tratamento traz nós soubemos – temos que facilitar o
+                acesso da população a esse medicamento‘’.
+                <br/>
+                <br/>
+                Hoje já atendemos e ajudamos dezenas de pessoas a amezinar seus
+                sintomas crônicos e a melhorar sua qualidade de vida.
+                <br/>
+                <br/>
+                Através do nosso ecossistema de profissionais contamos com
+                diversos médicos especialistas para lhe orientar, consultar e
+                prescrever os medicamentos de acordo com sua condição e patologia,
+                facilitando o acesso ao tratamento e seus benefícios.
+              </Text>
+            </div>
+          </RightWrapper>
+
         </Wrapper>
       </SixthSection>
       <Footer/>
