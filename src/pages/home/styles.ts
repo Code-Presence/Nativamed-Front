@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import background from '../../assets/BG.png';
 import backgroundUp from '../../assets/BG-upgraded.png';
 
 export const Container = styled.section`
@@ -11,9 +10,11 @@ export const Container = styled.section`
   background-color: #eee;
 
   & .img-da-muie {
+    !important
     width: 500px;
 
     @media screen and (max-width: 500px) {
+      !important
       width: 340px;
     }
   }
