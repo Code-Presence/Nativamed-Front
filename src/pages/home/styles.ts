@@ -10,11 +10,9 @@ export const Container = styled.section`
   background-color: #eee;
 
   & .img-da-muie {
-    !important
     width: 500px;
 
     @media screen and (max-width: 500px) {
-      !important
       width: 340px;
     }
   }

@@ -67,7 +67,7 @@ function Home(): JSX.Element {
             </TextWrapper>
           </LeftWrapper>
           <RightWrapper>
-            <img src={Muie} alt={'Mulher'} className={'img-da-muie'}/>
+            <img src={Muie} alt={'Mulher'} className={'img-da-muie'} fetch-priority="high"/>
           </RightWrapper>
         </Wrapper>
       </FirstSection>
