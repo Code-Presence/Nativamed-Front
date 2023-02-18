@@ -3,18 +3,14 @@ import {
   Container,
   FirstSection,
   Navbar,
-  TextWrapper,
   Title,
   Wrapper,
-  SubTitle,
-  PreTitle,
   LeftWrapper,
   RightWrapper,
   Button,
   FooterTitle,
   Text,
   SecondSection,
-  SeconSectionDivider,
   ThirdSection,
   FourthSection,
   FifthSection,
@@ -32,11 +28,7 @@ function Home(): JSX.Element {
   return (
     <Container>
       <Navbar>
-        <Wrapper
-          style={{
-            justifyContent: 'center',
-            gap: '40px',
-          }}
+        <div className={'nav-wrapper'}
         >
           <img src={Logo} alt="Logo Nativamed"/>
           <p>Tenho prescrição</p>
@@ -44,35 +36,35 @@ function Home(): JSX.Element {
           <p>Perguntas frequentes</p>
           <p>Blog</p>
           <p>Entrar em contato</p>
-        </Wrapper>
+        </div>
       </Navbar>
       <FirstSection>
-        <Wrapper>
-          <LeftWrapper>
-            <TextWrapper>
-              <PreTitle>
+        <div className={'first-wrapper'}>
+          <div className={'first-left-wrapper'}>
+            <div className={'first-text-wrapper'}>
+              <p className={'pre-title'}>
                 ALÍVIO NOS SINTOMAS DA ANSIEDADE, INSÔNIA E DORES CRÔNICAS
-              </PreTitle>
-              <Title>
+              </p>
+              <h1 className={'title'}>
                 Comece hoje o tratamento <br/>
                 para melhorar sua qualidade <br/>
                 de vida
-              </Title>
-              <SubTitle>NATURAL, LEGAL E APROVADO PELA ANVISA</SubTitle>
-              <FooterTitle>
+              </h1>
+              <p className={'sub-title'}>NATURAL, LEGAL E APROVADO PELA ANVISA</p>
+              <p className={'footer-title'}>
                 Te acolheremos desde o agendamento da sua consulta médica até a
                 compra do medicamento. <b>Simples e prático!</b>
-              </FooterTitle>
-              <Button>Agendar Consulta</Button>
-            </TextWrapper>
-          </LeftWrapper>
-          <RightWrapper>
+              </p>
+              <button>Agendar Consulta</button>
+            </div>
+          </div>
+          <div className={'first-right-wrapper'}>
             <img src={Muie} alt={'Mulher'} className={'img-da-muie'} fetch-priority="high"/>
-          </RightWrapper>
-        </Wrapper>
+          </div>
+        </div>
       </FirstSection>
       <SecondSection>
-        <SeconSectionDivider>
+        <div className={'divider'}>
           <div className={'second-sec-wrapper'}>
             <LeftWrapper className={'second-sec-left-wrapper'}>
               <img src={Laptop} alt={'Laptop'} className={'laptop'} />
@@ -93,12 +85,12 @@ function Home(): JSX.Element {
               </div>
             </RightWrapper>
           </div>
-        </SeconSectionDivider>
+        </div>
       </SecondSection>
       <ThirdSection>
-        <div className={'third-sec-wrapper'}>
-          <div className={'third-sec-left-wrapper'}>
-            <div className={'third-sec-text-wrapper'}>
+        <div className={'third-wrapper'}>
+          <div className={'third-left-wrapper'}>
+            <div className={'third-text-wrapper'}>
               <h4>MÉTODO NATURAL</h4>
               <h2>O nosso tratamento</h2>
               <p>
@@ -116,7 +108,7 @@ function Home(): JSX.Element {
               <button>Ver depoimentos</button>
             </div>
           </div>
-          <div className={'third-sec-right-wrapper'}>
+          <div className={'third-right-wrapper'}>
             <img src={Frasco} alt={'Frasco'} />
           </div>
         </div>
