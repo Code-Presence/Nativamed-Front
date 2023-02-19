@@ -14,6 +14,10 @@ export const Container = styled.section`
       width: 340px;
     }
   }
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 export const Navbar = styled.nav`
@@ -47,6 +51,10 @@ export const Navbar = styled.nav`
           display: none;
       }
     }
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 10px;
   }
 `;
 export const FirstSection = styled.div`
@@ -485,7 +493,7 @@ export const FifthSection = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid red;
+    //border: 2px solid red;
 
     gap: 3rem;
   }
@@ -523,7 +531,8 @@ export const FifthSection = styled.section`
   & .fifth-second-container {
     width: 100%;
     height: 600px;
-    background-color: blue;
+
+
   }
   & .fifth-third-container {
     width: 100%;

@@ -5,16 +5,19 @@ import {MedicCard} from './pages/components/MedicCard/MedicCard';
 
 function App(): JSX.Element {
   return (
-    <Home />
-    // <div
-    //   style={{
-    //     display: 'flex',
-    //     gap: '10rem',
-    //   }}
-    // >
-    //   <Filter/>
-    //   <MedicCard/>;
-    // </div>
+    <>
+      <Home />
+    </>
+
+  // <div
+  //   style={{
+  //     display: 'flex',
+  //     gap: '10rem',
+  //   }}
+  // >
+  //   <Filter/>
+  //   <MedicCard/>;
+  // </div>
   );
 }
 
