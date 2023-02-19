@@ -22,6 +22,13 @@ import Muie from '../../assets/muie.png';
 import Woman from '../../assets/woman.png';
 import Laptop from '../../assets/laptop.png';
 import Frasco from '../../assets/frasco.png';
+
+import One from '../../assets/one.png';
+import Two from '../../assets/two.png';
+import Three from '../../assets/three.png';
+import Four from '../../assets/four.png';
+import Plantas from '../../assets/platinhas.png';
+
 // import {Slider} from '../components/Slider/Slider';
 
 function Home(): JSX.Element {
@@ -67,20 +74,20 @@ function Home(): JSX.Element {
         <div className={'divider'}>
           <div className={'second-sec-wrapper'}>
             <LeftWrapper className={'second-sec-left-wrapper'}>
-              <img src={Laptop} alt={'Laptop'} className={'laptop'} />
+              <img src={Laptop} alt={'Laptop'} className={'laptop'}/>
             </LeftWrapper>
             <RightWrapper>
               <div className={'second-sec-right-wrapper'}>
                 <Title>
-                Preencha o formulário para dar <br/>
-                o primeiro passo em direção ao <br/>
-                alívio dos seus sintomas
+                  Preencha o formulário para dar <br/>
+                  o primeiro passo em direção ao <br/>
+                  alívio dos seus sintomas
                 </Title>
-                <br />
+                <br/>
                 <FooterTitle>
-                Entraremos em contato para te guiar por todo o caminho.
+                  Entraremos em contato para te guiar por todo o caminho.
                 </FooterTitle>
-                <br />
+                <br/>
                 <Button>Conheça o tratamento</Button>
               </div>
             </RightWrapper>
@@ -94,27 +101,96 @@ function Home(): JSX.Element {
               <h4>MÉTODO NATURAL</h4>
               <h2>O nosso tratamento</h2>
               <p>
-              O tratamento com óleo de Canabidiol (CBD) medicinal é autorizada pela ANVISA e milhares de pacientes já se beneficiam com o seu uso.
+                O tratamento com óleo de Canabidiol (CBD) medicinal é autorizada pela ANVISA e milhares de pacientes já
+                se beneficiam com o seu uso.
                 <br/>
                 <br/>
-              Existem mais de 20 mil estudos publicados comprovando sua eficácia e segurança para diversas patologias.
-                <br />
-                <br />
-              É um método natural que não causa dependência ou tolerância e que interage com um dos principais sistemas do nosso corpo, trazendo um completo estado de bem-estar físico e mental.
-                <br />
-                <br />
-              Taxa de 79,9% no alívio dos sintomas da ansiedade, comprovada cientificamente.
+                Existem mais de 20 mil estudos publicados comprovando sua eficácia e segurança para diversas patologias.
+                <br/>
+                <br/>
+                É um método natural que não causa dependência ou tolerância e que interage com um dos principais
+                sistemas do nosso corpo, trazendo um completo estado de bem-estar físico e mental.
+                <br/>
+                <br/>
+                Taxa de 79,9% no alívio dos sintomas da ansiedade, comprovada cientificamente.
               </p>
               <button>Ver depoimentos</button>
             </div>
           </div>
           <div className={'third-right-wrapper'}>
-            <img src={Frasco} alt={'Frasco'} />
+            <img src={Frasco} alt={'Frasco'}/>
           </div>
         </div>
       </ThirdSection>
       <FourthSection>
-        <Wrapper/>
+        <div className={'fourth-wrapper'}>
+          <div
+            style={{width: '100%', display: 'flex',}}
+          >
+            <div className={'fourth-left'}>
+              <div className={'left-text'}>
+                <h4>Passo a passo</h4>
+                <h1>Agendamento da consulta médica até a compra do medicamento.</h1>
+                <p>Para iniciar é necessário passar por uma consulta médica online onde o médico irá lhe encaminhar e
+                prescrever o medicamento de acordo com a sua condição</p>
+              </div>
+              <div className={'left-img'}>
+                <img src={Plantas} alt={'plantas-no-jarro'}/>
+              </div>
+            </div>
+            <div className={'fourth-right'}>
+              <div className={'right-text'}>
+                <div className={'content-container'}>
+                  <img src={One} alt={'num-one'}/>
+                  <div className={'text-wrapper'}>
+                    <p>
+                    No botão agendar consulta vá para a página de prescritores, escolha o profissional que mais atenda
+                    sua
+                    demanda e preencha o formulário.
+                      <br/>
+                      <br/>
+                    Se preferir entre em contato pelo WhatsApp e fale com um dos nossos especialistas que lhe
+                    auxiliaremos.
+                    </p>
+                  </div>
+                </div>
+                <div className={'content-container'}>
+                  <img src={Two} alt={'num-two'}/>
+                  <div className={'text-wrapper'}>
+                    <p>
+                    Já na plataforma Amplimed Selecione:
+                      <br/>
+                      <br/>
+                    Profissional, data, hora, valor e forma de pagamento e confirme sua consulta.
+                    </p>
+                  </div>
+                </div>
+                <div className={'content-container'}>
+                  <img src={Three} alt={'num-three'}/>
+                  <div className={'text-wrapper'}>
+                    <p>
+                    Durante a consulta o profissional irá avaliar seu objetivo terapêutico e indicar a melhor opção para
+                    seu tratamento.
+                    </p>
+                  </div>
+                </div>
+                <div className={'content-container'}>
+                  <img src={Four} alt={'num-four'}/>
+                  <div className={'text-wrapper'}>
+                    <p>
+                    Com a avaliação feita e prescrição em mãos, você receberá toda instrução via WhatsApp, E-mail e SMS
+                    para dar sequência na compra do medicamento.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={'bottom-wrapper'}>
+            <h1>Você está a um passo do tratamento ideal</h1>
+            <button>AGENDAR CONSULTA</button>
+          </div>
+        </div>
       </FourthSection>
       <FifthSection>
         <Wrapper></Wrapper>
@@ -160,5 +236,6 @@ function Home(): JSX.Element {
     </Container>
   );
 }
+
 export default Home;
 
