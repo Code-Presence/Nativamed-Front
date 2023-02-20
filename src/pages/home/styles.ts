@@ -6,7 +6,6 @@ export const Container = styled.section`
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: red;
 
   & .img-da-muie {
     width: 500px;
@@ -20,7 +19,7 @@ export const Container = styled.section`
   }
 `;
 
-export const Navbar = styled.nav`
+export const Navbar = styled.div`
   width: 100%;
   height: 85px;
   background-color: #34554e;
@@ -46,15 +45,15 @@ export const Navbar = styled.nav`
       font-size: 18px;
       font-family: "Raleway", sans-serif;
       color: #fff;
-
-      @media screen and (max-width: 500px) {
-          display: none;
-      }
     }
   }
 
   @media screen and (max-width: 500px) {
-    height: 10px;
+    height: 85px;
+
+    & p {
+      display: none;
+    }
   }
 `;
 export const FirstSection = styled.div`
@@ -68,6 +67,7 @@ export const FirstSection = styled.div`
   @media screen and (max-width: 500px) {
     flex-direction: column-reverse;
     height: fit-content;
+    width: 100%;
   }
 
   & .first-wrapper {
@@ -80,7 +80,9 @@ export const FirstSection = styled.div`
 
     @media screen and (max-width: 500px) {
       flex-direction: column-reverse;
+      width: 100%;
     }
+
   }
 
   & .first-left-wrapper {
@@ -92,8 +94,10 @@ export const FirstSection = styled.div`
     justify-content: center;
 
     @media screen and (max-width: 500px) {
-      width: 90%;
-      height: 450px;
+      flex-direction: column-reverse;
+      width: 95%;
+
+      height: fit-content;
       justify-content: flex-start;
       text-align: center;
     }
@@ -108,7 +112,7 @@ export const FirstSection = styled.div`
     justify-content: center;
 
     @media screen and (max-width: 500px) {
-      width: 100%;
+      width: 95%;
       height: 450px;
     }
   }
@@ -122,9 +126,6 @@ export const FirstSection = styled.div`
 
     @media screen and (max-width: 500px) {
       width: 100%;
-      height: 100%;
-      justify-content: center;
-      gap: 1rem;
     }
   }
 
@@ -208,6 +209,7 @@ export const SecondSection = styled.section`
 
   @media screen and (max-width: 500px) {
   height: 400px;
+    background-color: #FAFAFA;
   }
 
   & .divider {
@@ -245,6 +247,78 @@ export const SecondSection = styled.section`
 
     box-shadow: 2.2px 2.2px 6.59px rgba(0, 0, 0, 0.25);
   }
+  & .second-sec-left-wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  & .second-sec-right-wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+      text-align: center;
+      height: 300px;
+      background-color: #FAFAFA;
+    }
+
+
+
+    & h1 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      margin: 0;
+      color: #425f4b;
+
+      @media screen and (max-width: 500px) {
+        font-size: 22px;
+      }
+    }
+
+    & p {
+      font-size: 20px;
+      font-weight: 600;
+      font-family: "Montserrat", sans-serif;
+      color: #345249;
+      margin: 0;
+
+      @media screen and (max-width: 500px) {
+        font-size: 14px;
+      }
+    }
+
+
+
+    & button {
+      height: 50px;
+      width: 385px;
+      border-radius: 8px;
+      border: none;
+      background-color: #33554b;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      color: #fff;
+      margin-top: 30px;
+      cursor: pointer;
+
+      @media screen and (max-width: 500px) {
+        width: 95%;
+        height: 3rem;
+        font-size: 18px;
+      }
+    }
+  }
+
 `;
 export const ThirdSection = styled.div`
   width: 100%;
@@ -254,11 +328,21 @@ export const ThirdSection = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    height: fit-content;
+  }
+
   & .third-wrapper {
     max-width: 1440px;
     width: 100%;
     height: 100%;
     display: flex;
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      height: fit-content;
+    }
 
     & .third-left-wrapper {
       width: 50%;
@@ -268,12 +352,22 @@ export const ThirdSection = styled.div`
       align-items: center;
       justify-content: center;
 
+      @media screen and (max-width: 500px) {
+        width: 100%;
+      }
+
       & .third-text-wrapper {
         width: 490px;
         height: 600px;
         gap: 1rem;
         display: flex;
         flex-direction: column;
+
+      @media screen and (max-width: 500px) {
+        width: 90%;
+        padding-top: 2rem;
+        height: fit-content;
+      }
 
         & h4 {
           font-size: 18px;
@@ -311,6 +405,10 @@ export const ThirdSection = styled.div`
           color: #fff;
           margin-top: 30px;
           cursor: pointer;
+
+          @media screen and (max-width: 500px) {
+            width: 80%;
+          }
         }
       }
     }
@@ -319,7 +417,6 @@ export const ThirdSection = styled.div`
       width: 50%;
       height: 100%;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
 
@@ -327,6 +424,21 @@ export const ThirdSection = styled.div`
         width: 450px;
         border-radius: 8px;
         box-shadow: 2.2px 2.2px 6.59px rgba(0, 0, 0, 0.25);
+      }
+
+      @media screen and (max-width: 500px) {
+        width: 100%;
+        height: fit-content;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        align-items: normal;
+        justify-content: normal;
+
+
+        & img {
+          width: 50%;
+          margin-left: 1.5rem;
+        }
       }
     }
   }
@@ -339,6 +451,11 @@ export const FourthSection = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: 500px) {
+    height: fit-content;
+    flex-direction: column;
+  }
+
   & .fourth-wrapper{
     max-width: 1440px;
     width: 100%;
@@ -347,6 +464,15 @@ export const FourthSection = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    & .forth-content-wrapper {
+      width: 95%;
+      display: flex;
+
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+      }
+    }
   }
   & .fourth-left {
     width: 50%;
@@ -356,11 +482,20 @@ export const FourthSection = styled.div`
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: 500px) {
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+
     & .left-text {
       width: 500px;
       display: flex;
       flex-direction: column;
       gap: 0.8rem;
+
+      @media screen and (max-width: 500px) {
+        width: 100%;
+      }
 
       & h4 {
         font-size: 22px;
@@ -376,6 +511,10 @@ export const FourthSection = styled.div`
         font-weight: bold;
         color: #33554B;
         margin: 0;
+
+        @media screen and (max-width: 500px) {
+          font-size: 22px;
+        }
       }
 
       & p {
@@ -383,6 +522,10 @@ export const FourthSection = styled.div`
         font-family: 'Raleway', sans-serif;
         font-weight: 600;
         margin: 0;
+
+        @media screen and (max-width: 500px) {
+          font-size: 18px;
+        }
       }
     }
 
@@ -392,15 +535,12 @@ export const FourthSection = styled.div`
 
       & img {
         width: 600px;
+
+        @media screen and (max-width: 500px) {
+          width: 320px;
+        }
       }
     }
-
-  //  @media screen and (max-width: 500px) {
-  //    width: 90%;
-  //    height: 450px;
-  //    justify-content: flex-start;
-  //    text-align: center;
-  //}
   }
   & .fourth-right {
     width: 50%;
@@ -410,21 +550,35 @@ export const FourthSection = styled.div`
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: 500px) {
+      width: 100%;
+      padding-top: 2rem;
+    }
+
     & .right-text {
       width: 600px;
       display: flex;
       flex-direction: column;
       gap: 4rem;
 
+      @media screen and (max-width: 500px) {
+        width: 100%;
+        gap: 1.5rem;
+      }
+
       & .content-container {
         display: flex;
         width: 100%;
-
 
         & img {
           width: 100px;
           height: 100px;
           padding-right: 10px;
+
+          @media screen and (max-width: 500px) {
+           width: 80px;
+          height: 80px;
+          }
         }
 
         & .text-wrapper {
@@ -435,6 +589,10 @@ export const FourthSection = styled.div`
             padding-top: 10px;
             font-size: 22px;
             font-family: 'Raleway', sans-serif;
+
+            @media screen and (max-width: 500px) {
+              font-size: 16px;
+            }
           }
         }
       }
@@ -448,12 +606,21 @@ export const FourthSection = styled.div`
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: 500px) {
+      padding-top: 1.5rem;
+    }
+
     & h1 {
       width: 400px;
       text-align: center;
       font-size: 28px;
       font-family: 'Montserrat', sans-serif;
       color: #33554B;
+
+      @media screen and (max-width: 500px) {
+        font-size: 22px;
+      }
+
     }
 
     & button {
@@ -468,6 +635,10 @@ export const FourthSection = styled.div`
       font-weight: bold;
       letter-spacing: 1px;
       cursor: pointer;
+
+      @media screen and (max-width: 500px) {
+        font-size: 16px;
+      }
     }
   }
 `;
@@ -485,6 +656,10 @@ export const FifthSection = styled.section`
   background-position: center;
   background-position-y: bottom;
 
+  @media screen and (max-width: 500px) {
+    height: 1250px;
+  }
+
   & .fifth-wrapper {
     max-width: 1440px;
     width: 100%;
@@ -493,9 +668,12 @@ export const FifthSection = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    //border: 2px solid red;
 
     gap: 3rem;
+
+    @media screen and (max-width: 500px) {
+
+    }
   }
 
   & .fifth-first-container {
@@ -515,15 +693,24 @@ export const FifthSection = styled.section`
       border-radius: 8px;
       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
 
+      @media screen and (max-width: 500px) {
+        width: 75%;
+      }
+
       & h1 {
         width: 350px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         font-size: 28px;
-        line-height: 44px;
         text-align: center;
 
         color: #33554B;
+
+        @media screen and (max-width: 500px) {
+          width: 90%;
+          font-size: 20px;
+          line-height: 1.5rem;
+        }
 
       }
     }
@@ -678,12 +865,8 @@ export const RightWrapper = styled.div`
   height: 450px;
   }
 
-  & .second-sec-right-wrapper {
-    width: 95%;
-    text-align: center;
-    gap: 1rem;
-    height: 60%;
-  }
+
+
 
 `;
 
