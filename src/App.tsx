@@ -1,9 +1,5 @@
 import React from 'react';
 import Home from './pages/home/Home';
-import {Filter} from './pages/components/Filter/Filter';
-import {MedicCard} from './pages/components/MedicCard/MedicCard';
-import {MuiAccordion} from './pages/components/Faq';
-import Accordion from './pages/components/Accordion';
 
 function App(): JSX.Element {
   return (

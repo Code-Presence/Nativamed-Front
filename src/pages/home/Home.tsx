@@ -28,10 +28,6 @@ import Nav from '../components/Navbar/Navbar';
 import {FaWhatsapp, FaInstagram} from 'react-icons/fa';
 import {MdOutlineEmail} from 'react-icons/md';
 
-import Accordion from '../components/Accordion';
-import ControlledAccordions from '../components/Faq';
-
-
 function Home(): JSX.Element {
 
   return (
