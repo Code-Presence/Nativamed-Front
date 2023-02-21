@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   Container,
   FirstSection,
@@ -20,18 +20,24 @@ import Two from '../../assets/two.png';
 import Three from '../../assets/three.png';
 import Four from '../../assets/four.png';
 import Plantas from '../../assets/platinhas.png';
+import Logo from '../../assets/logo.png';
 
 import {Carousel} from '../components/Carousel';
 import Nav from '../components/Navbar/Navbar';
 
+import {FaWhatsapp, FaInstagram} from 'react-icons/fa';
+import {MdOutlineEmail} from 'react-icons/md';
 
-// import {Slider} from '../components/Slider/Slider';
+import Accordion from '../components/Accordion';
+import ControlledAccordions from '../components/Faq';
+
 
 function Home(): JSX.Element {
+
   return (
     <Container>
-      <Nav />
-      <FirstSection>
+      <Nav/>
+      <FirstSection id={'tenho-prescricao'}>
         <div className={'first-wrapper'}>
           <div className={'first-left-wrapper'}>
             <div className={'first-text-wrapper'}>
@@ -78,7 +84,7 @@ function Home(): JSX.Element {
           </div>
         </div>
       </SecondSection>
-      <ThirdSection>
+      <ThirdSection id={'sobre-o-tratamento'}>
         <div className={'third-wrapper'}>
           <div className={'third-left-wrapper'}>
             <div className={'third-text-wrapper'}>
@@ -212,24 +218,24 @@ function Home(): JSX.Element {
                 }}
               >
                 <p>
-                Somos a nativamed, uma empresa que surgiu da possibilidade de
-                melhorar a qualidade de vida das pessoas.
+                  Somos a nativamed, uma empresa que surgiu da possibilidade de
+                  melhorar a qualidade de vida das pessoas.
                   <br/>
                   <br/>
-                ‘’Depois que a mãe de uma criança pediu ajuda para importar a
-                medicação e vimos os benefícios e resultados positivos que esse
-                tipo de tratamento traz nós soubemos – temos que facilitar o
-                acesso da população a esse medicamento‘’.
+                  ‘’Depois que a mãe de uma criança pediu ajuda para importar a
+                  medicação e vimos os benefícios e resultados positivos que esse
+                  tipo de tratamento traz nós soubemos – temos que facilitar o
+                  acesso da população a esse medicamento‘’.
                   <br/>
                   <br/>
-                Hoje já atendemos e ajudamos dezenas de pessoas a amezinar seus
-                sintomas crônicos e a melhorar sua qualidade de vida.
+                  Hoje já atendemos e ajudamos dezenas de pessoas a amezinar seus
+                  sintomas crônicos e a melhorar sua qualidade de vida.
                   <br/>
                   <br/>
-                Através do nosso ecossistema de profissionais contamos com
-                diversos médicos especialistas para lhe orientar, consultar e
-                prescrever os medicamentos de acordo com sua condição e patologia,
-                facilitando o acesso ao tratamento e seus benefícios.
+                  Através do nosso ecossistema de profissionais contamos com
+                  diversos médicos especialistas para lhe orientar, consultar e
+                  prescrever os medicamentos de acordo com sua condição e patologia,
+                  facilitando o acesso ao tratamento e seus benefícios.
                 </p>
               </div>
             </div>
@@ -237,8 +243,49 @@ function Home(): JSX.Element {
           {/*<img src={Folhas} alt={'folhas'} className={'folhas'}/>*/}
         </div>
       </SixthSection>
-      <SeventhSection />
-      {/*<Footer/>*/}
+      {/*<SeventhSection>*/}
+      <Footer>
+        <div className={'footer-wrapper'}>
+          <div className={'logo-container'}>
+            <img src={Logo} alt={'logo'} />
+            <div className={'respons-icon-container'}>
+              <MdOutlineEmail/>
+              <FaInstagram/>
+              <FaWhatsapp/>
+            </div>
+          </div>
+          <div className={'option-container-1'}>
+            <p>Tenho prescrição</p>
+            <p>Perguntas frequentes</p>
+            <p>Blog</p>
+          </div>
+          <div className={'option-container-2'}>
+            <p>Agendamento de consulta</p>
+            <p>Nosso tratamento</p>
+            <p>Conheça nossa empresa</p>
+            <p>Depoimentos</p>
+          </div>
+          <div className={'icons-container'}>
+            <FaWhatsapp/>
+            <FaInstagram/>
+            <MdOutlineEmail/>
+          </div>
+        </div>
+        <hr className={'line'} />
+        <div className={'links-wrapper'}>
+          <div style={{ display: 'flex', gap: '10px'}}>
+            <div className={'respons-divider'}>
+              <a>Política de Privacidade</a>
+              <a>Política de Cookies</a>
+            </div>
+            <div className={'respons-divider'}>
+              <a>Termos de Uso</a>
+              <a>CNPJ: 48.029.775/0001-16</a>
+            </div>
+          </div>
+          <a>Todos os direitos reservados © nativamed.com.br</a>
+        </div>
+      </Footer>
     </Container>
   );
 }

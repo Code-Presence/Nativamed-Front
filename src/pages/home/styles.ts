@@ -258,10 +258,15 @@ export const FirstSection = styled.div`
   align-items: center;
   justify-content: center;
 
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
   @media screen and (max-width: 500px) {
     flex-direction: column-reverse;
     height: fit-content;
     width: 100%;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   & .first-wrapper {
@@ -401,9 +406,15 @@ export const SecondSection = styled.section`
   height: 600px;
   background-color: white;
 
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
   @media screen and (max-width: 500px) {
   height: 400px;
     background-color: #FAFAFA;
+
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   & .divider {
@@ -1156,12 +1167,10 @@ export const SixthSection = styled.section`
 
 export const SeventhSection = styled.section`
   width: 100%;
-  height: 1000px;
-  max-height: 1280px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   background-color: #FAFAFA;
 `;
 
@@ -1169,4 +1178,118 @@ export const Footer = styled.footer`
   width: 100%;
   height: 550px;
   background-color: #33554B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 500px) {
+    height: fit-content;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+  }
+
+  & .footer-wrapper {
+    display: flex;
+    gap: 88px;
+    padding-bottom: 4rem;
+
+    @media screen and (max-width: 500px) {
+    gap: 10px;
+    }
+  }
+
+  & .logo-container {
+    padding-right: 32px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 500px) {
+      & img {
+        width: 170px;
+      }
+    }
+
+    & .respons-icon-container {
+      display: none;
+
+
+      @media screen and (max-width: 500px) {
+        display: flex;
+        gap: 10px;
+        font-size: 28px;
+        color: white;
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  & .icons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 28px;
+    color: white;
+
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+
+
+  }
+
+  & .option-container-1 {
+    color: white;
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    & p {
+      margin: 0;
+    }
+  }
+
+  & .option-container-2 {
+    color: white;
+    font-family: Montserrat, sans-serif;
+    @media screen and (max-width: 500px) {
+        display: none;
+    }
+  }
+
+  & .line {
+    background-color: rgba(249, 249, 249, 0.2);
+    width: 1100px;
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
+  }
+
+  & .links-wrapper {
+    padding-top: 25px;
+    display: flex;
+    color: rgba(249, 249, 249, 0.6);
+    gap: 32px;
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    & .respons-divider {
+      display: flex;
+      gap: 32px;
+
+      @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+
+    }
+  }
+
 `;

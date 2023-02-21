@@ -34,13 +34,13 @@ const Nav = () => {
         <NavMenu>
           <NavLinks className={navActive ? 'nav-active' : ''}>
             <NavLink>
-              <a href="#">Tenho prescrição</a>
+              <a href="#tenho-prescricao">Tenho prescrição</a>
             </NavLink>
             <NavLink>
-              <a href="#">Seobre o tratamento</a>
+              <a href="#sobre-o-tratamento">Sobre o tratamento</a>
             </NavLink>
             <NavLink>
-              <a href="#">Perguntas frequentes</a>
+              <a href="#-perguntas-frequentes">Perguntas frequentes</a>
             </NavLink>
             <NavLink>
               <a href="#">Blog</a>
