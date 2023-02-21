@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import backgroundUp from '../../assets/BG-upgraded.png';
-import FolhasBG from '../../assets/folhas.png'
+import FolhasBG from '../../assets/folhas.png';
 import PlantasCortadas from '../../assets/plantinhas-2.png';
 
 export const Container = styled.section`
@@ -908,7 +908,7 @@ export const FifthSection = styled.section`
   background-position-y: bottom;
 
   @media screen and (max-width: 500px) {
-    height: 1250px;
+    height: fit-content;
   }
 
   & .fifth-wrapper {
@@ -923,7 +923,9 @@ export const FifthSection = styled.section`
     gap: 3rem;
 
     @media screen and (max-width: 500px) {
-
+      height: fit-content;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
     }
   }
 
@@ -981,6 +983,7 @@ export const FifthSection = styled.section`
     justify-content: center;
     gap: 1rem;
 
+
     & h1 {
       width: 400px;
       text-align: center;
@@ -1011,12 +1014,23 @@ export const SixthSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-background-color: white;
+  background-color: white;
   background-image: url(${FolhasBG});
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: bottom;
+
+  @media screen and (max-width: 500px) {
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: top;
+    padding-bottom: 10rem;
+
+    //background-position: right;
+    //background-position-y: bottom;
+  }
 
   overflow: hidden;
 
@@ -1031,6 +1045,9 @@ background-color: white;
     @media screen and (max-width: 500px) {
       flex-direction: column-reverse;
       width: 100%;
+      height: fit-content;
+      gap: 2rem;
+      padding-top: 8rem;
     }
 
     //& .folhas {
@@ -1054,12 +1071,17 @@ background-color: white;
       height: fit-content;
       justify-content: flex-start;
       text-align: center;
+
     }
 
     & img {
       width: 600px;
       border-radius: 8px;
       box-shadow: 2.2px 2.2px 6.59px rgba(0, 0, 0, 0.25);
+
+      @media screen and (max-width: 500px) {
+        width: 95%;
+      }
 
     }
   }
@@ -1074,10 +1096,8 @@ background-color: white;
 
     @media screen and (max-width: 500px) {
       width: 95%;
-      height: 450px;
+      height: fit-content;
     }
-
-
   }
 
   & .six-text-wrapper {
@@ -1091,6 +1111,8 @@ background-color: white;
 
     @media screen and (max-width: 500px) {
       width: 100%;
+    gap: 0.5rem;
+      //height: 100%;
     }
 
     & h4 {
@@ -1122,11 +1144,25 @@ background-color: white;
 
       @media screen and (max-width: 500px) {
         font-size: 16px;
+        width: 320px;
+        color: black
+      ;
       }
     }
   }
 
 
+`;
+
+export const SeventhSection = styled.section`
+  width: 100%;
+  height: 1000px;
+  max-height: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #FAFAFA;
 `;
 
 export const Footer = styled.footer`

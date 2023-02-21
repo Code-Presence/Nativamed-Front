@@ -7,7 +7,7 @@ import {
   FourthSection,
   FifthSection,
   SixthSection,
-  Footer, IMGDivider,
+  Footer, IMGDivider, SeventhSection,
 } from './styles';
 import Muie from '../../assets/muie.png';
 import Woman from '../../assets/woman.png';
@@ -20,8 +20,6 @@ import Two from '../../assets/two.png';
 import Three from '../../assets/three.png';
 import Four from '../../assets/four.png';
 import Plantas from '../../assets/platinhas.png';
-import PlantasCortadas from '../../assets/plantinhas-2.png';
-import Folhas from '../../assets/folhas.png';
 
 import {Carousel} from '../components/Carousel';
 import Nav from '../components/Navbar/Navbar';
@@ -111,7 +109,6 @@ function Home(): JSX.Element {
       <IMGDivider>
         <div className={'divider-wrapper'}>
           <img src={FrascoQuadrado} alt={'frasco-quadrado'} className={'frasco'}/>
-          {/*<img src={PlantasCortadas} alt={'plantas-no-jarro'} className={'plantas'}/>*/}
         </div>
       </IMGDivider>
       <FourthSection>
@@ -209,31 +206,38 @@ function Home(): JSX.Element {
             <div className={'six-text-wrapper'}>
               <h4>Quem somos</h4>
               <h1>Conheça a nossa empresa</h1>
-              <p >
+              <div
+                style={{
+                  height: '100%',
+                }}
+              >
+                <p>
                 Somos a nativamed, uma empresa que surgiu da possibilidade de
                 melhorar a qualidade de vida das pessoas.
-                <br/>
-                <br/>
+                  <br/>
+                  <br/>
                 ‘’Depois que a mãe de uma criança pediu ajuda para importar a
                 medicação e vimos os benefícios e resultados positivos que esse
                 tipo de tratamento traz nós soubemos – temos que facilitar o
                 acesso da população a esse medicamento‘’.
-                <br/>
-                <br/>
+                  <br/>
+                  <br/>
                 Hoje já atendemos e ajudamos dezenas de pessoas a amezinar seus
                 sintomas crônicos e a melhorar sua qualidade de vida.
-                <br/>
-                <br/>
+                  <br/>
+                  <br/>
                 Através do nosso ecossistema de profissionais contamos com
                 diversos médicos especialistas para lhe orientar, consultar e
                 prescrever os medicamentos de acordo com sua condição e patologia,
                 facilitando o acesso ao tratamento e seus benefícios.
-              </p>
+                </p>
+              </div>
             </div>
           </div>
           {/*<img src={Folhas} alt={'folhas'} className={'folhas'}/>*/}
         </div>
       </SixthSection>
+      <SeventhSection />
       {/*<Footer/>*/}
     </Container>
   );
