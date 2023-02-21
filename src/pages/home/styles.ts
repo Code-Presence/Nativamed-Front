@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import backgroundUp from '../../assets/BG-upgraded.png';
+import FolhasBG from '../../assets/folhas.png'
+import PlantasCortadas from '../../assets/plantinhas-2.png';
 
 export const Container = styled.section`
   width: 100%;
@@ -230,7 +232,7 @@ export const NAV = styled.section`
 //     & a {
 //       box-shadow: inset 0 0 0 0 #548c80;
 //       font-size: 18px;
-//       font-family: "Raleway", sans-serif;
+//       font-family: "Montserrat", sans-serif;
 //       color: #fff;
 //       text-decoration: none;
 //       cursor: pointer;
@@ -325,7 +327,7 @@ export const FirstSection = styled.div`
     // p
     font-size: 22px;
     font-weight: 400;
-    font-family: "Raleway", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #345249;
     margin: 0;
 
@@ -364,7 +366,7 @@ export const FirstSection = styled.div`
   // p
   font-size: 22px;
   font-weight: 400;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #345249;
   margin: 0;
 
@@ -564,7 +566,7 @@ export const ThirdSection = styled.div`
         & h4 {
           font-size: 18px;
           font-weight: bolder;
-          font-family: "Raleway", sans-serif;
+          font-family: "Montserrat", sans-serif;
           color: #345249;
           margin: 0;
         }
@@ -580,7 +582,7 @@ export const ThirdSection = styled.div`
         & p {
           font-size: 20px;
           font-weight: 400;
-          font-family: "Raleway", sans-serif;
+          font-family: "Montserrat", sans-serif;
           color: #345249;
           margin: 0;
         }
@@ -644,23 +646,32 @@ export const IMGDivider = styled.div`
   padding-top: 1.5rem;
   background-color: white;
 
+  background-image: url(${PlantasCortadas});
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  //background-position-y: 10px ;
+
   @media screen and (max-width: 500px) {
     display: flex;
-    height: 280px;
-
+    height: 380px;
+    justify-content: center;
+    //align-items: center;
 
     & .divider-wrapper {
       position: absolute;
-      width: 100%;
+      width: 90%;
       height: 400px;
       display: flex;
       justify-content: space-between;
     }
 
     & .frasco {
-      width: 40%;
-      height: 40%;
-      padding-left: 1.5rem;
+      width: 200px;
+      height: 200px;
+      border-radius: 8px;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+      //padding-left: 1.5rem;
     }
 
     & .plantas {
@@ -687,6 +698,7 @@ export const FourthSection = styled.div`
   @media screen and (max-width: 500px) {
     height: fit-content;
     flex-direction: column;
+    background-color: white;
   }
 
   & .fourth-wrapper{
@@ -720,6 +732,7 @@ export const FourthSection = styled.div`
       width: 100%;
       align-items: normal;
       justify-content: normal;
+      margin-top: 6rem;
     }
 
     & .left-text {
@@ -731,11 +744,12 @@ export const FourthSection = styled.div`
       @media screen and (max-width: 500px) {
         width: 80%;
         padding-top: 2rem;
+        position: absolute;
       }
 
       & h4 {
         font-size: 22px;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         color: #33554B;
         margin: 0;
@@ -755,8 +769,8 @@ export const FourthSection = styled.div`
 
       & p {
         font-size: 24px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
         margin: 0;
 
         @media screen and (max-width: 500px) {
@@ -825,7 +839,7 @@ export const FourthSection = styled.div`
           margin: 0;
             padding-top: 10px;
             font-size: 22px;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Montserrat', sans-serif;
 
             @media screen and (max-width: 500px) {
               font-size: 16px;
@@ -998,132 +1012,121 @@ export const SixthSection = styled.section`
   align-items: center;
   justify-content: center;
 background-color: white;
-`;
+  background-image: url(${FolhasBG});
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: bottom;
 
-export const TextWrapper = styled.div`
-  width: 550px;
-  height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  overflow: hidden;
 
-`;
-
-export const PreTitle = styled.p`
-  font-size: 22px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  color: #345249;
-  margin: 0;
-
-  @media screen and (max-width: 500px) {
-    font-size: 16px;
-  }
-
-`;
-
-export const Title = styled.h1`
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  margin: 0;
-  color: #425f4b;
-
-  @media screen and (max-width: 500px) {
-    font-size: 22px;
-  }
-`;
-export const SubTitle = styled.h1`
-  font-size: 20px;
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
-  color: #345249;
-  margin: 0;
-
-  @media screen and (max-width: 500px) {
-  font-size: 14px;
-  }
-`;
-
-export const FooterTitle = styled.p`
-  font-size: 22px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  color: #345249;
-  margin: 0;
-
-  @media screen and (max-width: 500px) {
-    font-size: 18px;
-  }
-`;
-
-export const LeftWrapper = styled.div`
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-
-
-`;
-
-export const Button = styled.button`
-  height: 50px;
-  width: 385px;
-  border-radius: 8px;
-  border: none;
-  background-color: #33554b;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: #fff;
-  margin-top: 30px;
-  cursor: pointer;
-
-  @media screen and (max-width: 500px) {
+  & .six-wrapper {
+    max-width: 1440px;
     width: 100%;
-    height: 3rem;
-    font-size: 18px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+
+    //& .folhas {
+    //  position: absolute;
+    //  margin-left: 60rem;
+    //}
   }
 
-`;
-export const RightWrapper = styled.div`
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  & .six-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-  @media screen and (max-width: 500px) {
-  width: 100%;
-  height: 450px;
+    @media screen and (max-width: 500px) {
+      flex-direction: column-reverse;
+      width: 95%;
+
+      height: fit-content;
+      justify-content: flex-start;
+      text-align: center;
+    }
+
+    & img {
+      width: 600px;
+      border-radius: 8px;
+      box-shadow: 2.2px 2.2px 6.59px rgba(0, 0, 0, 0.25);
+
+    }
+  }
+
+  & .six-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 500px) {
+      width: 95%;
+      height: 450px;
+    }
+
+
+  }
+
+  & .six-text-wrapper {
+    width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-left: 2rem;
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
+
+    & h4 {
+      font-size: 18px;
+      font-weight: 600;
+      font-family: "Montserrat", sans-serif;
+      color: #345249;
+      margin: 0;
+    }
+
+    & h1 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      margin: 0;
+      color: #425f4b;
+
+      @media screen and (max-width: 500px) {
+        font-size: 22px;
+      }
+    }
+
+    & p {
+      font-size: 18px;
+      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
+      color: #345249;
+      margin: 0;
+
+      @media screen and (max-width: 500px) {
+        font-size: 16px;
+      }
+    }
   }
 
 
-
-
-`;
-
-export const Wrapper = styled.section`
-  max-width: 1440px;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  //border: 1px solid red;
-
-`;
-
-
-export const Text = styled.p`
-  font-family: Ubuntu, sans-serif;
-  font-size: 26px;
-  font-weight: lighter;
-  color: #33554B;
 `;
 
 export const Footer = styled.footer`
