@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Container,
   FirstSection,
-  Navbar,
   SecondSection,
   ThirdSection,
   FourthSection,
@@ -10,7 +9,6 @@ import {
   SixthSection,
   Footer, IMGDivider,
 } from './styles';
-import Logo from '../../assets/logo.png';
 import Muie from '../../assets/muie.png';
 import Woman from '../../assets/woman.png';
 import Laptop from '../../assets/laptop.png';
@@ -25,6 +23,7 @@ import Plantas from '../../assets/platinhas.png';
 import PlantasCortadas from '../../assets/plantinhas-2.png';
 
 import {Carousel} from '../components/Carousel';
+import Nav from '../components/Navbar/Navbar';
 
 
 // import {Slider} from '../components/Slider/Slider';
@@ -32,17 +31,7 @@ import {Carousel} from '../components/Carousel';
 function Home(): JSX.Element {
   return (
     <Container>
-      <Navbar>
-        <div className={'nav-wrapper'}
-        >
-          <img src={Logo} alt="Logo Nativamed"/>
-          <p>Tenho prescrição</p>
-          <p>Sobre o tratamento</p>
-          <p>Perguntas frequentes</p>
-          <p>Blog</p>
-          <p>Entrar em contato</p>
-        </div>
-      </Navbar>
+      <Nav />
       <FirstSection>
         <div className={'first-wrapper'}>
           <div className={'first-left-wrapper'}>

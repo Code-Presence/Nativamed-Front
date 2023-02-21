@@ -7,6 +7,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
 
+
   & .img-da-muie {
     width: 500px;
     @media screen and (max-width: 500px) {
@@ -19,43 +20,234 @@ export const Container = styled.section`
   }
 `;
 
-export const Navbar = styled.div`
+export const NAV = styled.section`
   width: 100%;
-  height: 85px;
-  background-color: #34554e;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  & .nav-wrapper {
-    max-width: 1440px;
-    width: 100%;
-    height: 100%;
+  height: fit-content;
+  nav {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-between;
+    padding: 0 15%;
+    height: 75px;
+    line-height: 75px;
+    background: #404040;
+  }
 
-    & img {
-      width: 246px;
-      height: 33px;
-    }
+  nav .navbar-brand {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: .5px;
+  }
 
-    & p {
-      font-size: 18px;
-      font-family: "Raleway", sans-serif;
-      color: #fff;
-    }
+  nav .nav-list {
+    display: flex;
+  }
+
+  nav .nav-list .nav-item {
+    cursor: pointer;
+    height: 100%;
+    padding: 0 30px;
+    transition: .4s;
+  }
+
+  nav .nav-list .nav-item:hover {
+    background: #b69955;
+  }
+
+  nav .nav-list .nav-link {
+    color: #f1f1f1;
+    font-size: 18px;
+    font-weight: 500;
   }
 
   @media screen and (max-width: 500px) {
-    height: 85px;
 
-    & p {
-      display: none;
+    nav {
+      padding: 0 2rem;
     }
+
+    nav .nav-list .nav-item {
+      padding: 0 20px;
+    }
+
   }
+
+  @media screen and (max-width: 500px) {
+
+    nav .nav-list {
+      display: grid;
+      position: absolute;
+      background: #404040;
+      width: 100%;
+      top: 75px;
+      left: 0;
+      transform: translateY(-100%);
+      z-index: -1;
+      transition: .6s;
+    }
+
+    nav .nav-list .nav-item {
+      padding-left: 35px;
+    }
+
+    nav .navbar-toggler {
+      display: grid !important;
+    }
+
+  }
+
+  nav .navbar-toggler {
+    display: none;
+    height: min-content;
+    margin: 18px -10px 0 0;
+    cursor: pointer;
+  }
+
+  nav .navbar-toggler .bar {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border-radius: 10%;
+    transition: .4s;
+  }
+
+  input {
+    display: none;
+  }
+
+  input:checked ~ nav .nav-list {
+    transform: translateY(0);
+  }
+
+  input:checked ~ nav .navbar-toggler {
+    margin-top: 35px;
+  }
+
+  input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+  }
+
+  input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
+    display: none;
+  }
+
+  input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
 `;
+
+// export const Navbar = styled.div`
+//   width: 100%;
+//   height: 85px;
+//   background-color: #34554e;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//
+//   input:checked ~ nav .nav-link {
+//       transform: translateY(0);
+//     }
+//
+//
+//   @media screen and (max-width: 500px) {
+//     overflow: hidden;
+//   }
+//
+//   & .nav-wrapper {
+//     max-width: 1440px;
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 40px;
+//     overflow: hidden;
+//
+//     & .nav-toggle {
+//       display: none;
+//       height: min-content;
+//       margin: 18px -10px 0 0;
+//       cursor: pointer;
+//
+//       & .bar {
+//         width: 40px;
+//         height: 5px;
+//         margin-bottom: 10px;
+//         background-color: white;
+//         border-radius: 10%;
+//         transition: .4s;
+//       }
+//
+//       @media screen and (max-width: 500px) {
+//       display: grid !important;
+//
+//       }
+//     }
+//
+//     & .logo-nativamed {
+//       width: 246px;
+//       height: 33px;
+//     }
+//
+//     & .burger-menu {
+//       display: none;
+//
+//       @media screen and (max-width: 500px) {
+//         display: block;
+//         overflow: hidden;
+//       }
+//     }
+//   }
+//
+//   & .nav-links {
+//     list-style-type: none;
+//     display: flex;
+//     gap: 40px;
+//
+//     @media screen and (max-width: 500px) {
+//       display: none;
+//       position: absolute;
+//       background-color: #34554e;
+//       width: 100%;
+//       top: 75px;
+//       left: 0;
+//       transform: translateY(-100%);
+//       z-index: 1;
+//       transition: .6s;
+//       padding-top: 2rem;
+//       padding-bottom: 2rem;
+//       overflow: hidden;
+//     }
+//
+//     & li {
+//       text-decoration: none;
+//       overflow: hidden;
+//     }
+//
+//     & a {
+//       box-shadow: inset 0 0 0 0 #548c80;
+//       font-size: 18px;
+//       font-family: "Raleway", sans-serif;
+//       color: #fff;
+//       text-decoration: none;
+//       cursor: pointer;
+//       margin: 0 -.25rem;
+//       padding: 0 .25rem;
+//       transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+//       overflow: hidden;
+//
+//       :hover {
+//         box-shadow: inset 100px 0 0 0 #548c80;
+//       }
+//     }
+//   }
+//
+// `;
+
+
 export const FirstSection = styled.div`
   width: 100%;
   height: 720px;
