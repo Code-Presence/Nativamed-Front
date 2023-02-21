@@ -8,19 +8,21 @@ import {
   FourthSection,
   FifthSection,
   SixthSection,
-  Footer,
+  Footer, IMGDivider,
 } from './styles';
 import Logo from '../../assets/logo.png';
 import Muie from '../../assets/muie.png';
 import Woman from '../../assets/woman.png';
 import Laptop from '../../assets/laptop.png';
 import Frasco from '../../assets/frasco.png';
+import FrascoQuadrado from '../../assets/frasco-quadrado.png';
 
 import One from '../../assets/one.png';
 import Two from '../../assets/two.png';
 import Three from '../../assets/three.png';
 import Four from '../../assets/four.png';
 import Plantas from '../../assets/platinhas.png';
+import PlantasCortadas from '../../assets/plantinhas-2.png';
 
 import {Carousel} from '../components/Carousel';
 
@@ -74,13 +76,13 @@ function Home(): JSX.Element {
             </div>
             <div className={'second-sec-right-wrapper'}>
               <h1>
-                  Preencha o formulário para dar <br/>
-                  o primeiro passo em direção ao <br/>
-                  alívio dos seus sintomas
+                Preencha o formulário para dar <br/>
+                o primeiro passo em direção ao <br/>
+                alívio dos seus sintomas
               </h1>
               <br/>
               <p>
-                  Entraremos em contato para te guiar por todo o caminho.
+                Entraremos em contato para te guiar por todo o caminho.
               </p>
               <br/>
               <button>Conheça o tratamento</button>
@@ -116,6 +118,12 @@ function Home(): JSX.Element {
           </div>
         </div>
       </ThirdSection>
+      <IMGDivider>
+        <div className={'divider-wrapper'}>
+          <img src={FrascoQuadrado} alt={'frasco-quadrado'} className={'frasco'}/>
+          <img src={PlantasCortadas} alt={'plantas-no-jarro'} className={'plantas'}/>
+        </div>
+      </IMGDivider>
       <FourthSection>
         <div className={'fourth-wrapper'}>
           <div className={'forth-content-wrapper'}>
@@ -124,7 +132,7 @@ function Home(): JSX.Element {
                 <h4>Passo a passo</h4>
                 <h1>Agendamento da consulta médica até a compra do medicamento.</h1>
                 <p>Para iniciar é necessário passar por uma consulta médica online onde o médico irá lhe encaminhar e
-                prescrever o medicamento de acordo com a sua condição</p>
+                  prescrever o medicamento de acordo com a sua condição</p>
               </div>
               <div className={'left-img'}>
                 <img src={Plantas} alt={'plantas-no-jarro'}/>
@@ -136,13 +144,13 @@ function Home(): JSX.Element {
                   <img src={One} alt={'num-one'}/>
                   <div className={'text-wrapper'}>
                     <p>
-                    No botão agendar consulta vá para a página de prescritores, escolha o profissional que mais atenda
-                    sua
-                    demanda e preencha o formulário.
+                      No botão agendar consulta vá para a página de prescritores, escolha o profissional que mais atenda
+                      sua
+                      demanda e preencha o formulário.
                       <br/>
                       <br/>
-                    Se preferir entre em contato pelo WhatsApp e fale com um dos nossos especialistas que lhe
-                    auxiliaremos.
+                      Se preferir entre em contato pelo WhatsApp e fale com um dos nossos especialistas que lhe
+                      auxiliaremos.
                     </p>
                   </div>
                 </div>
@@ -150,10 +158,10 @@ function Home(): JSX.Element {
                   <img src={Two} alt={'num-two'}/>
                   <div className={'text-wrapper'}>
                     <p>
-                    Já na plataforma Amplimed Selecione:
+                      Já na plataforma Amplimed Selecione:
                       <br/>
                       <br/>
-                    Profissional, data, hora, valor e forma de pagamento e confirme sua consulta.
+                      Profissional, data, hora, valor e forma de pagamento e confirme sua consulta.
                     </p>
                   </div>
                 </div>
@@ -161,8 +169,9 @@ function Home(): JSX.Element {
                   <img src={Three} alt={'num-three'}/>
                   <div className={'text-wrapper'}>
                     <p>
-                    Durante a consulta o profissional irá avaliar seu objetivo terapêutico e indicar a melhor opção para
-                    seu tratamento.
+                      Durante a consulta o profissional irá avaliar seu objetivo terapêutico e indicar a melhor opção
+                      para
+                      seu tratamento.
                     </p>
                   </div>
                 </div>
@@ -170,8 +179,9 @@ function Home(): JSX.Element {
                   <img src={Four} alt={'num-four'}/>
                   <div className={'text-wrapper'}>
                     <p>
-                    Com a avaliação feita e prescrição em mãos, você receberá toda instrução via WhatsApp, E-mail e SMS
-                    para dar sequência na compra do medicamento.
+                      Com a avaliação feita e prescrição em mãos, você receberá toda instrução via WhatsApp, E-mail e
+                      SMS
+                      para dar sequência na compra do medicamento.
                     </p>
                   </div>
                 </div>
@@ -192,7 +202,7 @@ function Home(): JSX.Element {
             </div>
           </div>
           <div className={'fifth-second-container'}>
-            <Carousel />
+            <Carousel/>
           </div>
           <div className={'fifth-third-container'}>
             <h1>Você está a um passo do tratamento ideal</h1>
