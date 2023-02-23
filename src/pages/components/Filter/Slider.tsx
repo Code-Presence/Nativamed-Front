@@ -38,7 +38,6 @@ const PriceSlider = () => {
 };
 
 const Container = styled.div`
-  margin: auto;
   display: block;
   width: 90%;
   align-items: center;

@@ -22,234 +22,6 @@ export const Container = styled.section`
   }
 `;
 
-export const NAV = styled.section`
-  width: 100%;
-  height: fit-content;
-  nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 15%;
-    height: 75px;
-    line-height: 75px;
-    background: #404040;
-  }
-
-  nav .navbar-brand {
-    color: #ffffff;
-    font-size: 28px;
-    font-weight: 500;
-    letter-spacing: .5px;
-  }
-
-  nav .nav-list {
-    display: flex;
-  }
-
-  nav .nav-list .nav-item {
-    cursor: pointer;
-    height: 100%;
-    padding: 0 30px;
-    transition: .4s;
-  }
-
-  nav .nav-list .nav-item:hover {
-    background: #b69955;
-  }
-
-  nav .nav-list .nav-link {
-    color: #f1f1f1;
-    font-size: 18px;
-    font-weight: 500;
-  }
-
-  @media screen and (max-width: 500px) {
-
-    nav {
-      padding: 0 2rem;
-    }
-
-    nav .nav-list .nav-item {
-      padding: 0 20px;
-    }
-
-  }
-
-  @media screen and (max-width: 500px) {
-
-    nav .nav-list {
-      display: grid;
-      position: absolute;
-      background: #404040;
-      width: 100%;
-      top: 75px;
-      left: 0;
-      transform: translateY(-100%);
-      z-index: -1;
-      transition: .6s;
-    }
-
-    nav .nav-list .nav-item {
-      padding-left: 35px;
-    }
-
-    nav .navbar-toggler {
-      display: grid !important;
-    }
-
-  }
-
-  nav .navbar-toggler {
-    display: none;
-    height: min-content;
-    margin: 18px -10px 0 0;
-    cursor: pointer;
-  }
-
-  nav .navbar-toggler .bar {
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background: #ffffff;
-    border-radius: 10%;
-    transition: .4s;
-  }
-
-  input {
-    display: none;
-  }
-
-  input:checked ~ nav .nav-list {
-    transform: translateY(0);
-  }
-
-  input:checked ~ nav .navbar-toggler {
-    margin-top: 35px;
-  }
-
-  input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
-    position: absolute;
-    transform: rotate(45deg);
-  }
-
-  input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
-    display: none;
-  }
-
-  input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
-    transform: rotate(-45deg);
-  }
-
-`;
-
-// export const Navbar = styled.div`
-//   width: 100%;
-//   height: 85px;
-//   background-color: #34554e;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//
-//   input:checked ~ nav .nav-link {
-//       transform: translateY(0);
-//     }
-//
-//
-//   @media screen and (max-width: 500px) {
-//     overflow: hidden;
-//   }
-//
-//   & .nav-wrapper {
-//     max-width: 1440px;
-//     width: 100%;
-//     height: 100%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     gap: 40px;
-//     overflow: hidden;
-//
-//     & .nav-toggle {
-//       display: none;
-//       height: min-content;
-//       margin: 18px -10px 0 0;
-//       cursor: pointer;
-//
-//       & .bar {
-//         width: 40px;
-//         height: 5px;
-//         margin-bottom: 10px;
-//         background-color: white;
-//         border-radius: 10%;
-//         transition: .4s;
-//       }
-//
-//       @media screen and (max-width: 500px) {
-//       display: grid !important;
-//
-//       }
-//     }
-//
-//     & .logo-nativamed {
-//       width: 246px;
-//       height: 33px;
-//     }
-//
-//     & .burger-menu {
-//       display: none;
-//
-//       @media screen and (max-width: 500px) {
-//         display: block;
-//         overflow: hidden;
-//       }
-//     }
-//   }
-//
-//   & .nav-links {
-//     list-style-type: none;
-//     display: flex;
-//     gap: 40px;
-//
-//     @media screen and (max-width: 500px) {
-//       display: none;
-//       position: absolute;
-//       background-color: #34554e;
-//       width: 100%;
-//       top: 75px;
-//       left: 0;
-//       transform: translateY(-100%);
-//       z-index: 1;
-//       transition: .6s;
-//       padding-top: 2rem;
-//       padding-bottom: 2rem;
-//       overflow: hidden;
-//     }
-//
-//     & li {
-//       text-decoration: none;
-//       overflow: hidden;
-//     }
-//
-//     & a {
-//       box-shadow: inset 0 0 0 0 #548c80;
-//       font-size: 18px;
-//       font-family: "Montserrat", sans-serif;
-//       color: #fff;
-//       text-decoration: none;
-//       cursor: pointer;
-//       margin: 0 -.25rem;
-//       padding: 0 .25rem;
-//       transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-//       overflow: hidden;
-//
-//       :hover {
-//         box-shadow: inset 100px 0 0 0 #548c80;
-//       }
-//     }
-//   }
-//
-// `;
-
-
 export const FirstSection = styled.div`
   width: 100%;
   height: 720px;
@@ -328,7 +100,7 @@ export const FirstSection = styled.div`
     }
   }
 
-  & .pre-title{
+  & .pre-title {
     // p
     font-size: 22px;
     font-weight: 400;
@@ -342,43 +114,43 @@ export const FirstSection = styled.div`
   }
 
   & .title {
-  // h1
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  margin: 0;
-  color: #425f4b;
+    // h1
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0;
+    color: #425f4b;
 
-  @media screen and (max-width: 500px) {
+    @media screen and (max-width: 500px) {
+      font-size: 22px;
+    }
+  }
+
+  & .sub-title {
+    // h1
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    color: #345249;
+    margin: 0;
+
+    @media screen and (max-width: 500px) {
+      font-size: 14px;
+    }
+  }
+
+  & .footer-title {
+    // p
     font-size: 22px;
-  }
-  }
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    color: #345249;
+    margin: 0;
 
- & .sub-title {
-   // h1
-  font-size: 20px;
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
-  color: #345249;
-  margin: 0;
-
-  @media screen and (max-width: 500px) {
-  font-size: 14px;
+    @media screen and (max-width: 500px) {
+      font-size: 18px;
+    }
   }
- }
-
-& .footer-title {
-  // p
-  font-size: 22px;
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
-  color: #345249;
-  margin: 0;
-
-  @media screen and (max-width: 500px) {
-    font-size: 18px;
-  }
-}
 
   & button {
     height: 50px;
@@ -401,6 +173,7 @@ export const FirstSection = styled.div`
   }
 
 `;
+
 export const SecondSection = styled.section`
   width: 100%;
   height: 600px;
@@ -410,7 +183,7 @@ export const SecondSection = styled.section`
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   @media screen and (max-width: 500px) {
-  height: 400px;
+    height: 400px;
     background-color: #FAFAFA;
 
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -439,11 +212,12 @@ export const SecondSection = styled.section`
     justify-content: center;
 
     @media screen and (max-width: 500px) {
-      & .second-sec-left-wrapper{
+      & .second-sec-left-wrapper {
         display: none;
       }
     }
   }
+
   & .laptop {
     width: 400px;
     margin-top: 220px;
@@ -452,6 +226,7 @@ export const SecondSection = styled.section`
 
     box-shadow: 2.2px 2.2px 6.59px rgba(0, 0, 0, 0.25);
   }
+
   & .second-sec-left-wrapper {
     width: 50%;
     height: 100%;
@@ -460,6 +235,7 @@ export const SecondSection = styled.section`
     align-items: center;
     justify-content: center;
   }
+
   & .second-sec-right-wrapper {
     width: 50%;
     height: 100%;
@@ -474,7 +250,6 @@ export const SecondSection = styled.section`
       height: 300px;
       background-color: #FAFAFA;
     }
-
 
 
     & h1 {
@@ -502,7 +277,6 @@ export const SecondSection = styled.section`
     }
 
 
-
     & button {
       height: 50px;
       width: 385px;
@@ -525,6 +299,7 @@ export const SecondSection = styled.section`
   }
 
 `;
+
 export const ThirdSection = styled.div`
   width: 100%;
   height: 850px;
@@ -568,11 +343,11 @@ export const ThirdSection = styled.div`
         display: flex;
         flex-direction: column;
 
-      @media screen and (max-width: 500px) {
-        width: 90%;
-        padding-top: 2rem;
-        height: fit-content;
-      }
+        @media screen and (max-width: 500px) {
+          width: 90%;
+          padding-top: 2rem;
+          height: fit-content;
+        }
 
         & h4 {
           font-size: 18px;
@@ -668,7 +443,6 @@ export const IMGDivider = styled.div`
     height: 380px;
     justify-content: center;
     //align-items: center;
-
     & .divider-wrapper {
       position: absolute;
       width: 90%;
@@ -712,7 +486,7 @@ export const FourthSection = styled.div`
     background-color: white;
   }
 
-  & .fourth-wrapper{
+  & .fourth-wrapper {
     max-width: 1440px;
     width: 100%;
     height: 100%;
@@ -730,6 +504,7 @@ export const FourthSection = styled.div`
       }
     }
   }
+
   & .fourth-left {
     width: 50%;
     height: 100%;
@@ -804,6 +579,7 @@ export const FourthSection = styled.div`
       }
     }
   }
+
   & .fourth-right {
     width: 50%;
     height: 100%;
@@ -838,8 +614,8 @@ export const FourthSection = styled.div`
           padding-right: 10px;
 
           @media screen and (max-width: 500px) {
-           width: 80px;
-          height: 80px;
+            width: 80px;
+            height: 80px;
           }
         }
 
@@ -847,7 +623,7 @@ export const FourthSection = styled.div`
           height: fit-content;
 
           & p {
-          margin: 0;
+            margin: 0;
             padding-top: 10px;
             font-size: 22px;
             font-family: 'Montserrat', sans-serif;
@@ -860,6 +636,7 @@ export const FourthSection = styled.div`
       }
     }
   }
+
   & .bottom-wrapper {
     width: 100%;
     height: fit-content;
@@ -904,6 +681,7 @@ export const FourthSection = styled.div`
     }
   }
 `;
+
 export const FifthSection = styled.section`
   width: 100%;
   height: 1000px;
@@ -979,12 +757,14 @@ export const FifthSection = styled.section`
       }
     }
   }
+
   & .fifth-second-container {
     width: 100%;
     height: 600px;
 
 
   }
+
   & .fifth-third-container {
     width: 100%;
     height: fit-content;
@@ -1019,6 +799,7 @@ export const FifthSection = styled.section`
     }
   }
 `;
+
 export const SixthSection = styled.section`
   width: 100%;
   height: 920px;
@@ -1122,7 +903,7 @@ export const SixthSection = styled.section`
 
     @media screen and (max-width: 500px) {
       width: 100%;
-    gap: 0.5rem;
+      gap: 0.5rem;
       //height: 100%;
     }
 
@@ -1196,7 +977,7 @@ export const Footer = styled.footer`
     padding-bottom: 4rem;
 
     @media screen and (max-width: 500px) {
-    gap: 10px;
+      gap: 10px;
     }
   }
 
@@ -1254,8 +1035,15 @@ export const Footer = styled.footer`
   & .option-container-2 {
     color: white;
     font-family: Montserrat, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     @media screen and (max-width: 500px) {
-        display: none;
+      display: none;
+    }
+
+    & p {
+      margin: 0;
     }
   }
 
@@ -1286,8 +1074,8 @@ export const Footer = styled.footer`
       gap: 32px;
 
       @media screen and (max-width: 500px) {
-      flex-direction: column;
-    }
+        flex-direction: column;
+      }
 
     }
   }

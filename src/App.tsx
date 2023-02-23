@@ -3,9 +3,9 @@ import Home from './pages/home/Home';
 
 function App(): JSX.Element {
   return (
-    <>
-      <Home />
-    </>
+    <Home />
+
+  // <Prescritores />
 
   // <div
   //   style={{

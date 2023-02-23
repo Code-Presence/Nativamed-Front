@@ -32,10 +32,13 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 25px 24px;
+  padding: 20px 10px;
   gap: 20px;
+  background-color: white;
 
   border: 1px solid #c4c4c4;
+
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 `;
 
 const TitleWrapper = styled.div`

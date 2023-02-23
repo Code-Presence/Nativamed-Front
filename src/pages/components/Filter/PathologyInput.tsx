@@ -24,10 +24,12 @@ const Container = styled.div`
   font-family: 'Montserrat', sans-serif;
   gap: 0.8rem;
 
-
-
   & h3 {
     margin: 0;
+  }
+
+  & option {
+    font-family: 'Montserrat', sans-serif;
   }
 
   & select {
