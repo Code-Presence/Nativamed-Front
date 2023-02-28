@@ -27,12 +27,21 @@ import Nav from '../components/Navbar/Navbar';
 
 import {FaWhatsapp, FaInstagram} from 'react-icons/fa';
 import {MdOutlineEmail} from 'react-icons/md';
+import RDStationForm from '../components/FormModal/Form';
 
 function Home(): JSX.Element {
+  const [showForm, setShowForm] = useState<boolean>(false);
+
+  const handleButtonClick = () => {
+    setShowForm(true);
+  };
 
   return (
     <Container>
       <Nav/>
+      <div >
+        {showForm && <RDStationForm onClose={() => setShowForm(false)}/>}
+      </div>
       <FirstSection id={'tenho-prescricao'}>
         <div className={'first-wrapper'}>
           <div className={'first-left-wrapper'}>
@@ -50,7 +59,8 @@ function Home(): JSX.Element {
                 Te acolheremos desde o agendamento da sua consulta médica até a
                 compra do medicamento. <b>Simples e prático!</b>
               </p>
-              <button>Agendar Consulta</button>
+
+              <button onClick={handleButtonClick}>Agendar Consulta</button>
             </div>
           </div>
           <div className={'first-right-wrapper'}>

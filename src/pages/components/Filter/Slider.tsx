@@ -14,6 +14,7 @@ const PriceSlider = () => {
     console.log(newValue);
   };
 
+
   return (
     <Container>
       <Title>Preço</Title>
