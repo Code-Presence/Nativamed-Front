@@ -1,4 +1,4 @@
-import {useEffect, useState } from 'react';
+import {useEffect, useState} from 'react';
 
 import {
   Navbar,
@@ -27,6 +27,14 @@ const Nav = () => {
     setNavActive(!navActive);
   };
 
+  const url = 'https://api.whatsapp.com/send?phone=5547996314944&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta';
+  const handleClick = () => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    event.preventDefault();
+    window.open(url, '_blank');
+  };
+
   return (
     <Navbar>
       <NavbarContainer>
@@ -40,19 +48,19 @@ const Nav = () => {
               <a href="#sobre-o-tratamento">Sobre o tratamento</a>
             </NavLink>
             <NavLink>
-              <a href="#-perguntas-frequentes">Perguntas frequentes</a>
+              <a href="#faq">Perguntas frequentes</a>
             </NavLink>
             <NavLink>
               <a href="#">Blog</a>
             </NavLink>
             <NavLink>
-              <a href="#">Entrar em contato</a>
+              <a href={url} onClick={handleClick}>Entrar em contato</a>
             </NavLink>
           </NavLinks>
           <Burger onClick={toggleNav}>
-            <BurgerLine className={navActive ? 'toggle' : ''} />
-            <BurgerLine className={navActive ? 'toggle' : ''} />
-            <BurgerLine className={navActive ? 'toggle' : ''} />
+            <BurgerLine className={navActive ? 'toggle' : ''}/>
+            <BurgerLine className={navActive ? 'toggle' : ''}/>
+            <BurgerLine className={navActive ? 'toggle' : ''}/>
           </Burger>
         </NavMenu>
       </NavbarContainer>

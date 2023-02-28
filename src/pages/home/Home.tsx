@@ -21,25 +21,75 @@ import Three from '../../assets/three.png';
 import Four from '../../assets/four.png';
 import Plantas from '../../assets/platinhas.png';
 import Logo from '../../assets/logo.png';
+import ContaGota from '../../assets/conta-gotas.png';
+
 
 import {Carousel} from '../components/Carousel';
 import Nav from '../components/Navbar/Navbar';
 
 import {FaWhatsapp, FaInstagram} from 'react-icons/fa';
+import {ImWhatsapp} from 'react-icons/im';
 import {MdOutlineEmail} from 'react-icons/md';
 import RDStationForm from '../components/FormModal/Form';
+import ControlledAccordions from '../components/Faq';
+import {Faq} from '../components/Faq/Faq';
+
 
 function Home(): JSX.Element {
   const [showForm, setShowForm] = useState<boolean>(false);
 
+  const faqs = [
+    {
+      question: 'Quanto custa o tratamento?',
+      answer: 'O custo do tratamento com Cannabis medicinal varia conforme o medicamento e posologia (dosagem da medicação) prescrito pelo médico, após a avaliação na consulta. A partir de R$ 100,00 mensais já é possível ter acesso a este tipo de tratamento.',
+    },
+    {
+      question: 'Quanto custa a consulta?',
+      answer: 'O valor de nossas consultas varia de acordo com o médico escolhido, podendo ser de R$ 250 a R$ 450 reais. Acesse o agendamento de consultas para saber o valor de cada médico especialista ou fale conosco pelo WhatsApp.',
+    },
+    {
+      question: 'A Nativamed atende meu convênio ou plano de saúde?',
+      answer: 'No momento não atendemos por convênios e planos de saúde, mas você pode solicitar conosco a nota fiscal da consulta e pedir reembolso junto ao seu plano ou convênio.',
+    },
+    {
+      question: 'Quem são os médicos? Posso escolher?',
+      answer: 'Todos nossos médicos são especialistas no sistema endocanabinoide, acesse o agendamento de consulta para escolher o profissional mais adequado ao seu tratamento.',
+    },
+    {
+      question: 'Tenho direito a retorno?',
+      answer: 'No agendamento da sua consulta você pode conferir se o médico selecionado oferece uma consulta de retorno.',
+    },
+    {
+      question: 'Em caso de cancelamento, posso pedir reembolso?',
+      answer: 'Oferecemos o cancelamento gratuito desde que comunicado com 48h de antecedência da consulta médica.',
+    },
+    {
+      question: 'Por que preciso de uma receita?',
+      answer: 'Por se tratar de medicamentos controlados, é obrigatório a apresentação da receita médica para a compra do medicamento, conforme a RDC nº660/2022 da ANVISA',
+    },
+    {
+      question: 'Quais as formas de pagamento?',
+      answer: 'Nossas formas de pagamento são à vista via PIX ou em até 4x no cartão sem juros.',
+    },
+    {
+      question: 'Qual o endereço para consulta?',
+      answer: 'Todas as nossas consultas são na modalidade de telemedicina, 100% online.',
+    },
+  ];
+
   const handleButtonClick = () => {
-    setShowForm(true);
+    // setShowForm(true);
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    event.preventDefault();
+    const url = 'https://api.whatsapp.com/send?phone=5547996314944&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta';
+    window.open(url, '_blank');
   };
 
   return (
     <Container>
       <Nav/>
-      <div >
+      <div>
         {showForm && <RDStationForm onClose={() => setShowForm(false)}/>}
       </div>
       <FirstSection id={'tenho-prescricao'}>
@@ -97,7 +147,7 @@ function Home(): JSX.Element {
               <h4>MÉTODO NATURAL</h4>
               <h2>O nosso tratamento</h2>
               <p>
-                O tratamento com óleo de Canabidiol (CBD) medicinal é autorizada pela ANVISA e milhares de pacientes já
+                O tratamento com óleo de CBD medicinal é autorizada pela ANVISA e milhares de pacientes já
                 se beneficiam com o seu uso.
                 <br/>
                 <br/>
@@ -157,7 +207,7 @@ function Home(): JSX.Element {
                   <img src={Two} alt={'num-two'}/>
                   <div className={'text-wrapper'}>
                     <p>
-                      Já na plataforma Amplimed Selecione:
+                      Selecione:
                       <br/>
                       <br/>
                       Profissional, data, hora, valor e forma de pagamento e confirme sua consulta.
@@ -249,11 +299,40 @@ function Home(): JSX.Element {
           {/*<img src={Folhas} alt={'folhas'} className={'folhas'}/>*/}
         </div>
       </SixthSection>
-      {/*<SeventhSection>*/}
+      <SeventhSection id={'faq'}>
+        <div className={'seven-wrapper'}>
+          <div className={'seven-left'}>
+            <div className={'text-n-text-wrapper'}>
+              <p className={'seven-pre-title'}>FAQ</p>
+              <h1 className={'seven-title'}>Perguntas Frequentes</h1>
+              <div className={'faq-wrapper'}>
+                <Faq faqs={faqs}/>
+              </div>
+            </div>
+            <div>
+
+              <img src={ContaGota} alt={'frasco-conta-gota'}/>
+            </div>
+          </div>
+          <div className={'seven-text-wrapper'}>
+            <h1>
+              Possui alguma dúvida?
+            </h1>
+            <p>Entre em contato que lhe explicaremos como funciona todo o processo de maneira simples e prática.</p>
+            <button>
+              <i>
+                <ImWhatsapp/>
+              </i>
+              Fale conosco
+            </button>
+          </div>
+        </div>
+
+      </SeventhSection>
       <Footer>
         <div className={'footer-wrapper'}>
           <div className={'logo-container'}>
-            <img src={Logo} alt={'logo'} />
+            <img src={Logo} alt={'logo'}/>
             <div className={'respons-icon-container'}>
               <MdOutlineEmail/>
               <FaInstagram/>
@@ -261,15 +340,15 @@ function Home(): JSX.Element {
             </div>
           </div>
           <div className={'option-container-1'}>
-            <p>Tenho prescrição</p>
-            <p>Perguntas frequentes</p>
-            <p>Blog</p>
+            <a>Tenho prescrição</a>
+            <a>Perguntas frequentes</a>
+            <a>Blog</a>
           </div>
           <div className={'option-container-2'}>
-            <p>Agendamento de consulta</p>
-            <p>Nosso tratamento</p>
-            <p>Conheça nossa empresa</p>
-            <p>Depoimentos</p>
+            <a>Agendamento de consulta</a>
+            <a>Nosso tratamento</a>
+            <a>Conheça nossa empresa</a>
+            <a>Depoimentos</a>
           </div>
           <div className={'icons-container'}>
             <FaWhatsapp/>
@@ -277,9 +356,9 @@ function Home(): JSX.Element {
             <MdOutlineEmail/>
           </div>
         </div>
-        <hr className={'line'} />
+        <hr className={'line'}/>
         <div className={'links-wrapper'}>
-          <div style={{ display: 'flex', gap: '10px'}}>
+          <div style={{display: 'flex', gap: '10px'}}>
             <div className={'respons-divider'}>
               <a>Política de Privacidade</a>
               <a>Política de Cookies</a>

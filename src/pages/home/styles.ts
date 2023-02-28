@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import backgroundUp from '../../assets/BG-upgraded.png';
 import FolhasBG from '../../assets/folhas.png';
 import PlantasCortadas from '../../assets/plantinhas-2.png';
+import OutraPlanta from '../../assets/outra-planta.png'
 
 export const Container = styled.section`
   width: 100%;
@@ -818,7 +819,7 @@ export const SixthSection = styled.section`
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: top;
-    padding-bottom: 10rem;
+    padding-bottom: 4rem;
 
     //background-position: right;
     //background-position-y: bottom;
@@ -948,11 +949,153 @@ export const SixthSection = styled.section`
 
 export const SeventhSection = styled.section`
   width: 100%;
-  height: 500px;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #FAFAFA;
+  padding-top: 100px;
+
+  background-image: url(${OutraPlanta});
+  background-size: 15%;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+
+  @media screen and (max-width: 500px) {
+   background-size: 50%;
+    padding-top: 4rem;
+    background-position-x: -100px;
+    background-position-y: 800px;
+  }
+
+  & .seven-wrapper {
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      width: 100%;
+      gap: 50px;
+    }
+
+    & img {
+      border-radius: 8px;
+      filter: drop-shadow(4.81574px 4.81574px 14.4472px rgba(0, 0, 0, 0.25));
+
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
+    }
+
+  }
+
+  & .seven-left {
+    display: flex;
+    gap: 100px;
+
+    @media screen and (max-width: 500px) {
+      gap: 0;
+    }
+
+    & .text-n-text-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+
+      @media screen and (max-width: 500px) {
+        align-items: center;
+        gap: 0;
+      }
+
+
+      & .seven-title {
+        font-size: 32px;
+        margin: 0;
+        color: #33554B;
+
+        @media screen and (max-width: 500px) {
+         padding-bottom: 1rem;
+        }
+      }
+
+      & .seven-pre-title {
+        font-size: 22px;
+        margin: 0;
+        color: #33554B;
+      }
+
+    }
+  }
+
+  & .seven-right {
+
+  }
+
+  & .faq-wrapper {
+    width: 570px;
+    height: fit-content;
+
+    @media screen and (max-width: 500px) {
+      width: 90%;
+    }
+  }
+
+  & .seven-text-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 350px;
+    text-align: center;
+
+
+    & h1 {
+      font-size: 28px;
+      color: #33554B;
+      margin: 0;
+    }
+
+    & p {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    & button {
+      height: 50px;
+      width: 250px;
+      border-radius: 8px;
+      border: none;
+      background-color: #33554b;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 100px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+
+      @media screen and (max-width: 500px) {
+        width: 100%;
+        height: 3rem;
+        font-size: 18px;
+      }
+      & i {
+        width: 27.25px;
+        height: 27.12px;
+      }
+    }
+  }
 `;
 
 export const Footer = styled.footer`
@@ -1027,7 +1170,7 @@ export const Footer = styled.footer`
     flex-direction: column;
     gap: 15px;
 
-    & p {
+    & a {
       margin: 0;
     }
   }
@@ -1042,7 +1185,7 @@ export const Footer = styled.footer`
       display: none;
     }
 
-    & p {
+    & a {
       margin: 0;
     }
   }
