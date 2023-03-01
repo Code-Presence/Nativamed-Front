@@ -7,6 +7,7 @@ export const Navbar = styled.header`
   justify-content: center;
   align-items: center;
   padding: 0 20px;
+  overflow: hidden;
 `;
 
 export const NavbarContainer = styled.nav`
@@ -16,15 +17,14 @@ export const NavbarContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
   //gap: 40px;
 
 
   & .logo-main {
     width: 200px;
-
     @media screen and (max-width: 500px) {
       width: 150px;
-
     }
   }
 `;
@@ -50,7 +50,7 @@ export const NavLinks = styled.ul`
     position: fixed;
     top: 60px;
     left: -100%;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: rgba(52, 85, 78, 0.5);
     backdrop-filter: blur(10px);
@@ -59,18 +59,8 @@ export const NavLinks = styled.ul`
     gap: 2rem;
     overflow: hidden;
 
-    //&.nav-active {
-    //  left: 0;
-    //  overflow-y: auto;
-    //  -webkit-overflow-scrolling: touch;
-    //  /* Impede o scroll quando o menu está aberto */
-    //  body.no-scroll {
-    //    overflow: hidden;
-    //  }
-
     &.nav-active {
       left: 0;
-      padding-left: 15%;
       overflow: hidden;
       position: absolute;
 
@@ -101,6 +91,7 @@ export const NavLink = styled.li`
 
   @media screen and (max-width: 500px) {
     width: 100%;
+    padding-left: 20%;
 
     a {
       text-align: center;

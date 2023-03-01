@@ -648,6 +648,7 @@ export const FourthSection = styled.div`
 
     @media screen and (max-width: 500px) {
       padding-top: 1.5rem;
+      overflow: hidden;
     }
 
     & h1 {
@@ -678,6 +679,7 @@ export const FourthSection = styled.div`
 
       @media screen and (max-width: 500px) {
         font-size: 16px;
+        width: 90%;
       }
     }
   }
@@ -762,7 +764,9 @@ export const FifthSection = styled.section`
   & .fifth-second-container {
     width: 100%;
     height: 600px;
-
+    @media screen and (max-width: 500px) {
+      height: fit-content;
+    }
 
   }
 
@@ -783,6 +787,11 @@ export const FifthSection = styled.section`
       font-size: 28px;
       font-family: 'Montserrat', sans-serif;
       color: #33554B;
+
+      @media screen and (max-width: 500px) {
+        width: 90%;
+        font-size: 22px;
+      }
     }
 
     & button {
@@ -797,6 +806,10 @@ export const FifthSection = styled.section`
       font-weight: bold;
       letter-spacing: 1px;
       cursor: pointer;
+
+      @media screen and (max-width: 500px) {
+        width: 90%;
+      }
     }
   }
 `;
@@ -905,6 +918,7 @@ export const SixthSection = styled.section`
     @media screen and (max-width: 500px) {
       width: 100%;
       gap: 0.5rem;
+      padding-left: 0;
       //height: 100%;
     }
 
@@ -1056,16 +1070,28 @@ export const SeventhSection = styled.section`
     width: 350px;
     text-align: center;
 
+    @media screen and (max-width: 500px) {
+      width: 90%;
+    }
+
 
     & h1 {
       font-size: 28px;
       color: #33554B;
       margin: 0;
+
+      @media screen and (max-width: 500px) {
+        font-size: 22px;
+      }
     }
 
     & p {
       font-size: 18px;
       margin: 0;
+
+      @media screen and (max-width: 500px) {
+        font-size: 16px;
+      }
     }
 
     & button {
