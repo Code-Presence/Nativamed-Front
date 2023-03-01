@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Navbar = styled.nav`
+export const Navbar = styled.header`
   background-color: #34554E;
   height: 60px;
   display: flex;
@@ -9,7 +9,7 @@ export const Navbar = styled.nav`
   padding: 0 20px;
 `;
 
-export const NavbarContainer = styled.div`
+export const NavbarContainer = styled.nav`
   max-width: 1250px;
   width: 100%;
   height: 100%;
