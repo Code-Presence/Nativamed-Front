@@ -23,6 +23,8 @@ import Plantas from '../../assets/platinhas.png';
 import Logo from '../../assets/logo.png';
 import ContaGota from '../../assets/conta-gotas.png';
 
+import {Link} from 'react-scroll';
+
 
 import {Carousel} from '../components/Carousel';
 import Nav from '../components/Navbar/Navbar';
@@ -31,7 +33,6 @@ import {FaWhatsapp, FaInstagram} from 'react-icons/fa';
 import {ImWhatsapp} from 'react-icons/im';
 import {MdOutlineEmail} from 'react-icons/md';
 import RDStationForm from '../components/FormModal/Form';
-import ControlledAccordions from '../components/Faq';
 import {Faq} from '../components/Faq/Faq';
 
 
@@ -77,13 +78,39 @@ function Home(): JSX.Element {
     },
   ];
 
-  const handleButtonClick = () => {
+  const handleLinkClick = () => {
     // setShowForm(true);
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     event.preventDefault();
     const url = 'https://api.whatsapp.com/send?phone=5547996314944&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta';
     window.open(url, '_blank');
+  };
+
+  const handleMailClick = () => {
+    // setShowForm(true);
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    event.preventDefault();
+    const url = 'mailto:contato@nativamed.com.br';
+    window.open(url, '_blank');
+  };
+
+  const handleInstaClick = () => {
+    // setShowForm(true);
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    event.preventDefault();
+    const url = 'https://www.instagram.com/nativamed/';
+    window.open(url, '_blank');
+  };
+
+
+  const handleModalClick = () => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    event.preventDefault();
+    setShowForm(true);
   };
 
   return (
@@ -110,7 +137,7 @@ function Home(): JSX.Element {
                 compra do medicamento. <b>Simples e prático!</b>
               </p>
 
-              <button onClick={handleButtonClick}>Agendar Consulta</button>
+              <button onClick={handleModalClick}>Agendar Consulta</button>
             </div>
           </div>
           <div className={'first-right-wrapper'}>
@@ -135,12 +162,12 @@ function Home(): JSX.Element {
                 Entraremos em contato para te guiar por todo o caminho.
               </p>
               <br/>
-              <button>Conheça o tratamento</button>
+              <button onClick={handleModalClick}>Conheça o tratamento</button>
             </div>
           </div>
         </div>
       </SecondSection>
-      <ThirdSection id={'sobre-o-tratamento'}>
+      <ThirdSection id={'sobre'}>
         <div className={'third-wrapper'}>
           <div className={'third-left-wrapper'}>
             <div className={'third-text-wrapper'}>
@@ -160,7 +187,9 @@ function Home(): JSX.Element {
                 <br/>
                 Taxa de 79,9% no alívio dos sintomas da ansiedade, comprovada cientificamente.
               </p>
-              <button>Ver depoimentos</button>
+              <Link to={'depoimentos'} smooth={true} duration={1000}>
+                <button>Ver depoimentos</button>
+              </Link>
             </div>
           </div>
           <div className={'third-right-wrapper'}>
@@ -239,11 +268,11 @@ function Home(): JSX.Element {
           </div>
           <div className={'bottom-wrapper'}>
             <h1>Você está a um passo do tratamento ideal</h1>
-            <button>AGENDAR CONSULTA</button>
+            <button onClick={handleModalClick}>AGENDAR CONSULTA</button>
           </div>
         </div>
       </FourthSection>
-      <FifthSection>
+      <FifthSection id={'depoimentos'}>
         <div className={'fifth-wrapper'}>
           <div className={'fifth-first-container'}>
             <div className={'text-wrapper'}>
@@ -255,11 +284,11 @@ function Home(): JSX.Element {
           </div>
           <div className={'fifth-third-container'}>
             <h1>Você está a um passo do tratamento ideal</h1>
-            <button>QUERO INICIAR</button>
+            <button onClick={handleModalClick}>QUERO INICIAR</button>
           </div>
         </div>
       </FifthSection>
-      <SixthSection>
+      <SixthSection id={'conheca'}>
         <div className={'six-wrapper'}>
           <div className={'six-left'}>
             <img src={Woman} alt={'Ôta muié'}/>
@@ -319,7 +348,7 @@ function Home(): JSX.Element {
               Possui alguma dúvida?
             </h1>
             <p>Entre em contato que lhe explicaremos como funciona todo o processo de maneira simples e prática.</p>
-            <button>
+            <button onClick={handleLinkClick}>
               <i>
                 <ImWhatsapp/>
               </i>
@@ -340,20 +369,34 @@ function Home(): JSX.Element {
             </div>
           </div>
           <div className={'option-container-1'}>
-            <a>Tenho prescrição</a>
-            <a>Perguntas frequentes</a>
+            <a onClick={handleLinkClick} style={{cursor: 'pointer'}}>Tenho prescrição</a>
+            <Link to={'faq'} smooth={true} duration={1000}>
+              <a style={{cursor: 'pointer'}}>Perguntas frequentes</a>
+            </Link>
             <a>Blog</a>
           </div>
           <div className={'option-container-2'}>
-            <a>Agendamento de consulta</a>
-            <a>Nosso tratamento</a>
-            <a>Conheça nossa empresa</a>
-            <a>Depoimentos</a>
+            <a style={{cursor: 'pointer'}} onClick={handleModalClick}>Agendamento de consulta</a>
+            <Link to={'sobre'} smooth={true} duration={1000}>
+              <a style={{cursor: 'pointer'}}>Nosso tratamento</a>
+            </Link>
+            <Link to={'conheca'} smooth={true} duration={1000}>
+              <a style={{cursor: 'pointer'}}>Conheça nossa empresa</a>
+            </Link>
+            <Link to={'depoimentos'} smooth={true} duration={1000}>
+              <a style={{cursor: 'pointer'}}>Depoimentos</a>
+            </Link>
           </div>
-          <div className={'icons-container'}>
-            <FaWhatsapp/>
-            <FaInstagram/>
-            <MdOutlineEmail/>
+          <div className={'icons-container'} >
+            <a style={{cursor: 'pointer'}} onClick={handleLinkClick}>
+              <FaWhatsapp/>
+            </a>
+            <a style={{cursor: 'pointer'}} onClick={handleInstaClick}>
+              <FaInstagram/>
+            </a>
+            <a style={{cursor: 'pointer'}} onClick={handleMailClick}>
+              <MdOutlineEmail/>
+            </a>
           </div>
         </div>
         <hr className={'line'}/>

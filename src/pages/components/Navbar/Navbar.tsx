@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import {useEffect, useState, MouseEventHandler} from 'react';
 
 import {
   Navbar,
@@ -35,6 +35,18 @@ const Nav = () => {
     window.open(url, '_blank');
   };
 
+  const handleLinkClick: MouseEventHandler<HTMLAnchorElement> = (event) => {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute('href');
+    if (href) {
+      const targetElement = document.querySelector(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
+
   return (
     <Navbar>
       <NavbarContainer>
@@ -42,13 +54,13 @@ const Nav = () => {
         <NavMenu>
           <NavLinks className={navActive ? 'nav-active' : ''}>
             <NavLink>
-              <a href="#tenho-prescricao">Tenho prescrição</a>
+              <a href={url} onClick={handleClick} >Tenho prescrição</a>
             </NavLink>
             <NavLink>
-              <a href="#sobre-o-tratamento">Sobre o tratamento</a>
+              <a href="#sobre" onClick={handleLinkClick}>Sobre o tratamento</a>
             </NavLink>
             <NavLink>
-              <a href="#faq">Perguntas frequentes</a>
+              <a href="#faq" onClick={handleLinkClick}>Perguntas frequentes</a>
             </NavLink>
             <NavLink>
               <a href="#">Blog</a>

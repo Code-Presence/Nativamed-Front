@@ -7,7 +7,8 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 10px;
 
-  & .faq-item{
+  & .faq-item {
+
   }
 
   & .faq-question {
@@ -19,7 +20,7 @@ export const Container = styled.div`
     padding-left: 14px;
     padding-right: 14px;
     border-radius: 4px;
-
+    cursor: pointer;
 
 
     & h1 {
@@ -27,11 +28,18 @@ export const Container = styled.div`
       font-weight: 500;
       font-family: 'Montserrat', sans-serif;
     }
+
+
   }
 
   & .faq-answer {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding: 10px 14px;
+
+    & p {
+      margin: 0;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+    }
 
   }
 `;

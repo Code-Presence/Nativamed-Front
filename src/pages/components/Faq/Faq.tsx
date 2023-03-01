@@ -34,7 +34,6 @@ const Faq: React.FC<FaqProps> = ({faqs}) => {
           </div>
           {activeIndex === index && <div className="faq-answer">
             <p>
-
               {faq.answer}
             </p>
           </div>}
