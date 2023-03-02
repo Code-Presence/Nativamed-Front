@@ -1023,15 +1023,17 @@ export const SeventhSection = styled.section`
   padding-top: 100px;
 
   background-image: url(${OutraPlanta});
-  background-size: 15%;
+  background-size: 20%;
   background-repeat: no-repeat;
-  background-position: bottom left;
+  //background-position: bottom left;
+  background-position-y: 400px;
+  background-position-x: -100px;
 
   @media screen and (max-width: 500px) {
    background-size: 50%;
     padding-top: 4rem;
-    background-position-x: -100px;
-    background-position-y: 800px;
+    background-position-x: -80px;
+    background-position-y: 650px;
   }
 
   & .seven-wrapper {
