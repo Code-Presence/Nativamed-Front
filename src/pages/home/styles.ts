@@ -676,11 +676,25 @@ export const FourthSection = styled.div`
       letter-spacing: 1px;
       cursor: pointer;
 
+      //transition: transform 0.3s;
+      //transition-property: width;
+      //transition-duration: 2s;
+
+      transition: all 0.5s linear;
+      top: 0;
+
       @media screen and (max-width: 500px) {
         font-size: 16px;
         width: 90%;
       }
+
+      &:hover{
+        top: -5px;
+        cursor: pointer;
+      }
     }
+
+
   }
 `;
 

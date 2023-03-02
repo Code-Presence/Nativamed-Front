@@ -35,6 +35,9 @@ import {MdOutlineEmail} from 'react-icons/md';
 import RDStationForm from '../components/FormModal/Form';
 import {Faq} from '../components/Faq/Faq';
 
+import ReactGA from 'react-ga';
+
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function Home(): JSX.Element {
   const [showForm, setShowForm] = useState<boolean>(false);
@@ -272,7 +275,7 @@ function Home(): JSX.Element {
           </div>
           <div className={'bottom-wrapper'}>
             <h1>Você está a um passo do tratamento ideal</h1>
-            <button onClick={handleModalClick}>AGENDAR CONSULTA</button>
+            <button onClick={handleModalClick} >AGENDAR CONSULTA</button>
           </div>
         </div>
       </FourthSection>
