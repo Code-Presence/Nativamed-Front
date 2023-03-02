@@ -17,7 +17,7 @@ body {
 }
 
 .swiper {
-  width: 90%;
+  width: 80%;
   height: 100%;
   padding-bottom: 10px;
 }
@@ -47,7 +47,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
 
   color: #33554B;
@@ -57,7 +57,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
 
   text-align: left;

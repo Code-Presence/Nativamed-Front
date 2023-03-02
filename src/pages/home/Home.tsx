@@ -154,17 +154,19 @@ function Home(): JSX.Element {
               <img src={LaptopSVG} alt={'Laptop'} className={'laptop'}/>
             </div>
             <div className={'second-sec-right-wrapper'}>
-              <h1>
-                Preencha o formulário para dar <br/>
-                o primeiro passo em direção ao <br/>
-                alívio dos seus sintomas
-              </h1>
-              <br/>
-              <p>
-                Entraremos em contato para te guiar por todo o caminho.
-              </p>
-              <br/>
-              <button onClick={handleModalClick}>Conheça o tratamento</button>
+              <div>
+                <h1>
+                  Preencha o formulário para dar <br/>
+                  o primeiro passo em direção ao <br/>
+                  alívio dos seus sintomas
+                </h1>
+                <br/>
+                <p>
+                  Entraremos em contato para te guiar por todo o caminho.
+                </p>
+                <br/>
+                <button onClick={handleModalClick}>Conheça o tratamento</button>
+              </div>
             </div>
           </div>
         </div>
@@ -365,9 +367,15 @@ function Home(): JSX.Element {
           <div className={'logo-container'}>
             <img src={Logo} alt={'logo'}/>
             <div className={'respons-icon-container'}>
-              <MdOutlineEmail/>
-              <FaInstagram/>
-              <FaWhatsapp/>
+              <a style={{cursor: 'pointer'}} onClick={handleLinkClick}>
+                <FaWhatsapp/>
+              </a>
+              <a style={{cursor: 'pointer'}} onClick={handleInstaClick}>
+                <FaInstagram/>
+              </a>
+              <a style={{cursor: 'pointer'}} onClick={handleMailClick}>
+                <MdOutlineEmail/>
+              </a>
             </div>
           </div>
           <div className={'option-container-1'}>
@@ -389,7 +397,7 @@ function Home(): JSX.Element {
               <a style={{cursor: 'pointer'}}>Depoimentos</a>
             </Link>
           </div>
-          <div className={'icons-container'} >
+          <div className={'icons-container'}>
             <a style={{cursor: 'pointer'}} onClick={handleLinkClick}>
               <FaWhatsapp/>
             </a>

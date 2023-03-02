@@ -91,10 +91,10 @@ export const FirstSection = styled.div`
 
   & .first-text-wrapper {
     width: 550px;
-    height: 450px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 20px;
 
     @media screen and (max-width: 500px) {
       width: 100%;
@@ -103,7 +103,7 @@ export const FirstSection = styled.div`
 
   & .pre-title {
     // p
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
     color: #345249;
@@ -118,7 +118,7 @@ export const FirstSection = styled.div`
     // h1
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 32px;
     margin: 0;
     color: #425f4b;
 
@@ -129,7 +129,7 @@ export const FirstSection = styled.div`
 
   & .sub-title {
     // h1
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
     color: #345249;
@@ -142,7 +142,7 @@ export const FirstSection = styled.div`
 
   & .footer-title {
     // p
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
     color: #345249;
@@ -242,7 +242,7 @@ export const SecondSection = styled.section`
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    //align-items: center;
     justify-content: center;
 
     @media screen and (max-width: 500px) {
@@ -256,7 +256,7 @@ export const SecondSection = styled.section`
     & h1 {
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
-      font-size: 36px;
+      font-size: 28px;
       margin: 0;
       color: #425f4b;
 
@@ -266,7 +266,7 @@ export const SecondSection = styled.section`
     }
 
     & p {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 600;
       font-family: "Montserrat", sans-serif;
       color: #345249;
@@ -535,7 +535,7 @@ export const FourthSection = styled.div`
       }
 
       & h4 {
-        font-size: 22px;
+        font-size: 20px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         color: #33554B;
@@ -543,7 +543,7 @@ export const FourthSection = styled.div`
       }
 
       & h1 {
-        font-size: 32px;
+        font-size: 26px;
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         color: #33554B;
@@ -555,7 +555,7 @@ export const FourthSection = styled.div`
       }
 
       & p {
-        font-size: 24px;
+        font-size: 18px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         margin: 0;
@@ -571,7 +571,7 @@ export const FourthSection = styled.div`
       height: fit-content;
 
       & img {
-        width: 600px;
+        width: 500px;
 
         @media screen and (max-width: 500px) {
           //width: 320px;
@@ -587,7 +587,6 @@ export const FourthSection = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     @media screen and (max-width: 500px) {
       width: 100%;
@@ -626,7 +625,7 @@ export const FourthSection = styled.div`
           & p {
             margin: 0;
             padding-top: 10px;
-            font-size: 22px;
+            font-size: 18px;
             font-family: 'Montserrat', sans-serif;
 
             @media screen and (max-width: 500px) {
@@ -730,7 +729,7 @@ export const FifthSection = styled.section`
 
     & .text-wrapper {
       background-color: white;
-      width: 400px;
+      width: 300px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -746,7 +745,7 @@ export const FifthSection = styled.section`
         width: 350px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 28px;
+        font-size: 22px;
         text-align: center;
 
         color: #33554B;
@@ -867,7 +866,7 @@ export const SixthSection = styled.section`
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     justify-content: center;
 
     @media screen and (max-width: 500px) {
@@ -881,7 +880,7 @@ export const SixthSection = styled.section`
     }
 
     & img {
-      width: 600px;
+      width: 500px;
       border-radius: 8px;
       box-shadow: 2.2px 2.2px 6.59px rgba(0, 0, 0, 0.25);
 
@@ -933,7 +932,7 @@ export const SixthSection = styled.section`
     & h1 {
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
-      font-size: 28px;
+      font-size: 24px;
       margin: 0;
       color: #425f4b;
 
@@ -943,7 +942,7 @@ export const SixthSection = styled.section`
     }
 
     & p {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 400;
       font-family: "Montserrat", sans-serif;
       color: #345249;
