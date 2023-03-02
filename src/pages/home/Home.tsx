@@ -127,7 +127,7 @@ function Home(): JSX.Element {
           <div className={'first-left-wrapper'}>
             <div className={'first-text-wrapper'}>
               <p className={'pre-title'}>
-                ALÍVIO NOS SINTOMAS DA ANSIEDADE, INSÔNIA E DORES CRÔNICAS
+                ALÍVIO NOS SINTOMAS DA ANSIEDADE, <br/> INSÔNIA E DORES CRÔNICAS
               </p>
               <h1 className={'title'}>
                 Comece hoje o tratamento <br/>
@@ -135,10 +135,13 @@ function Home(): JSX.Element {
                 de vida
               </h1>
               <p className={'sub-title'}>NATURAL, LEGAL E APROVADO PELA ANVISA</p>
-              <p className={'footer-title'}>
-                Te acolheremos desde o agendamento da sua consulta médica até a
-                compra do medicamento. <b>Simples e prático!</b>
-              </p>
+              <div >
+                <p className={'footer-title'}>
+                  Te acolheremos desde o agendamento da sua consulta médica até a
+                  compra do medicamento.</p>
+                <p style={{margin: 0,paddingTop: '5px' ,fontSize: '20px', color: '#345249' ,fontFamily: 'Montserrat', fontWeight: '600'}}>Simples e prático!</p>
+
+              </div>
 
               <button onClick={handleModalClick}>Agendar Consulta</button>
             </div>
@@ -163,11 +166,11 @@ function Home(): JSX.Element {
                 </h1>
                 <br/>
                 <p>
-                  Entraremos em contato para te guiar por todo o caminho.
+                  Entraremos em contato para te guiar por <br/> todo o caminho.
                 </p>
                 <br/>
                 <Link to={'sobre'} smooth={true} duration={1000}>
-                  <button>Conheça o tratamento</button>
+                  <button>Preencher Formulário</button>
                 </Link>
               </div>
             </div>
@@ -275,7 +278,7 @@ function Home(): JSX.Element {
           </div>
           <div className={'bottom-wrapper'}>
             <h1>Você está a um passo do tratamento ideal</h1>
-            <button onClick={handleModalClick} >AGENDAR CONSULTA</button>
+            <button onClick={handleModalClick}>AGENDAR CONSULTA</button>
           </div>
         </div>
       </FourthSection>
@@ -283,7 +286,8 @@ function Home(): JSX.Element {
         <div className={'fifth-wrapper'}>
           <div className={'fifth-first-container'}>
             <div className={'text-wrapper'}>
-              <h1>Depoimentos De Pacientes Satisfeitos</h1>
+              <h2>DEPOIMENTOS DE</h2>
+              <h1>Pacientes Satisfeitos</h1>
             </div>
           </div>
           <div className={'fifth-second-container'}>
@@ -346,7 +350,6 @@ function Home(): JSX.Element {
               </div>
             </div>
             <div>
-
               <img src={ContaGota} alt={'frasco-conta-gota'}/>
             </div>
           </div>
@@ -357,7 +360,7 @@ function Home(): JSX.Element {
             <p>Entre em contato que lhe explicaremos como funciona todo o processo de maneira simples e prática.</p>
             <button onClick={handleLinkClick}>
               <i>
-                <ImWhatsapp/>
+                <ImWhatsapp style={{width: '100%', height: '100%'}}/>
               </i>
               Fale conosco
             </button>

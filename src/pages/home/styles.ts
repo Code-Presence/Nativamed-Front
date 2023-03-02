@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import backgroundUp from '../../assets/BG-upgraded.png';
 import FolhasBG from '../../assets/folhas.png';
 import PlantasCortadas from '../../assets/plantinhas-2.png';
-import OutraPlanta from '../../assets/outra-planta.png'
+import OutraPlanta from '../../assets/outra-planta.png';
 
 export const Container = styled.section`
   width: 100%;
@@ -25,7 +25,7 @@ export const Container = styled.section`
 
 export const FirstSection = styled.div`
   width: 100%;
-  height: 720px;
+  height: 550px;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -62,15 +62,17 @@ export const FirstSection = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    padding-right: 10px;
     justify-content: center;
 
     @media screen and (max-width: 500px) {
       flex-direction: column-reverse;
       width: 95%;
-
+      align-items: center;
       height: fit-content;
-      justify-content: flex-start;
+      padding: 0;
+      //justify-content: flex-start;
       text-align: center;
     }
   }
@@ -80,31 +82,35 @@ export const FirstSection = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    padding-left: 10px;
 
     @media screen and (max-width: 500px) {
-      width: 95%;
-      height: 450px;
+      width: 100%;
+      height: 350px;
+      align-items: center;
     }
   }
 
   & .first-text-wrapper {
-    width: 550px;
-    height: 400px;
+    width: 480px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 
     @media screen and (max-width: 500px) {
       width: 100%;
+      align-items: center;
     }
   }
 
   & .pre-title {
     // p
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
+    line-height: 1.5;
     font-family: "Montserrat", sans-serif;
     color: #345249;
     margin: 0;
@@ -142,10 +148,10 @@ export const FirstSection = styled.div`
 
   & .footer-title {
     // p
-    font-size: 18px;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
     color: #345249;
+    line-height: 1.2;
     margin: 0;
 
     @media screen and (max-width: 500px) {
@@ -154,8 +160,8 @@ export const FirstSection = styled.div`
   }
 
   & button {
-    height: 50px;
-    width: 385px;
+    height: 60px;
+    width: 280px;
     border-radius: 8px;
     border: none;
     background-color: #33554b;
@@ -163,12 +169,12 @@ export const FirstSection = styled.div`
     font-weight: 700;
     font-size: 20px;
     color: #fff;
-    margin-top: 30px;
+    margin-top: 10px;
     cursor: pointer;
 
     @media screen and (max-width: 500px) {
       width: 100%;
-      height: 3rem;
+      height: 4rem;
       font-size: 18px;
     }
   }
@@ -177,7 +183,7 @@ export const FirstSection = styled.div`
 
 export const SecondSection = styled.section`
   width: 100%;
-  height: 600px;
+  height: 500px;
   background-color: white;
 
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -220,10 +226,11 @@ export const SecondSection = styled.section`
   }
 
   & .laptop {
-    width: 400px;
-    margin-top: 220px;
+    width: 350px;
+    margin-top: 120px;
     position: absolute;
     border-radius: 8px;
+    margin-right: 4rem;
 
     box-shadow: 2.2px 2.2px 6.59px rgba(0, 0, 0, 0.25);
   }
@@ -233,7 +240,7 @@ export const SecondSection = styled.section`
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
   }
 
@@ -242,7 +249,7 @@ export const SecondSection = styled.section`
     height: 100%;
     display: flex;
     flex-direction: column;
-    //align-items: center;
+    align-items: flex-start;
     justify-content: center;
 
     @media screen and (max-width: 500px) {
@@ -266,21 +273,21 @@ export const SecondSection = styled.section`
     }
 
     & p {
-      font-size: 18px;
-      font-weight: 600;
-      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      font-family: "Raleway", sans-serif;
       color: #345249;
       margin: 0;
 
       @media screen and (max-width: 500px) {
-        font-size: 14px;
+        font-size: 18px;
       }
     }
 
 
     & button {
-      height: 50px;
-      width: 385px;
+      height: 60px;
+      width: 280px;
       border-radius: 8px;
       border: none;
       background-color: #33554b;
@@ -288,7 +295,7 @@ export const SecondSection = styled.section`
       font-weight: 700;
       font-size: 20px;
       color: #fff;
-      margin-top: 30px;
+      margin-top: 15px;
       cursor: pointer;
 
       @media screen and (max-width: 500px) {
@@ -303,7 +310,8 @@ export const SecondSection = styled.section`
 
 export const ThirdSection = styled.div`
   width: 100%;
-  height: 850px;
+  height: 700px;
+  padding-bottom: 20px;
   background-color: white;
   display: flex;
   align-items: center;
@@ -330,7 +338,7 @@ export const ThirdSection = styled.div`
       height: 100%;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
 
       @media screen and (max-width: 500px) {
@@ -340,9 +348,10 @@ export const ThirdSection = styled.div`
       & .third-text-wrapper {
         width: 490px;
         height: 600px;
-        gap: 1rem;
+        padding-top: 4rem;
         display: flex;
         flex-direction: column;
+        justify-content: end;
 
         @media screen and (max-width: 500px) {
           width: 90%;
@@ -367,16 +376,19 @@ export const ThirdSection = styled.div`
         }
 
         & p {
-          font-size: 20px;
+          font-size: 18px;
+          padding-top: 15px;
+          line-height: 1.2;
+          letter-spacing: 1px;
           font-weight: 400;
-          font-family: "Montserrat", sans-serif;
+          font-family: "Raleway", sans-serif;
           color: #345249;
           margin: 0;
         }
 
         & button {
-          height: 50px;
-          width: 385px;
+          height: 60px;
+          width: 280px;
           border-radius: 8px;
           border: none;
           background-color: #33554b;
@@ -402,7 +414,7 @@ export const ThirdSection = styled.div`
       justify-content: center;
 
       & img {
-        width: 450px;
+        width: 400px;
         border-radius: 8px;
         box-shadow: 2.2px 2.2px 6.59px rgba(0, 0, 0, 0.25);
       }
@@ -475,11 +487,13 @@ export const IMGDivider = styled.div`
 
 export const FourthSection = styled.div`
   width: 100%;
-  height: 1300px;
+  height: fit-content;
+  padding-top: 40px;
   background-color: #FAFAFA;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 40px;
 
   @media screen and (max-width: 500px) {
     height: fit-content;
@@ -511,7 +525,7 @@ export const FourthSection = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 
     @media screen and (max-width: 500px) {
@@ -523,10 +537,10 @@ export const FourthSection = styled.div`
     }
 
     & .left-text {
-      width: 500px;
+      width: 450px;
       display: flex;
       flex-direction: column;
-      gap: 0.8rem;
+      gap: 0.5rem;
 
       @media screen and (max-width: 500px) {
         width: 80%;
@@ -556,7 +570,7 @@ export const FourthSection = styled.div`
 
       & p {
         font-size: 18px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Raleway', sans-serif;
         font-weight: 400;
         margin: 0;
 
@@ -568,11 +582,15 @@ export const FourthSection = styled.div`
 
     & .left-img {
       width: 100%;
-      height: fit-content;
+      height: 100%;
+      padding-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
+      padding-top: 40px;
+      right: 100px;
 
       & img {
-        width: 500px;
-
+        width: 450px;
         @media screen and (max-width: 500px) {
           //width: 320px;
           display: none;
@@ -664,14 +682,14 @@ export const FourthSection = styled.div`
     }
 
     & button {
-      width: 385px;
-      height: 3rem;
+      height: 60px;
+      width: 300px;
       border-radius: 8px;
       border: none;
       background-color: #33554B;
       color: white;
       font-family: 'Montserrat', sans-serif;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
       letter-spacing: 1px;
       cursor: pointer;
@@ -688,7 +706,7 @@ export const FourthSection = styled.div`
         width: 90%;
       }
 
-      &:hover{
+      &:hover {
         top: -5px;
         cursor: pointer;
       }
@@ -745,6 +763,9 @@ export const FifthSection = styled.section`
       background-color: white;
       width: 300px;
       display: flex;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       height: fit-content;
@@ -761,6 +782,23 @@ export const FifthSection = styled.section`
         font-weight: 700;
         font-size: 22px;
         text-align: center;
+        margin: 0;
+
+        color: #33554B;
+
+        @media screen and (max-width: 500px) {
+          width: 90%;
+          font-size: 20px;
+          line-height: 1.5rem;
+        }
+
+      }
+      & h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        margin: 0;
 
         color: #33554B;
 
@@ -920,7 +958,7 @@ export const SixthSection = styled.section`
   }
 
   & .six-text-wrapper {
-    width: 400px;
+    width: 350px;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -958,7 +996,8 @@ export const SixthSection = styled.section`
     & p {
       font-size: 16px;
       font-weight: 400;
-      font-family: "Montserrat", sans-serif;
+      line-height: 1.3;
+      font-family: "Raleway", sans-serif;
       color: #345249;
       margin: 0;
 
@@ -1033,7 +1072,7 @@ export const SeventhSection = styled.section`
     & .text-n-text-wrapper {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      //gap: 1rem;
       width: 100%;
 
       @media screen and (max-width: 500px) {
@@ -1068,6 +1107,7 @@ export const SeventhSection = styled.section`
   & .faq-wrapper {
     width: 570px;
     height: fit-content;
+    margin-top: 2rem;
 
     @media screen and (max-width: 500px) {
       width: 90%;
@@ -1108,8 +1148,8 @@ export const SeventhSection = styled.section`
     }
 
     & button {
-      height: 50px;
-      width: 250px;
+      height: 60px;
+      width: 280px;
       border-radius: 8px;
       border: none;
       background-color: #33554b;
