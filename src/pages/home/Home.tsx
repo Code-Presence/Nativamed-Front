@@ -9,10 +9,8 @@ import {
   SixthSection,
   Footer, IMGDivider, SeventhSection,
 } from './styles';
-import Muie from '../../assets/muie.png';
 import MuieSVG from '../../assets/muie-svg.svg';
 import Woman from '../../assets/woman.png';
-import Laptop from '../../assets/laptop.png';
 import LaptopSVG from '../../assets/laptop-svg.svg';
 import Frasco from '../../assets/frasco.png';
 import FrascoQuadrado from '../../assets/frasco-quadrado.png';
@@ -165,7 +163,9 @@ function Home(): JSX.Element {
                   Entraremos em contato para te guiar por todo o caminho.
                 </p>
                 <br/>
-                <button onClick={handleModalClick}>Conheça o tratamento</button>
+                <Link to={'sobre'} smooth={true} duration={1000}>
+                  <button>Conheça o tratamento</button>
+                </Link>
               </div>
             </div>
           </div>
