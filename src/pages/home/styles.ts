@@ -233,6 +233,13 @@ export const SecondSection = styled.section`
     margin-right: 4rem;
 
     box-shadow: 2.2px 2.2px 6.59px rgba(0, 0, 0, 0.25);
+    @media screen and (max-width: 500px) {
+      //width: 200px;
+      //margin: 0;
+      //position: center;
+      display: none;
+    }
+
   }
 
   & .second-sec-left-wrapper {
@@ -255,6 +262,8 @@ export const SecondSection = styled.section`
     @media screen and (max-width: 500px) {
       width: 100%;
       text-align: center;
+      align-items: center;
+      justify-content: center;
       height: 300px;
       background-color: #FAFAFA;
     }
@@ -268,7 +277,7 @@ export const SecondSection = styled.section`
       color: #425f4b;
 
       @media screen and (max-width: 500px) {
-        font-size: 22px;
+        font-size: 18px;
       }
     }
 
@@ -299,8 +308,8 @@ export const SecondSection = styled.section`
       cursor: pointer;
 
       @media screen and (max-width: 500px) {
-        width: 95%;
-        height: 3rem;
+        width: 100%;
+        height: 4rem;
         font-size: 18px;
       }
     }
@@ -343,6 +352,7 @@ export const ThirdSection = styled.div`
 
       @media screen and (max-width: 500px) {
         width: 100%;
+      align-items: center;
       }
 
       & .third-text-wrapper {
@@ -356,6 +366,7 @@ export const ThirdSection = styled.div`
         @media screen and (max-width: 500px) {
           width: 90%;
           padding-top: 2rem;
+          background-color: red;
           height: fit-content;
         }
 

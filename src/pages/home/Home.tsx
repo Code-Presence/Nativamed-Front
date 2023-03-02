@@ -158,7 +158,7 @@ function Home(): JSX.Element {
               <img src={LaptopSVG} alt={'Laptop'} className={'laptop'}/>
             </div>
             <div className={'second-sec-right-wrapper'}>
-              <div>
+              <div style={{ width: '95%'}}>
                 <h1>
                   Preencha o formulário para dar <br/>
                   o primeiro passo em direção ao <br/>
