@@ -12,13 +12,14 @@ export const Navbar = styled.header`
 
 export const NavbarContainer = styled.nav`
   max-width: 1250px;
-  width: 100%;
+  width: 65%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
   gap: 80px;
+  background-color: red;
 
 
   & .logo-main {
