@@ -366,7 +366,6 @@ export const ThirdSection = styled.div`
         @media screen and (max-width: 500px) {
           width: 90%;
           padding-top: 2rem;
-          background-color: red;
           height: fit-content;
         }
 
