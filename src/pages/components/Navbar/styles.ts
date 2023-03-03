@@ -20,11 +20,16 @@ export const NavbarContainer = styled.nav`
   overflow: hidden;
   gap: 80px;
 
+
   & .logo-main {
     width: 200px;
     @media screen and (max-width: 500px) {
       width: 150px;
     }
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 90%;
   }
 `;
 
