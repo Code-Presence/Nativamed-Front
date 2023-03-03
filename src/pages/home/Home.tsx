@@ -35,10 +35,6 @@ import {MdOutlineEmail} from 'react-icons/md';
 import RDStationForm from '../components/FormModal/Form';
 import {Faq} from '../components/Faq/Faq';
 
-import ReactGA from 'react-ga';
-
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 function Home(): JSX.Element {
   const [showForm, setShowForm] = useState<boolean>(false);
 
@@ -135,11 +131,18 @@ function Home(): JSX.Element {
                 de vida
               </h1>
               <p className={'sub-title'}>NATURAL, LEGAL E APROVADO PELA ANVISA</p>
-              <div >
+              <div>
                 <p className={'footer-title'}>
                   Te acolheremos desde o agendamento da sua consulta médica até a
                   compra do medicamento.</p>
-                <p style={{margin: 0,paddingTop: '5px' ,fontSize: '20px', color: '#345249' ,fontFamily: 'Montserrat', fontWeight: '600'}}>Simples e prático!</p>
+                <p style={{
+                  margin: 0,
+                  paddingTop: '5px',
+                  fontSize: '20px',
+                  color: '#345249',
+                  fontFamily: 'Montserrat',
+                  fontWeight: '600'
+                }}>Simples e prático!</p>
 
               </div>
 
@@ -158,7 +161,7 @@ function Home(): JSX.Element {
               <img src={LaptopSVG} alt={'Laptop'} className={'laptop'}/>
             </div>
             <div className={'second-sec-right-wrapper'}>
-              <div style={{ width: '95%'}}>
+              <div style={{width: '95%'}}>
                 <h1>
                   Preencha o formulário para dar <br/>
                   o primeiro passo em direção ao <br/>
@@ -169,9 +172,9 @@ function Home(): JSX.Element {
                   Entraremos em contato para te guiar por <br/> todo o caminho.
                 </p>
                 <br/>
-                <Link to={'sobre'} smooth={true} duration={1000}>
-                  <button>Preencher Formulário</button>
-                </Link>
+                {/*<Link to={'sobre'} smooth={true} duration={1000}>*/}
+                <button onClick={handleModalClick}>Preencher Formulário</button>
+                {/*</Link>*/}
               </div>
             </div>
           </div>

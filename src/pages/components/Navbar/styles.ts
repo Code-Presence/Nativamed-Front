@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Navbar = styled.header`
   background-color: #34554E;
-  height: 60px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@ export const NavbarContainer = styled.nav`
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  //gap: 40px;
+  gap: 80px;
 
 
   & .logo-main {
@@ -42,7 +42,7 @@ export const NavLinks = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 35px;
+  gap: 25px;
 
   @media screen and (max-width: 500px) {
     flex-direction: column;
@@ -75,8 +75,8 @@ export const NavLinks = styled.ul`
 export const NavLink = styled.li`
   a {
     box-shadow: inset 0 0 0 0 #548c80;
-    font-size: 18px;
-    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
     color: #fff;
     text-decoration: none;
     cursor: pointer;
@@ -108,6 +108,7 @@ export const Burger = styled.div`
     top: 0;
     transform: translate(-100%, 60%);
     cursor: pointer;
+    margin-top: 5px;
   }
 `;
 
@@ -135,4 +136,10 @@ export const NavMenu = styled.div`
   display: flex;
   align-items: center;
   gap: 40px;
+
+  & .insta-wrapper{
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+  }
 `;

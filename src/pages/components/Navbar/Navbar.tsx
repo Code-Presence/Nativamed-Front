@@ -1,4 +1,4 @@
-import {useEffect, useState, MouseEventHandler} from 'react';
+import React, {useEffect, useState, MouseEventHandler} from 'react';
 
 import {
   Navbar,
@@ -10,9 +10,19 @@ import {
   BurgerLine,
 } from './styles';
 import Logo from '../../../assets/logo.png';
+import {FaInstagram} from 'react-icons/fa';
 
 
 const Nav = () => {
+  const handleInstaClick = () => {
+    // setShowForm(true);
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    event.preventDefault();
+    const url = 'https://www.instagram.com/nativamed/';
+    window.open(url, '_blank');
+  };
+
   const [navActive, setNavActive] = useState(false);
 
   useEffect(() => {
@@ -62,13 +72,17 @@ const Nav = () => {
             <NavLink>
               <a href="#faq" onClick={handleLinkClick}>Perguntas frequentes</a>
             </NavLink>
-            <NavLink>
-              <a href="#">Blog</a>
-            </NavLink>
+            {/*<NavLink>*/}
+            {/*  <a href="#">Blog</a>*/}
+            {/*</NavLink>*/}
             <NavLink>
               <a href={url} onClick={handleClick}>Entrar em contato</a>
             </NavLink>
+
           </NavLinks>
+          <a className={'insta-wrapper'} style={{cursor: 'pointer', width: 'fit-content', height: 'fit-content'}} onClick={handleInstaClick}>
+            <FaInstagram style={{width: '25px', height: '25px', color: 'white'}}/>
+          </a>
           <Burger onClick={toggleNav}>
             <BurgerLine className={navActive ? 'toggle' : ''}/>
             <BurgerLine className={navActive ? 'toggle' : ''}/>
