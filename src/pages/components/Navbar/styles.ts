@@ -10,7 +10,7 @@ export const Navbar = styled.header`
   overflow: hidden;
 
   @media screen and (max-width: 1000px){
-    width: 100%;
+    //width: 100%;
   }
 `;
 

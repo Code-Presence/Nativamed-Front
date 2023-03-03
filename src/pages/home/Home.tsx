@@ -135,14 +135,7 @@ function Home(): JSX.Element {
                 <p className={'footer-title'}>
                   Te acolheremos desde o agendamento da sua consulta médica até a
                   compra do medicamento.</p>
-                <p style={{
-                  margin: 0,
-                  paddingTop: '5px',
-                  fontSize: '20px',
-                  color: '#345249',
-                  fontFamily: 'Montserrat',
-                  fontWeight: '600'
-                }}>Simples e prático!</p>
+                <p className={'footer-title-bold'} >Simples e prático!</p>
 
               </div>
 

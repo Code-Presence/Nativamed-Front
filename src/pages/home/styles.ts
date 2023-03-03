@@ -10,12 +10,20 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
 
-
   & .img-da-muie {
     width: 500px;
+
+    @media screen and (max-width: 1000px) {
+      width: 400px;
+    }
+
     @media screen and (max-width: 500px) {
       width: 340px;
     }
+  }
+
+  @media screen and (max-width: 1500px) {
+    width: 100%;
   }
 
   @media screen and (max-width: 500px) {
@@ -34,6 +42,13 @@ export const FirstSection = styled.div`
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
+  @media screen and (max-width: 1000px){
+    width: 100%;
+
+    & .pre-title {
+      font-size: 12px;
+    }
+  }
   @media screen and (max-width: 500px) {
     flex-direction: column-reverse;
     height: fit-content;
@@ -86,6 +101,10 @@ export const FirstSection = styled.div`
     justify-content: center;
     padding-left: 10px;
 
+    @media screen and (max-width: 1000px){
+      align-items: center;
+    }
+
     @media screen and (max-width: 500px) {
       width: 100%;
       height: 350px;
@@ -99,6 +118,10 @@ export const FirstSection = styled.div`
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    @media screen and (max-width: 1000px){
+      width: 400px;
+    }
 
     @media screen and (max-width: 500px) {
       width: 100%;
@@ -115,6 +138,10 @@ export const FirstSection = styled.div`
     color: #345249;
     margin: 0;
 
+    @media screen and (max-width: 1000px){
+        font-size: 16px;
+    }
+
     @media screen and (max-width: 500px) {
       font-size: 16px;
     }
@@ -127,6 +154,10 @@ export const FirstSection = styled.div`
     font-size: 32px;
     margin: 0;
     color: #425f4b;
+
+    @media screen and (max-width: 1000px){
+      font-size: 26px;
+    }
 
     @media screen and (max-width: 500px) {
       font-size: 22px;
@@ -141,6 +172,10 @@ export const FirstSection = styled.div`
     color: #345249;
     margin: 0;
 
+    @media screen and (max-width: 1000px){
+      font-size: 16px;
+    }
+
     @media screen and (max-width: 500px) {
       font-size: 14px;
     }
@@ -154,7 +189,28 @@ export const FirstSection = styled.div`
     line-height: 1.2;
     margin: 0;
 
+    @media screen and (max-width: 1000px){
+      font-size: 18px;
+    }
+
     @media screen and (max-width: 500px) {
+      font-size: 18px;
+    }
+  }
+
+  & .footer-title-bold {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 20px;
+    color: #345249;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+
+    @media screen and (max-width: 1000px){
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: 500px){
       font-size: 18px;
     }
   }
@@ -627,6 +683,10 @@ export const FourthSection = styled.div`
       flex-direction: column;
       gap: 4rem;
 
+      @media screen and (max-width: 1500px){
+          //display: none;
+      }
+
       @media screen and (max-width: 500px) {
         width: 100%;
         gap: 1.5rem;
@@ -1039,12 +1099,19 @@ export const SeventhSection = styled.section`
   background-position-y: 400px;
   background-position-x: -100px;
 
+  @media screen and (max-width: 1500px){
+    & img {
+      display: none;
+    }
+  }
+
   @media screen and (max-width: 500px) {
    background-size: 50%;
     padding-top: 4rem;
     background-position-x: -80px;
     background-position-y: 650px;
   }
+
 
   & .seven-wrapper {
     max-width: 1440px;
