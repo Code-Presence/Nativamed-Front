@@ -50,7 +50,7 @@ const RDStationForm: React.FC<Props> = ({ onClose }) => {
       alignItems: 'center',
       justifyContent: 'center'
     }}>
-      <div ref={modalRef} style={{ width: '500px', height: '500px' }}>
+      <div ref={modalRef} style={{ width: '450px', height: '80%' }}>
         <button onClick={() => { onClose(); formRef.current?.remove(); }}>Fechar</button>
         <div role="main" id="cbfarma-2bdf4b4f83698a82beaf"></div>
       </div>
