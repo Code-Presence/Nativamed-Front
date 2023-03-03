@@ -19,8 +19,6 @@ export const NavbarContainer = styled.nav`
   justify-content: space-between;
   overflow: hidden;
   gap: 80px;
-  background-color: red;
-
 
   & .logo-main {
     width: 200px;
