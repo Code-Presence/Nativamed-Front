@@ -8,6 +8,10 @@ export const Navbar = styled.header`
   align-items: center;
   padding: 0 20px;
   overflow: hidden;
+
+  @media screen and (max-width: 1000px){
+    width: 100%;
+  }
 `;
 
 export const NavbarContainer = styled.nav`
@@ -20,7 +24,6 @@ export const NavbarContainer = styled.nav`
   overflow: hidden;
   gap: 80px;
 
-
   & .logo-main {
     width: 200px;
     @media screen and (max-width: 500px) {
@@ -30,6 +33,10 @@ export const NavbarContainer = styled.nav`
 
   @media screen and (max-width: 500px) {
     width: 90%;
+  }
+
+  @media screen and (max-width: 1500px){
+    width: 100%;
   }
 `;
 
@@ -42,7 +49,6 @@ export const Logo = styled.a`
 
 export const NavLinks = styled.ul`
   display: flex;
-  //justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
