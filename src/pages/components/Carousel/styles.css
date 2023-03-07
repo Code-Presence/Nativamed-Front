@@ -18,12 +18,12 @@ body {
 
 .swiper {
   width: 80%;
-  height: 100%;
+  height: fit-content;
   padding-bottom: 10px;
 }
 
 .swiper-slide {
-  height: 95%;
+  height: fit-content;
   text-align: center;
   font-size: 18px;
   background: #fff;

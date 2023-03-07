@@ -283,7 +283,7 @@ function Home(): JSX.Element {
           <div className={'fifth-first-container'}>
             <div className={'text-wrapper'}>
               <h2>DEPOIMENTOS DE</h2>
-              <h1>Pacientes Satisfeitos</h1>
+              <h1>PACIENTES SATISFEITOS</h1>
             </div>
           </div>
           <div className={'fifth-second-container'}>

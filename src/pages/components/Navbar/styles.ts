@@ -15,7 +15,7 @@ export const Navbar = styled.header`
 `;
 
 export const NavbarContainer = styled.nav`
-  max-width: 1250px;
+  max-width: 1000px;
   width: 65%;
   height: 100%;
   display: flex;

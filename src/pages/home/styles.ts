@@ -14,7 +14,7 @@ export const Container = styled.section`
     width: 500px;
 
     @media screen and (max-width: 1000px) {
-      width: 400px;
+      width: 100%;
     }
 
     @media screen and (max-width: 500px) {
@@ -120,7 +120,7 @@ export const FirstSection = styled.div`
     gap: 15px;
 
     @media screen and (max-width: 1000px){
-      width: 400px;
+      width: 100%;
     }
 
     @media screen and (max-width: 500px) {
@@ -480,7 +480,7 @@ export const ThirdSection = styled.div`
       justify-content: center;
 
       & img {
-        width: 400px;
+        width: 50%;
         border-radius: 8px;
         box-shadow: 2.2px 2.2px 6.59px rgba(0, 0, 0, 0.25);
       }
@@ -603,7 +603,7 @@ export const FourthSection = styled.div`
     }
 
     & .left-text {
-      width: 450px;
+      width: 80%;
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
@@ -678,10 +678,10 @@ export const FourthSection = styled.div`
     }
 
     & .right-text {
-      width: 600px;
+      width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 4rem;
+      gap: 2rem;
 
       @media screen and (max-width: 1500px){
           //display: none;
@@ -714,7 +714,7 @@ export const FourthSection = styled.div`
             margin: 0;
             padding-top: 10px;
             font-size: 18px;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Raleway', sans-serif;
 
             @media screen and (max-width: 500px) {
               font-size: 16px;
@@ -788,8 +788,9 @@ export const FourthSection = styled.div`
 
 export const FifthSection = styled.section`
   width: 100%;
-  height: 1000px;
+  height: fit-content;
   max-height: 1280px;
+  padding-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -884,7 +885,7 @@ export const FifthSection = styled.section`
 
   & .fifth-second-container {
     width: 100%;
-    height: 600px;
+    height: fit-content;
     @media screen and (max-width: 500px) {
       height: fit-content;
     }
@@ -895,6 +896,7 @@ export const FifthSection = styled.section`
     width: 100%;
     height: fit-content;
     display: flex;
+    padding-bottom: 1rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -937,9 +939,11 @@ export const FifthSection = styled.section`
 
 export const SixthSection = styled.section`
   width: 100%;
-  height: 920px;
+  height: fit-content;
   display: flex;
   align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   justify-content: center;
   background-color: white;
   background-image: url(${FolhasBG});
@@ -954,6 +958,7 @@ export const SixthSection = styled.section`
     background-position: right;
     background-position-y: top;
     padding-bottom: 4rem;
+    padding-top: 1rem;
 
     //background-position: right;
     //background-position-y: bottom;
@@ -974,7 +979,7 @@ export const SixthSection = styled.section`
       width: 100%;
       height: fit-content;
       gap: 2rem;
-      padding-top: 8rem;
+      padding-top: 2rem;
     }
 
     //& .folhas {
@@ -1099,9 +1104,9 @@ export const SeventhSection = styled.section`
   background-position-y: 400px;
   background-position-x: -100px;
 
-  @media screen and (max-width: 1500px){
+  @media screen and (max-width: 1200px){
     & img {
-      display: none;
+      width: 100%;
     }
   }
 
@@ -1144,7 +1149,9 @@ export const SeventhSection = styled.section`
     display: flex;
     gap: 100px;
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 1200px) {
+      gap: 45px;
+    } @media screen and (max-width: 500px) {
       gap: 0;
     }
 
@@ -1188,6 +1195,9 @@ export const SeventhSection = styled.section`
     height: fit-content;
     margin-top: 2rem;
 
+    @media screen and (max-width: 1200px) {
+      width: 90%;
+    }
     @media screen and (max-width: 500px) {
       width: 90%;
     }
@@ -1199,7 +1209,8 @@ export const SeventhSection = styled.section`
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    width: 350px;
+    width: 40%;
+    padding-bottom: 50px;
     text-align: center;
 
     @media screen and (max-width: 500px) {
@@ -1236,7 +1247,7 @@ export const SeventhSection = styled.section`
       font-weight: 700;
       font-size: 20px;
       color: #fff;
-      margin-bottom: 100px;
+
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -1274,10 +1285,18 @@ export const Footer = styled.footer`
 
   & .footer-wrapper {
     display: flex;
+    width: 90%;
+    justify-content: center;
     gap: 88px;
     padding-bottom: 4rem;
 
+
+    @media screen and (max-width: 720px) {
+      gap: 10px;
+    }
+
     @media screen and (max-width: 500px) {
+      width: 90%;
       gap: 10px;
     }
   }
@@ -1313,6 +1332,11 @@ export const Footer = styled.footer`
     gap: 10px;
     font-size: 28px;
     color: white;
+
+
+    @media screen and (max-width: 720px) {
+      display: none;
+    }
 
     @media screen and (max-width: 500px) {
       display: none;
@@ -1350,7 +1374,7 @@ export const Footer = styled.footer`
 
   & .line {
     background-color: rgba(249, 249, 249, 0.2);
-    width: 1100px;
+    width: 100%;
 
     @media screen and (max-width: 500px) {
       width: 100%;
