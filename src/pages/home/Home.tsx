@@ -150,7 +150,7 @@ function Home(): JSX.Element {
             </div>
           </div>
           <div className={'first-right-wrapper'}>
-            <img src={MuieSVG} alt={'Mulher'} className={'img-da-muie'} fetch-priority="high"/>
+            <img loading={'lazy'} src={MuieSVG} alt={'Mulher'} className={'img-da-muie'} fetch-priority="high"/>
           </div>
         </div>
       </FirstSection>
@@ -158,7 +158,7 @@ function Home(): JSX.Element {
         <div className={'divider'} >
           <div className={'second-sec-wrapper'} >
             <div className={'second-sec-left-wrapper'} data-aos="fade-right">
-              <img src={LaptopSVG} alt={'Laptop'} className={'laptop'}/>
+              <img loading={'lazy'} src={LaptopSVG} alt={'Laptop'} className={'laptop'}/>
             </div>
             <div className={'second-sec-right-wrapper'} data-aos="fade-up">
               <div style={{width: '95%'}}>
@@ -206,13 +206,13 @@ function Home(): JSX.Element {
             </div>
           </div>
           <div className={'third-right-wrapper'} data-aos="fade-left">
-            <img src={Frasco} alt={'Frasco'}/>
+            <img loading={'lazy'} src={Frasco} alt={'Frasco'}/>
           </div>
         </div>
       </ThirdSection>
       <IMGDivider>
         <div className={'divider-wrapper'}>
-          <img src={FrascoQuadrado} alt={'frasco-quadrado'} className={'frasco'}/>
+          <img loading={'lazy'} src={FrascoQuadrado} alt={'frasco-quadrado'} className={'frasco'}/>
         </div>
       </IMGDivider>
       <FourthSection>
@@ -226,13 +226,13 @@ function Home(): JSX.Element {
                   prescrever o medicamento de acordo com a sua condição</p>
               </div>
               <div className={'left-img'}>
-                <img src={Plantas} alt={'plantas-no-jarro'}/>
+                <img loading={'lazy'} src={Plantas} alt={'plantas-no-jarro'}/>
               </div>
             </div>
             <div className={'fourth-right'}>
               <div className={'right-text'}>
                 <div className={'content-container'} data-aos="fade-up">
-                  <img src={One} alt={'num-one'}/>
+                  <img loading={'lazy'} src={One} alt={'num-one'}/>
                   <div className={'text-wrapper'}>
                     <p>
                       No botão agendar consulta vá para a página de prescritores, escolha o profissional que mais atenda
@@ -246,7 +246,7 @@ function Home(): JSX.Element {
                   </div>
                 </div>
                 <div className={'content-container'} data-aos="fade-up">
-                  <img src={Two} alt={'num-two'}/>
+                  <img loading={'lazy'} src={Two} alt={'num-two'}/>
                   <div className={'text-wrapper'}>
                     <p>
                       Selecione:
@@ -257,7 +257,7 @@ function Home(): JSX.Element {
                   </div>
                 </div>
                 <div className={'content-container'} data-aos="fade-up">
-                  <img src={Three} alt={'num-three'}/>
+                  <img loading={'lazy'} src={Three} alt={'num-three'}/>
                   <div className={'text-wrapper'}>
                     <p>
                       Durante a consulta o profissional irá avaliar seu objetivo terapêutico e indicar a melhor opção
@@ -267,7 +267,7 @@ function Home(): JSX.Element {
                   </div>
                 </div>
                 <div className={'content-container'} data-aos="fade-up">
-                  <img src={Four} alt={'num-four'}/>
+                  <img loading={'lazy'} src={Four} alt={'num-four'}/>
                   <div className={'text-wrapper'}>
                     <p>
                       Com a avaliação feita e prescrição em mãos, você receberá toda instrução via WhatsApp, E-mail e
@@ -305,7 +305,7 @@ function Home(): JSX.Element {
       <SixthSection id={'conheca'}>
         <div className={'six-wrapper'}>
           <div className={'six-left'} data-aos="fade-right">
-            <img src={Woman} alt={'Ôta muié'}/>
+            <img loading={'lazy'} src={Woman} alt={'Ôta muié'}/>
           </div>
           <div className={'six-right'} data-aos="fade-left">
             <div className={'six-text-wrapper'}>
@@ -353,7 +353,7 @@ function Home(): JSX.Element {
               </div>
             </div>
             <div >
-              <img src={ContaGota} alt={'frasco-conta-gota'}/>
+              <img loading={'lazy'} src={ContaGota} alt={'frasco-conta-gota'}/>
             </div>
           </div>
           <div className={'seven-text-wrapper'}>
@@ -374,7 +374,7 @@ function Home(): JSX.Element {
       <Footer>
         <div className={'footer-wrapper'}>
           <div className={'logo-container'}>
-            <img src={Logo} alt={'logo'}/>
+            <img loading={'lazy'} src={Logo} alt={'logo'}/>
             <div className={'respons-icon-container'}>
               <a style={{cursor: 'pointer'}} onClick={handleLinkClick}>
                 <FaWhatsapp/>
