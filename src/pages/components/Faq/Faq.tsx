@@ -1,7 +1,9 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {FaChevronDown, FaChevronUp} from 'react-icons/fa';
 import {Container} from './styles';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 interface FaqItem {
   question: string;
   answer: string;
@@ -22,10 +24,14 @@ const Faq: React.FC<FaqProps> = ({faqs}) => {
     }
   };
 
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  }, []);
+
   return (
-    <Container>
+    <Container >
       {faqs.map((faq, index) => (
-        <div key={index} className="faq-item">
+        <div key={index} className="faq-item" data-aos="fade-up">
           <div className="faq-question" onClick={() => toggleActiveIndex(index)}>
             <h1>
               {faq.question}

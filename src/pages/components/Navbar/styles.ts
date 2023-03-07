@@ -8,6 +8,7 @@ export const Navbar = styled.header`
   align-items: center;
   padding: 0 20px;
   overflow: hidden;
+  z-index: 9;
 
   @media screen and (max-width: 1000px){
     //width: 100%;

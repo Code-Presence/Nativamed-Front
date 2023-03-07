@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   Container,
   FirstSection,
@@ -22,6 +22,9 @@ import Four from '../../assets/four.png';
 import Plantas from '../../assets/platinhas.png';
 import Logo from '../../assets/logo.png';
 import ContaGota from '../../assets/conta-gotas.png';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import {Link} from 'react-scroll';
 
@@ -112,14 +115,18 @@ function Home(): JSX.Element {
     setShowForm(true);
   };
 
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  }, []);
+
   return (
     <Container>
       <Nav/>
       <div>
         {showForm && <RDStationForm onClose={() => setShowForm(false)}/>}
       </div>
-      <FirstSection id={'tenho-prescricao'}>
-        <div className={'first-wrapper'}>
+      <FirstSection id={'tenho-prescricao'} >
+        <div className={'first-wrapper'} data-aos="fade-up">
           <div className={'first-left-wrapper'}>
             <div className={'first-text-wrapper'}>
               <p className={'pre-title'}>
@@ -135,7 +142,7 @@ function Home(): JSX.Element {
                 <p className={'footer-title'}>
                   Te acolheremos desde o agendamento da sua consulta médica até a
                   compra do medicamento.</p>
-                <p className={'footer-title-bold'} >Simples e prático!</p>
+                <p className={'footer-title-bold'}>Simples e prático!</p>
 
               </div>
 
@@ -147,13 +154,13 @@ function Home(): JSX.Element {
           </div>
         </div>
       </FirstSection>
-      <SecondSection>
-        <div className={'divider'}>
-          <div className={'second-sec-wrapper'}>
-            <div className={'second-sec-left-wrapper'}>
+      <SecondSection >
+        <div className={'divider'} >
+          <div className={'second-sec-wrapper'} >
+            <div className={'second-sec-left-wrapper'} data-aos="fade-right">
               <img src={LaptopSVG} alt={'Laptop'} className={'laptop'}/>
             </div>
-            <div className={'second-sec-right-wrapper'}>
+            <div className={'second-sec-right-wrapper'} data-aos="fade-up">
               <div style={{width: '95%'}}>
                 <h1>
                   Preencha o formulário para dar <br/>
@@ -175,7 +182,7 @@ function Home(): JSX.Element {
       </SecondSection>
       <ThirdSection id={'sobre'}>
         <div className={'third-wrapper'}>
-          <div className={'third-left-wrapper'}>
+          <div className={'third-left-wrapper'} data-aos="fade-right">
             <div className={'third-text-wrapper'}>
               <h4>MÉTODO NATURAL</h4>
               <h2>O nosso tratamento</h2>
@@ -198,7 +205,7 @@ function Home(): JSX.Element {
               </Link>
             </div>
           </div>
-          <div className={'third-right-wrapper'}>
+          <div className={'third-right-wrapper'} data-aos="fade-left">
             <img src={Frasco} alt={'Frasco'}/>
           </div>
         </div>
@@ -224,7 +231,7 @@ function Home(): JSX.Element {
             </div>
             <div className={'fourth-right'}>
               <div className={'right-text'}>
-                <div className={'content-container'}>
+                <div className={'content-container'} data-aos="fade-up">
                   <img src={One} alt={'num-one'}/>
                   <div className={'text-wrapper'}>
                     <p>
@@ -238,7 +245,7 @@ function Home(): JSX.Element {
                     </p>
                   </div>
                 </div>
-                <div className={'content-container'}>
+                <div className={'content-container'} data-aos="fade-up">
                   <img src={Two} alt={'num-two'}/>
                   <div className={'text-wrapper'}>
                     <p>
@@ -249,7 +256,7 @@ function Home(): JSX.Element {
                     </p>
                   </div>
                 </div>
-                <div className={'content-container'}>
+                <div className={'content-container'} data-aos="fade-up">
                   <img src={Three} alt={'num-three'}/>
                   <div className={'text-wrapper'}>
                     <p>
@@ -259,7 +266,7 @@ function Home(): JSX.Element {
                     </p>
                   </div>
                 </div>
-                <div className={'content-container'}>
+                <div className={'content-container'} data-aos="fade-up">
                   <img src={Four} alt={'num-four'}/>
                   <div className={'text-wrapper'}>
                     <p>
@@ -272,7 +279,7 @@ function Home(): JSX.Element {
               </div>
             </div>
           </div>
-          <div className={'bottom-wrapper'}>
+          <div className={'bottom-wrapper'} data-aos="fade-up">
             <h1>Você está a um passo do tratamento ideal</h1>
             <button onClick={handleModalClick}>AGENDAR CONSULTA</button>
           </div>
@@ -286,10 +293,10 @@ function Home(): JSX.Element {
               <h1>PACIENTES SATISFEITOS</h1>
             </div>
           </div>
-          <div className={'fifth-second-container'}>
-            <Carousel/>
+          <div className={'fifth-second-container'} data-aos="fade-up">
+            <Carousel />
           </div>
-          <div className={'fifth-third-container'}>
+          <div className={'fifth-third-container'} data-aos="fade-up">
             <h1>Você está a um passo do tratamento ideal</h1>
             <button onClick={handleModalClick}>QUERO INICIAR</button>
           </div>
@@ -297,10 +304,10 @@ function Home(): JSX.Element {
       </FifthSection>
       <SixthSection id={'conheca'}>
         <div className={'six-wrapper'}>
-          <div className={'six-left'}>
+          <div className={'six-left'} data-aos="fade-right">
             <img src={Woman} alt={'Ôta muié'}/>
           </div>
-          <div className={'six-right'}>
+          <div className={'six-right'} data-aos="fade-left">
             <div className={'six-text-wrapper'}>
               <h4>Quem somos</h4>
               <h1>Conheça a nossa empresa</h1>
@@ -345,7 +352,7 @@ function Home(): JSX.Element {
                 <Faq faqs={faqs}/>
               </div>
             </div>
-            <div>
+            <div >
               <img src={ContaGota} alt={'frasco-conta-gota'}/>
             </div>
           </div>

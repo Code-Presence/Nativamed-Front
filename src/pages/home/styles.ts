@@ -412,7 +412,7 @@ export const ThirdSection = styled.div`
       }
 
       & .third-text-wrapper {
-        width: 490px;
+        width: 80%;
         height: 600px;
         padding-top: 4rem;
         display: flex;
