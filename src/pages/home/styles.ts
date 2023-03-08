@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import backgroundUp from '../../assets/BG-upgraded.png';
-import FolhasBG from '../../assets/folhas.png';
-import PlantasCortadas from '../../assets/plantinhas-2.png';
-import OutraPlanta from '../../assets/outra-planta.png';
+import backgroundUp from '../../../public/assets/BG-upgraded.png';
+import FolhasBG from '../../../public/assets/folhas.png';
+import PlantasCortadas from '../../../public/assets/plantinhas-2.png';
+import OutraPlanta from '../../../public/assets/outra-planta.png';
 
 export const Container = styled.section`
   width: 100%;

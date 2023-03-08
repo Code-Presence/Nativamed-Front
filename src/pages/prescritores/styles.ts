@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import backgroundUp from '../../assets/BG-upgraded.png';
+import backgroundUp from '../../../public/assets/BG-upgraded.png';
 
 export const Container = styled.section`
   width: 100%;
