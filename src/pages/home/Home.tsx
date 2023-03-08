@@ -121,7 +121,7 @@ function Home(): JSX.Element {
 
   return (
     <Container>
-      <Nav/>
+      <Nav />
       <div>
         {showForm && <RDStationForm onClose={() => setShowForm(false)}/>}
       </div>
@@ -158,7 +158,7 @@ function Home(): JSX.Element {
         <div className={'divider'} >
           <div className={'second-sec-wrapper'} >
             <div className={'second-sec-left-wrapper'} data-aos="fade-right">
-              <img loading={'lazy'} src={Laptop2} alt={'Laptop'} className={'laptop'}/>
+              <img fetch-priority={'hight'} src={Laptop2} alt={'Laptop'} className={'laptop'}/>
             </div>
             <div className={'second-sec-right-wrapper'} data-aos="fade-up">
               <div style={{width: '95%'}}>
