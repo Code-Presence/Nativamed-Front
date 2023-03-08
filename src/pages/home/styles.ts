@@ -42,7 +42,7 @@ export const FirstSection = styled.div`
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-  @media screen and (max-width: 1000px){
+  @media screen and (max-width: 1000px) {
     width: 100%;
 
     & .pre-title {
@@ -101,7 +101,7 @@ export const FirstSection = styled.div`
     justify-content: center;
     padding-left: 10px;
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 1000px) {
       align-items: center;
     }
 
@@ -119,7 +119,7 @@ export const FirstSection = styled.div`
     flex-direction: column;
     gap: 15px;
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 1000px) {
       width: 100%;
     }
 
@@ -138,8 +138,8 @@ export const FirstSection = styled.div`
     color: #345249;
     margin: 0;
 
-    @media screen and (max-width: 1000px){
-        font-size: 16px;
+    @media screen and (max-width: 1000px) {
+      font-size: 16px;
     }
 
     @media screen and (max-width: 500px) {
@@ -155,7 +155,7 @@ export const FirstSection = styled.div`
     margin: 0;
     color: #425f4b;
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 1000px) {
       font-size: 26px;
     }
 
@@ -172,7 +172,7 @@ export const FirstSection = styled.div`
     color: #345249;
     margin: 0;
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 1000px) {
       font-size: 16px;
     }
 
@@ -189,7 +189,7 @@ export const FirstSection = styled.div`
     line-height: 1.2;
     margin: 0;
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 1000px) {
       font-size: 18px;
     }
 
@@ -206,11 +206,11 @@ export const FirstSection = styled.div`
     font-family: Montserrat, sans-serif;
     font-weight: 600;
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 1000px) {
       font-size: 18px;
     }
 
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 500px) {
       font-size: 18px;
     }
   }
@@ -227,6 +227,13 @@ export const FirstSection = styled.div`
     color: #fff;
     margin-top: 10px;
     cursor: pointer;
+    transition: all 0.3s ease;
+
+    :hover {
+      background-color: #357538;
+      transform: translateY(-5px); /* Transladar para cima */
+      box-shadow: 2.2px 4px 8.50px rgba(0, 0, 0, 0.25); /* Sombra */
+    }
 
     @media screen and (max-width: 500px) {
       width: 100%;
@@ -362,6 +369,13 @@ export const SecondSection = styled.section`
       color: #fff;
       margin-top: 15px;
       cursor: pointer;
+      transition: all 0.3s ease;
+
+      :hover {
+        background-color: #357538;
+        transform: translateY(-5px); /* Transladar para cima */
+        box-shadow: 2.2px 4px 8.50px rgba(0, 0, 0, 0.25); /* Sombra */
+      }
 
       @media screen and (max-width: 500px) {
         width: 100%;
@@ -464,6 +478,13 @@ export const ThirdSection = styled.div`
           color: #fff;
           margin-top: 30px;
           cursor: pointer;
+          transition: all 0.3s ease;
+
+          :hover {
+            background-color: #357538;
+            transform: translateY(-5px); /* Transladar para cima */
+            box-shadow: 2.2px 4px 8.50px rgba(0, 0, 0, 0.25); /* Sombra */
+          }
 
           @media screen and (max-width: 500px) {
             width: 80%;
@@ -763,22 +784,19 @@ export const FourthSection = styled.div`
       font-weight: bold;
       letter-spacing: 1px;
       cursor: pointer;
+      transition: all 0.3s ease;
 
-      //transition: transform 0.3s;
-      //transition-property: width;
-      //transition-duration: 2s;
+      :hover {
+        background-color: #357538;
+        transform: translateY(-5px); /* Transladar para cima */
+        box-shadow: 2.2px 4px 8.50px rgba(0, 0, 0, 0.25); /* Sombra */
+      }
 
-      transition: all 0.5s linear;
-      top: 0;
+
 
       @media screen and (max-width: 500px) {
         font-size: 16px;
         width: 90%;
-      }
-
-      &:hover {
-        top: -5px;
-        cursor: pointer;
       }
     }
 
@@ -929,6 +947,13 @@ export const FifthSection = styled.section`
       font-weight: bold;
       letter-spacing: 1px;
       cursor: pointer;
+      transition: all 0.3s ease;
+
+      :hover {
+        background-color: #357538;
+        transform: translateY(-5px); /* Transladar para cima */
+        box-shadow: 2.2px 4px 8.50px rgba(0, 0, 0, 0.25); /* Sombra */
+      }
 
       @media screen and (max-width: 500px) {
         width: 90%;
@@ -1253,6 +1278,13 @@ export const SeventhSection = styled.section`
       align-items: center;
       justify-content: center;
       gap: 15px;
+      transition: all 0.3s ease;
+
+      :hover {
+        background-color: #357538;
+        transform: translateY(-5px); /* Transladar para cima */
+        box-shadow: 2.2px 4px 8.50px rgba(0, 0, 0, 0.25); /* Sombra */
+      }
 
       @media screen and (max-width: 500px) {
         width: 100%;

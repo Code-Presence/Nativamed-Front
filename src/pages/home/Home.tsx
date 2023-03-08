@@ -150,7 +150,7 @@ function Home(): JSX.Element {
             </div>
           </div>
           <div className={'first-right-wrapper'}>
-            <img loading={'lazy'} src={MuieSVG} alt={'Mulher'} className={'img-da-muie'} fetch-priority="high"/>
+            <img loading={'lazy'} src={MuieSVG} alt={'Mulher'} className={'img-da-muie'}/>
           </div>
         </div>
       </FirstSection>

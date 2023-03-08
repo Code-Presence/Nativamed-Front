@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState } from 'react';
+import React, {useEffect, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -29,9 +29,6 @@ function Carousel() {
       <Swiper
         slidesPerView={slidesPerView}
         spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
         loop={true}
         grabCursor={true}
         modules={[Pagination]}
