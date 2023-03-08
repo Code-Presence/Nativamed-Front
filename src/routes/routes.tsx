@@ -7,7 +7,7 @@ export default function AppRoutes() {
   return (
     <Routes>
       <Route path={'/'} element={<Home/>}/>
-      <Route path={'/em-desenvolvimento'} element={<Prescritores/>}/>
+      <Route path={'/desenvolvimento'} element={<Prescritores/>}/>
     </Routes>
   );
 }
