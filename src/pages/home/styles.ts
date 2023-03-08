@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import backgroundUp from '../../../public/assets/BG-upgraded.png';
-import FolhasBG from '../../../public/assets/folhas.png';
-import PlantasCortadas from '../../../public/assets/plantinhas-2.png';
-import OutraPlanta from '../../../public/assets/outra-planta.png';
+import backgroundUp from '../../../public/assets/BG-upgraded.webp';
+import FolhasBG from '../../../public/assets/folhas.webp';
+import PlantasCortadas from '../../../public/assets/plantinhas-2.webp';
+import OutraPlanta from '../../../public/assets/outra-planta.webp';
 
 export const Container = styled.section`
   width: 100%;
@@ -12,6 +12,7 @@ export const Container = styled.section`
 
   & .img-da-muie {
     width: 500px;
+    height: auto;
 
     @media screen and (max-width: 1000px) {
       width: 100%;

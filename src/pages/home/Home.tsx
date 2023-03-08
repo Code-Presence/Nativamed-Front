@@ -9,19 +9,19 @@ import {
   SixthSection,
   Footer, IMGDivider, SeventhSection,
 } from './styles';
-import Muie2 from '../../../public/assets/muie.webp';
-import Woman from '../../../public/assets/woman.png';
-import Laptop2 from '../../../public/assets/laptop.webp';
-import Frasco2 from '../../../public/assets/frasco.webp';
-import FrascoQuadrado from '../../../public/assets/frasco-quadrado.png';
+import Muie2 from '/assets/muie.webp';
+import Woman from '/assets/woman.png';
+import Laptop2 from '/assets/laptop.webp';
+import Frasco2 from '/assets/frasco.webp';
+import FrascoQuadrado from '/assets/frasco-quadrado.webp';
 
-import One from '../../../public/assets/one.png';
-import Two from '../../../public/assets/two.png';
-import Three from '../../../public/assets/three.png';
-import Four from '../../../public/assets/four.png';
-import Plantas from '../../../public/assets/platinhas.png';
-import Logo from '../../../public/assets/logo.png';
-import ContaGota from '../../../public/assets/conta-gotas.png';
+import One from '/assets/one.png';
+import Two from '/assets/two.png';
+import Three from '/assets/three.png';
+import Four from '/assets/four.png';
+import Plantas from '/assets/platinhas.png';
+import Logo from '/assets/logo.png';
+import ContaGota from '/assets/conta-gotas.png';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
