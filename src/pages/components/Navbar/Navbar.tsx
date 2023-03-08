@@ -9,7 +9,7 @@ import {
   Burger,
   BurgerLine,
 } from './styles';
-import Logo from '../../../../public/assets/logo.png';
+import Logo from '/assets/logo.png';
 import {FaInstagram} from 'react-icons/fa';
 
 
