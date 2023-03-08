@@ -10,6 +10,7 @@ import {
   Footer, IMGDivider, SeventhSection,
 } from './styles';
 import MuieSVG from '../../../public/assets/muie-svg.svg';
+import Muie from '../../../public/assets/muie.png';
 import Woman from '../../../public/assets/woman.png';
 import LaptopSVG from '../../../public/assets/laptop-svg.svg';
 import Frasco from '../../../public/assets/frasco.png';
@@ -150,7 +151,7 @@ function Home(): JSX.Element {
             </div>
           </div>
           <div className={'first-right-wrapper'}>
-            <img loading={'lazy'} src={MuieSVG} alt={'Mulher'} className={'img-da-muie'}/>
+            <img fetch-priority={'hight'} src={Muie} alt={'Mulher'} className={'img-da-muie'}/>
           </div>
         </div>
       </FirstSection>
