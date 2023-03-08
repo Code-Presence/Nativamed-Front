@@ -9,10 +9,9 @@ import {
   SixthSection,
   Footer, IMGDivider, SeventhSection,
 } from './styles';
-import MuieSVG from '../../../public/assets/muie-svg.svg';
 import Muie from '../../../public/assets/muie.png';
 import Woman from '../../../public/assets/woman.png';
-import LaptopSVG from '../../../public/assets/laptop-svg.svg';
+import Laptop from '../../../public/assets/laptop.png';
 import Frasco from '../../../public/assets/frasco.png';
 import FrascoQuadrado from '../../../public/assets/frasco-quadrado.png';
 
@@ -159,7 +158,7 @@ function Home(): JSX.Element {
         <div className={'divider'} >
           <div className={'second-sec-wrapper'} >
             <div className={'second-sec-left-wrapper'} data-aos="fade-right">
-              <img loading={'lazy'} src={LaptopSVG} alt={'Laptop'} className={'laptop'}/>
+              <img loading={'lazy'} src={Laptop} alt={'Laptop'} className={'laptop'}/>
             </div>
             <div className={'second-sec-right-wrapper'} data-aos="fade-up">
               <div style={{width: '95%'}}>
