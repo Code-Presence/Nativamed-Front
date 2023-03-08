@@ -1,16 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 330px;
-  height: 46rem;
-  border-radius: 8px;
-  border: 1px solid #c4c4c4;
-  background-color: white;
+  width: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 
 `;
 export const IMGContainer = styled.div`
@@ -26,10 +21,7 @@ export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-
   margin-top: 10px;
-
-
   letter-spacing: 0.8px;
 
   & h1 {

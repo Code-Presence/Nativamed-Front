@@ -1,34 +1,41 @@
-import React from 'react';
-import {Container, Content, Wrapper} from './styles';
+import React, { useEffect } from 'react';
+import {Container, Content, Wrapper, MainSection} from './styles';
 import Nav from '../components/Navbar/Navbar';
 import {Filter} from '../components/Filter/Filter';
 import {MedicCard} from '../components/MedicCard/MedicCard';
+import {CarouselMedics} from '../components/CarouselMedics';
+import {Footer} from '../home/styles';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Prescritores(): JSX.Element {
+
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  }, []);
+
   return (
     <Container>
       <Nav/>
-      <Wrapper>
-        <div className={'text-container'}>
-          <div className={'text-wrapper'}>
-            <p>Aqui você vai escolher o médico especialista para sua patologia e disponibilidade para agendarmos sua
-              consulta</p>
-          </div>
-        </div>
-      </Wrapper>
-      <Content>
-        <div className={'wrapper'}>
-          <div className={'filter-n-card-wrapper'}>
+      <MainSection >
+        <Content>
+          <Wrapper>
+            <div className={'text-container'}>
+              <div className={'text-wrapper'} data-aos="fade-up">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+              </div>
+            </div>
+          </Wrapper>
+          <div className={'global-wrapper'}>
 
-            <Filter/>
-            <div className={'card-wrapper'}>
-              <MedicCard/>
-              <MedicCard/>
-              <MedicCard/>
+            <div className={'card-wrapper'} data-aos="fade-up">
+              <CarouselMedics/>
             </div>
           </div>
-        </div>
-      </Content>
+        </Content>
+      </MainSection>
+      <Footer />
     </Container>
   );
 }
