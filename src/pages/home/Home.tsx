@@ -9,10 +9,10 @@ import {
   SixthSection,
   Footer, IMGDivider, SeventhSection,
 } from './styles';
-import Muie from '../../../public/assets/muie.png';
+import Muie2 from '../../../public/assets/muie.webp';
 import Woman from '../../../public/assets/woman.png';
-import Laptop from '../../../public/assets/laptop.png';
-import Frasco from '../../../public/assets/frasco.png';
+import Laptop2 from '../../../public/assets/laptop.webp';
+import Frasco2 from '../../../public/assets/frasco.webp';
 import FrascoQuadrado from '../../../public/assets/frasco-quadrado.png';
 
 import One from '../../../public/assets/one.png';
@@ -150,7 +150,7 @@ function Home(): JSX.Element {
             </div>
           </div>
           <div className={'first-right-wrapper'}>
-            <img fetch-priority={'hight'} src={Muie} alt={'Mulher'} className={'img-da-muie'}/>
+            <img fetch-priority={'hight'} src={Muie2} alt={'Mulher'} className={'img-da-muie'}/>
           </div>
         </div>
       </FirstSection>
@@ -158,7 +158,7 @@ function Home(): JSX.Element {
         <div className={'divider'} >
           <div className={'second-sec-wrapper'} >
             <div className={'second-sec-left-wrapper'} data-aos="fade-right">
-              <img loading={'lazy'} src={Laptop} alt={'Laptop'} className={'laptop'}/>
+              <img loading={'lazy'} src={Laptop2} alt={'Laptop'} className={'laptop'}/>
             </div>
             <div className={'second-sec-right-wrapper'} data-aos="fade-up">
               <div style={{width: '95%'}}>
@@ -206,7 +206,7 @@ function Home(): JSX.Element {
             </div>
           </div>
           <div className={'third-right-wrapper'} data-aos="fade-left">
-            <img loading={'lazy'} src={Frasco} alt={'Frasco'}/>
+            <img loading={'lazy'} src={Frasco2} alt={'Frasco'}/>
           </div>
         </div>
       </ThirdSection>
