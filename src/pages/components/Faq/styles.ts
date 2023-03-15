@@ -21,11 +21,13 @@ export const Container = styled.div`
     padding-right: 14px;
     border-radius: 4px;
     cursor: pointer;
+    color: #345249;
 
 
     & h1 {
       margin: 0;
       font-weight: 500;
+      color: #345249;
       font-family: 'Montserrat', sans-serif;
     }
 
@@ -38,6 +40,7 @@ export const Container = styled.div`
     & p {
       margin: 0;
       font-size: 16px;
+
       font-family: 'Montserrat', sans-serif;
     }
 

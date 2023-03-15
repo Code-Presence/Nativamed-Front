@@ -23,7 +23,7 @@ export const NavbarContainer = styled.nav`
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  gap: 80px;
+  gap: 20px;
 
   & .logo-main {
     width: 200px;
@@ -91,8 +91,8 @@ export const NavLink = styled.li`
     color: #fff;
     text-decoration: none;
     cursor: pointer;
-    margin: 0 -.25rem;
-    padding: 0 .25rem;
+    /* margin: 0 -.25rem; */
+    /* padding: 0 .25rem; */
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     overflow: hidden;
       :hover {

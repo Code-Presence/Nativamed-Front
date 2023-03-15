@@ -220,10 +220,10 @@ function Home(): JSX.Element {
           <div className={'forth-content-wrapper'}>
             <div className={'fourth-left'}>
               <div className={'left-text'}>
-                <h4>Passo a passo</h4>
-                <h1>Agendamento da consulta médica até a compra do medicamento.</h1>
+                <h4>PASSO A PASSO</h4>
+                <h1>Agendamento da consulta médica até a compra do medicamento</h1>
                 <p>Para iniciar é necessário passar por uma consulta médica online onde o médico irá lhe encaminhar e
-                  prescrever o medicamento de acordo com a sua condição</p>
+                  prescrever o medicamento de acordo com a sua condição.</p>
               </div>
               <div className={'left-img'}>
                 <img loading={'lazy'} src={Plantas} alt={'plantas-no-jarro'}/>
@@ -309,7 +309,7 @@ function Home(): JSX.Element {
           </div>
           <div className={'six-right'} data-aos="fade-left">
             <div className={'six-text-wrapper'}>
-              <h4>Quem somos</h4>
+              <h4>QUEM SOMOS</h4>
               <h1>Conheça a nossa empresa</h1>
               <div
                 style={{

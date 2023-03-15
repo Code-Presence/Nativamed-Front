@@ -9,9 +9,10 @@ export const Container = styled.section`
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #fafafa;
 
   & .img-da-muie {
-    width: 500px;
+    width: 440px;
     height: auto;
 
     @media screen and (max-width: 1000px) {
@@ -59,12 +60,13 @@ export const FirstSection = styled.div`
   }
 
   & .first-wrapper {
-    max-width: 1440px;
+    max-width: 1000px;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+
 
     @media screen and (max-width: 500px) {
       flex-direction: column-reverse;
@@ -78,8 +80,9 @@ export const FirstSection = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding-right: 10px;
+
+
+
     justify-content: center;
 
     @media screen and (max-width: 500px) {
@@ -98,9 +101,10 @@ export const FirstSection = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
+
     justify-content: center;
-    padding-left: 10px;
+
 
     @media screen and (max-width: 1000px) {
       align-items: center;
@@ -132,7 +136,7 @@ export const FirstSection = styled.div`
 
   & .pre-title {
     // p
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.5;
     font-family: "Montserrat", sans-serif;
@@ -152,7 +156,7 @@ export const FirstSection = styled.div`
     // h1
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 28px;
     margin: 0;
     color: #425f4b;
 
@@ -167,7 +171,7 @@ export const FirstSection = styled.div`
 
   & .sub-title {
     // h1
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
     color: #345249;
@@ -184,7 +188,7 @@ export const FirstSection = styled.div`
 
   & .footer-title {
     // p
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Raleway", sans-serif;
     color: #345249;
     line-height: 1.2;
@@ -281,6 +285,7 @@ export const SecondSection = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+
 
     @media screen and (max-width: 500px) {
       & .second-sec-left-wrapper {
@@ -391,7 +396,7 @@ export const SecondSection = styled.section`
 export const ThirdSection = styled.div`
   width: 100%;
   height: 700px;
-  padding-bottom: 20px;
+  padding-bottom: 45px;
   background-color: white;
   display: flex;
   align-items: center;
@@ -403,10 +408,11 @@ export const ThirdSection = styled.div`
   }
 
   & .third-wrapper {
-    max-width: 1440px;
+    max-width: 1000px;
     width: 100%;
     height: 100%;
     display: flex;
+
 
     @media screen and (max-width: 500px) {
       flex-direction: column;
@@ -418,7 +424,7 @@ export const ThirdSection = styled.div`
       height: 100%;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+
       justify-content: center;
 
       @media screen and (max-width: 500px) {
@@ -427,12 +433,13 @@ export const ThirdSection = styled.div`
       }
 
       & .third-text-wrapper {
-        width: 80%;
+        width: 100%;
         height: 600px;
         padding-top: 4rem;
         display: flex;
         flex-direction: column;
         justify-content: end;
+
 
         @media screen and (max-width: 500px) {
           width: 90%;
@@ -502,7 +509,7 @@ export const ThirdSection = styled.div`
       justify-content: center;
 
       & img {
-        width: 50%;
+        width: 350px;
         border-radius: 8px;
         box-shadow: 2.2px 2.2px 6.59px rgba(0, 0, 0, 0.25);
       }
@@ -530,7 +537,7 @@ export const ThirdSection = styled.div`
 export const IMGDivider = styled.div`
   width: 100%;
   display: none;
-  padding-top: 1.5rem;
+  padding-top: 40px;
   background-color: white;
 
   background-image: url(${PlantasCortadas});
@@ -590,16 +597,16 @@ export const FourthSection = styled.div`
   }
 
   & .fourth-wrapper {
-    max-width: 1440px;
+    max-width: 1000px;
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;s
     justify-content: center;
 
+
     & .forth-content-wrapper {
-      width: 95%;
+      width: 100%;
       display: flex;
 
       @media screen and (max-width: 500px) {
@@ -613,8 +620,8 @@ export const FourthSection = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     justify-content: center;
+
 
     @media screen and (max-width: 500px) {
       flex-direction: column-reverse;
@@ -629,6 +636,8 @@ export const FourthSection = styled.div`
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+
+
 
       @media screen and (max-width: 500px) {
         width: 80%;
@@ -692,7 +701,6 @@ export const FourthSection = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     @media screen and (max-width: 500px) {
       width: 100%;
@@ -809,7 +817,8 @@ export const FifthSection = styled.section`
   width: 100%;
   height: fit-content;
   max-height: 1280px;
-  padding-top: 2rem;
+  margin-top: 4rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -825,13 +834,14 @@ export const FifthSection = styled.section`
   }
 
   & .fifth-wrapper {
-    max-width: 1440px;
+    max-width: 1000px;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 
     gap: 3rem;
 
@@ -968,7 +978,7 @@ export const SixthSection = styled.section`
   height: fit-content;
   display: flex;
   align-items: center;
-  padding-top: 4rem;
+  padding-top: 8rem;
   padding-bottom: 4rem;
   justify-content: center;
   background-color: white;
@@ -999,6 +1009,7 @@ export const SixthSection = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+
 
     @media screen and (max-width: 500px) {
       flex-direction: column-reverse;
@@ -1127,7 +1138,7 @@ export const SeventhSection = styled.section`
   background-size: 20%;
   background-repeat: no-repeat;
   //background-position: bottom left;
-  background-position-y: 400px;
+  background-position-y: 520px;
   background-position-x: -100px;
 
   @media screen and (max-width: 1200px){
@@ -1153,6 +1164,7 @@ export const SeventhSection = styled.section`
     align-items: center;
     justify-content: center;
     gap: 100px;
+
 
     @media screen and (max-width: 500px) {
       flex-direction: column;
