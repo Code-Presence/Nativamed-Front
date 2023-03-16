@@ -21,6 +21,7 @@ import Three from '/assets/three.png';
 import Four from '/assets/four.png';
 import Plantas from '/assets/platinhas.png';
 import Logo from '/assets/logo.png';
+import LogoBranco from '/assets/logo-branco.png';
 import ContaGota from '/assets/conta-gotas.png';
 
 import Aos from 'aos';
@@ -374,7 +375,7 @@ function Home(): JSX.Element {
       <Footer>
         <div className={'footer-wrapper'}>
           <div className={'logo-container'}>
-            <img loading={'lazy'} src={Logo} alt={'logo'}/>
+            <img loading={'lazy'} src={LogoBranco} alt={'logo'} style={{width: '100%'}}/>
             <div className={'respons-icon-container'}>
               <a style={{cursor: 'pointer'}} onClick={handleLinkClick}>
                 <FaWhatsapp/>

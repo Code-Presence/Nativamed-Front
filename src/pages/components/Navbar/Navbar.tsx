@@ -10,6 +10,7 @@ import {
   BurgerLine,
 } from './styles';
 import Logo from '/assets/logo.png';
+import LogoBranco from '/assets/logo-branco.png';
 import {FaInstagram} from 'react-icons/fa';
 
 
@@ -60,7 +61,7 @@ const Nav = () => {
   return (
     <Navbar>
       <NavbarContainer>
-        <img src={Logo} alt={'logo'} className={'logo-main'}/>
+        <img src={LogoBranco} alt={'logo'} className={'logo-main'}/>
         <NavMenu>
           <NavLinks className={navActive ? 'nav-active' : ''}>
             <NavLink>

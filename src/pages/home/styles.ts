@@ -594,6 +594,7 @@ export const FourthSection = styled.div`
     height: fit-content;
     flex-direction: column;
     background-color: white;
+    padding-bottom: 0;
   }
 
   & .fourth-wrapper {
@@ -637,11 +638,10 @@ export const FourthSection = styled.div`
       flex-direction: column;
       gap: 0.5rem;
 
-
-
       @media screen and (max-width: 500px) {
-        width: 80%;
+        width: 75%;
         padding-top: 2rem;
+        padding-left: 1rem;
         position: absolute;
       }
 
@@ -726,6 +726,10 @@ export const FourthSection = styled.div`
         display: flex;
         width: 100%;
 
+        @media screen and (max-width: 500px) {
+            width: 95%;
+          }
+
         & img {
           width: 100px;
           height: 100px;
@@ -739,6 +743,7 @@ export const FourthSection = styled.div`
 
         & .text-wrapper {
           height: fit-content;
+          width: 90%;
 
           & p {
             margin: 0;
@@ -1348,6 +1353,8 @@ export const Footer = styled.footer`
 
   & .logo-container {
     padding-right: 32px;
+    width: 240px;
+    height: auto;
     display: flex;
     flex-direction: column;
 
