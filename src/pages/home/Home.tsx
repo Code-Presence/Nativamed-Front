@@ -20,7 +20,6 @@ import Two from '/assets/two.png';
 import Three from '/assets/three.png';
 import Four from '/assets/four.png';
 import Plantas from '/assets/platinhas.png';
-import Logo from '/assets/logo.png';
 import LogoBranco from '/assets/logo-branco.png';
 import ContaGota from '/assets/conta-gotas.png';
 
@@ -122,7 +121,9 @@ function Home(): JSX.Element {
 
   return (
     <>
-      {showForm && <RDStationForm onClose={() => setShowForm(false)}/>}
+      <div id={'form'}>
+        {showForm && <RDStationForm onClose={() => setShowForm(false)}/>}
+      </div>
       <Container>
         <Nav />
         <FirstSection id={'tenho-prescricao'} >
@@ -145,8 +146,9 @@ function Home(): JSX.Element {
                   <p className={'footer-title-bold'}>Simples e prático!</p>
 
                 </div>
-
-                <button onClick={handleModalClick}>Agendar Consulta</button>
+                <Link to='form' style={{width: '100%' , height: '60px', alignItems: 'center', display: 'flex', justifyContent: 'center'}}>
+                  <button onClick={handleModalClick}>Agendar Consulta</button>
+                </Link>
               </div>
             </div>
             <div className={'first-right-wrapper'}>
@@ -173,7 +175,9 @@ function Home(): JSX.Element {
                   </p>
                   <br/>
                   {/*<Link to={'sobre'} smooth={true} duration={1000}>*/}
-                  <button onClick={handleModalClick}>Preencher Formulário</button>
+                  <Link to='form' style={{width: '100%' , height: '60px', alignItems: 'center', display: 'flex', justifyContent: 'center'}}>
+                    <button onClick={handleModalClick}>Preencher Formulário</button>
+                  </Link>
                   {/*</Link>*/}
                 </div>
               </div>
@@ -281,7 +285,9 @@ function Home(): JSX.Element {
             </div>
             <div className={'bottom-wrapper'} data-aos="fade-up">
               <h1>Você está a um passo do tratamento ideal</h1>
-              <button onClick={handleModalClick}>AGENDAR CONSULTA</button>
+              <Link to='form' style={{width: '100%' , height: '60px', alignItems: 'center', display: 'flex', justifyContent: 'center'}}>
+                <button onClick={handleModalClick}>AGENDAR CONSULTA</button>
+              </Link>
             </div>
           </div>
         </FourthSection>
@@ -298,7 +304,9 @@ function Home(): JSX.Element {
             </div>
             <div className={'fifth-third-container'} data-aos="fade-up">
               <h1>Você está a um passo do tratamento ideal</h1>
-              <button onClick={handleModalClick}>QUERO INICIAR</button>
+              <Link to='form' style={{width: '100%' , height: '60px', alignItems: 'center', display: 'flex', justifyContent: 'center'}}>
+                <button onClick={handleModalClick}>QUERO INICIAR</button>
+              </Link>
             </div>
           </div>
         </FifthSection>
@@ -395,7 +403,9 @@ function Home(): JSX.Element {
               <a>Blog</a>
             </div>
             <div className={'option-container-2'}>
-              <a style={{cursor: 'pointer'}} onClick={handleModalClick}>Agendamento de consulta</a>
+              <Link to='form' style={{width: '100%' , height: '60px', alignItems: 'center', display: 'flex', justifyContent: 'center'}}>
+                <a style={{cursor: 'pointer'}} onClick={handleModalClick}>Agendamento de consulta</a>
+              </Link>
               <Link to={'sobre'} smooth={true} duration={1000}>
                 <a style={{cursor: 'pointer'}}>Nosso tratamento</a>
               </Link>

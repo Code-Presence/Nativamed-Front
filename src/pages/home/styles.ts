@@ -55,6 +55,7 @@ export const FirstSection = styled.div`
     flex-direction: column-reverse;
     height: fit-content;
     width: 100%;
+    margin-bottom: 10px;
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
@@ -131,6 +132,7 @@ export const FirstSection = styled.div`
     @media screen and (max-width: 500px) {
       width: 100%;
       align-items: center;
+      padding-bottom: 2rem;
     }
   }
 
@@ -258,7 +260,7 @@ export const SecondSection = styled.section`
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   @media screen and (max-width: 500px) {
-    height: 400px;
+    height: fit-content;
     background-color: #FAFAFA;
 
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -953,7 +955,7 @@ export const FifthSection = styled.section`
 
     & button {
       width: 385px;
-      height: 3rem;
+      height: 60px;
       border-radius: 8px;
       border: none;
       background-color: #33554B;
