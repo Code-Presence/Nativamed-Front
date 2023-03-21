@@ -47,7 +47,8 @@ const RDStationForm: React.FC<Props> = ({ onClose }) => {
       zIndex: 9999,
       display: 'flex',
       alignItems: 'center',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      overflow: 'hidden'
     }}>
       <div ref={modalRef} style={{ width: '100%', height: '90%', padding: '0.5rem' }}>
         <button onClick={() => { onClose(); formRef.current?.remove(); }}>Fechar</button>
