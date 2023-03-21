@@ -1,5 +1,4 @@
 import React from 'react';
-import Home from './pages/home/Home';
 import {BrowserRouter} from 'react-router-dom';
 import AppRoutes from './routes/routes';
 

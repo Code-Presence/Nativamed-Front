@@ -39,18 +39,17 @@ const RDStationForm: React.FC<Props> = ({ onClose }) => {
 
   return (
     <div style={{
-      position: 'fixed',
+      position: 'absolute',
       top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
+      width: '100vw',
+      height: '100vh',
       backgroundColor: 'rgba(0, 0, 0, 0.5)',
       zIndex: 9999,
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center'
     }}>
-      <div ref={modalRef} style={{ width: '450px', height: '90%', padding: '2rem' }}>
+      <div ref={modalRef} style={{ width: '100%', height: '90%', padding: '0.5rem' }}>
         <button onClick={() => { onClose(); formRef.current?.remove(); }}>Fechar</button>
         <div role="main" id="cbfarma-2bdf4b4f83698a82beaf"></div>
       </div>

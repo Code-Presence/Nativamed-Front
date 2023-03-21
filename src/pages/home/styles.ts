@@ -5,7 +5,7 @@ import PlantasCortadas from '/assets/plantinhas-2.webp';
 import OutraPlanta from '/assets/outra-planta.webp';
 
 export const Container = styled.section`
-  width: 100%;
+  width: 100vw;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -918,7 +918,7 @@ export const FifthSection = styled.section`
   }
 
   & .fifth-second-container {
-    width: 100%;
+    width: 95%;
     height: fit-content;
     @media screen and (max-width: 500px) {
       height: fit-content;

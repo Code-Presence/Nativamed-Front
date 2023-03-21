@@ -121,262 +121,292 @@ function Home(): JSX.Element {
   }, []);
 
   return (
-    <Container>
-      <Nav />
-      <div>
-        {showForm && <RDStationForm onClose={() => setShowForm(false)}/>}
-      </div>
-      <FirstSection id={'tenho-prescricao'} >
-        <div className={'first-wrapper'} data-aos="fade-up">
-          <div className={'first-left-wrapper'}>
-            <div className={'first-text-wrapper'}>
-              <p className={'pre-title'}>
+    <>
+      {showForm && <RDStationForm onClose={() => setShowForm(false)}/>}
+      <Container>
+        <Nav />
+        <FirstSection id={'tenho-prescricao'} >
+          <div className={'first-wrapper'} data-aos="fade-up">
+            <div className={'first-left-wrapper'}>
+              <div className={'first-text-wrapper'}>
+                <p className={'pre-title'}>
                 ALÍVIO NOS SINTOMAS DA ANSIEDADE, <br/> INSÔNIA E DORES CRÔNICAS
-              </p>
-              <h1 className={'title'}>
+                </p>
+                <h1 className={'title'}>
                 Comece hoje o tratamento <br/>
                 para melhorar sua qualidade <br/>
                 de vida
-              </h1>
-              <p className={'sub-title'}>NATURAL, LEGAL E APROVADO PELA ANVISA</p>
-              <div>
-                <p className={'footer-title'}>
+                </h1>
+                <p className={'sub-title'}>NATURAL, LEGAL E APROVADO PELA ANVISA</p>
+                <div>
+                  <p className={'footer-title'}>
                   Te acolheremos desde o agendamento da sua consulta médica até a
                   compra do medicamento.</p>
-                <p className={'footer-title-bold'}>Simples e prático!</p>
+                  <p className={'footer-title-bold'}>Simples e prático!</p>
 
+                </div>
+
+                <button onClick={handleModalClick}>Agendar Consulta</button>
               </div>
-
-              <button onClick={handleModalClick}>Agendar Consulta</button>
+            </div>
+            <div className={'first-right-wrapper'}>
+              <img fetch-priority={'hight'} src={Muie2} alt={'Mulher'} className={'img-da-muie'}/>
             </div>
           </div>
-          <div className={'first-right-wrapper'}>
-            <img fetch-priority={'hight'} src={Muie2} alt={'Mulher'} className={'img-da-muie'}/>
-          </div>
-        </div>
-      </FirstSection>
-      <SecondSection >
-        <div className={'divider'} >
-          <div className={'second-sec-wrapper'} >
-            <div className={'second-sec-left-wrapper'} data-aos="fade-right">
-              <img fetch-priority={'hight'} src={Laptop2} alt={'Laptop'} className={'laptop'}/>
-            </div>
-            <div className={'second-sec-right-wrapper'} data-aos="fade-up">
-              <div style={{width: '95%'}}>
-                <h1>
+        </FirstSection>
+        <SecondSection >
+          <div className={'divider'} >
+            <div className={'second-sec-wrapper'} >
+              <div className={'second-sec-left-wrapper'} data-aos="fade-right">
+                <img fetch-priority={'hight'} src={Laptop2} alt={'Laptop'} className={'laptop'}/>
+              </div>
+              <div className={'second-sec-right-wrapper'} data-aos="fade-up">
+                <div style={{width: '95%'}}>
+                  <h1>
                   Preencha o formulário para dar <br/>
                   o primeiro passo em direção ao <br/>
                   alívio dos seus sintomas
-                </h1>
-                <br/>
-                <p>
+                  </h1>
+                  <br/>
+                  <p>
                   Entraremos em contato para te guiar por <br/> todo o caminho.
-                </p>
-                <br/>
-                {/*<Link to={'sobre'} smooth={true} duration={1000}>*/}
-                <button onClick={handleModalClick}>Preencher Formulário</button>
-                {/*</Link>*/}
+                  </p>
+                  <br/>
+                  {/*<Link to={'sobre'} smooth={true} duration={1000}>*/}
+                  <button onClick={handleModalClick}>Preencher Formulário</button>
+                  {/*</Link>*/}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </SecondSection>
-      <ThirdSection id={'sobre'}>
-        <div className={'third-wrapper'}>
-          <div className={'third-left-wrapper'} data-aos="fade-right">
-            <div className={'third-text-wrapper'}>
-              <h4>MÉTODO NATURAL</h4>
-              <h2>O nosso tratamento</h2>
-              <p>
+        </SecondSection>
+        <ThirdSection id={'sobre'}>
+          <div className={'third-wrapper'}>
+            <div className={'third-left-wrapper'} data-aos="fade-right">
+              <div className={'third-text-wrapper'}>
+                <h4>MÉTODO NATURAL</h4>
+                <h2>O nosso tratamento</h2>
+                <p>
                 O tratamento com óleo de CBD medicinal é autorizada pela ANVISA e milhares de pacientes já
                 se beneficiam com o seu uso.
-                <br/>
-                <br/>
+                  <br/>
+                  <br/>
                 Existem mais de 20 mil estudos publicados comprovando sua eficácia e segurança para diversas patologias.
-                <br/>
-                <br/>
+                  <br/>
+                  <br/>
                 É um método natural que não causa dependência ou tolerância e que interage com um dos principais
                 sistemas do nosso corpo, trazendo um completo estado de bem-estar físico e mental.
-                <br/>
-                <br/>
+                  <br/>
+                  <br/>
                 Taxa de 79,9% no alívio dos sintomas da ansiedade, comprovada cientificamente.
-              </p>
-              <Link to={'depoimentos'} smooth={true} duration={1000}>
-                <button>Ver depoimentos</button>
-              </Link>
+                </p>
+                <Link to={'depoimentos'} smooth={true} duration={1000}>
+                  <button>Ver depoimentos</button>
+                </Link>
+              </div>
+            </div>
+            <div className={'third-right-wrapper'} data-aos="fade-left">
+              <img loading={'lazy'} src={Frasco2} alt={'Frasco'}/>
             </div>
           </div>
-          <div className={'third-right-wrapper'} data-aos="fade-left">
-            <img loading={'lazy'} src={Frasco2} alt={'Frasco'}/>
+        </ThirdSection>
+        <IMGDivider>
+          <div className={'divider-wrapper'}>
+            <img loading={'lazy'} src={FrascoQuadrado} alt={'frasco-quadrado'} className={'frasco'}/>
           </div>
-        </div>
-      </ThirdSection>
-      <IMGDivider>
-        <div className={'divider-wrapper'}>
-          <img loading={'lazy'} src={FrascoQuadrado} alt={'frasco-quadrado'} className={'frasco'}/>
-        </div>
-      </IMGDivider>
-      <FourthSection>
-        <div className={'fourth-wrapper'}>
-          <div className={'forth-content-wrapper'}>
-            <div className={'fourth-left'}>
-              <div className={'left-text'}>
-                <h4>PASSO A PASSO</h4>
-                <h1>Agendamento da consulta médica até a compra do medicamento</h1>
-                <p>Para iniciar é necessário passar por uma consulta médica online onde o médico irá lhe encaminhar e
+        </IMGDivider>
+        <FourthSection>
+          <div className={'fourth-wrapper'}>
+            <div className={'forth-content-wrapper'}>
+              <div className={'fourth-left'}>
+                <div className={'left-text'}>
+                  <h4>PASSO A PASSO</h4>
+                  <h1>Agendamento da consulta médica até a compra do medicamento</h1>
+                  <p>Para iniciar é necessário passar por uma consulta médica online onde o médico irá lhe encaminhar e
                   prescrever o medicamento de acordo com a sua condição.</p>
+                </div>
+                <div className={'left-img'}>
+                  <img loading={'lazy'} src={Plantas} alt={'plantas-no-jarro'}/>
+                </div>
               </div>
-              <div className={'left-img'}>
-                <img loading={'lazy'} src={Plantas} alt={'plantas-no-jarro'}/>
-              </div>
-            </div>
-            <div className={'fourth-right'}>
-              <div className={'right-text'}>
-                <div className={'content-container'} data-aos="fade-up">
-                  <img loading={'lazy'} src={One} alt={'num-one'}/>
-                  <div className={'text-wrapper'}>
-                    <p>
+              <div className={'fourth-right'}>
+                <div className={'right-text'}>
+                  <div className={'content-container'} data-aos="fade-up">
+                    <img loading={'lazy'} src={One} alt={'num-one'}/>
+                    <div className={'text-wrapper'}>
+                      <p>
                       No botão agendar consulta vá para a página de prescritores, escolha o profissional que mais atenda
                       sua
                       demanda e preencha o formulário.
-                      <br/>
-                      <br/>
+                        <br/>
+                        <br/>
                       Se preferir entre em contato pelo WhatsApp e fale com um dos nossos especialistas que lhe
                       auxiliaremos.
-                    </p>
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className={'content-container'} data-aos="fade-up">
-                  <img loading={'lazy'} src={Two} alt={'num-two'}/>
-                  <div className={'text-wrapper'}>
-                    <p>
+                  <div className={'content-container'} data-aos="fade-up">
+                    <img loading={'lazy'} src={Two} alt={'num-two'}/>
+                    <div className={'text-wrapper'}>
+                      <p>
                       Selecione:
-                      <br/>
-                      <br/>
+                        <br/>
+                        <br/>
                       Profissional, data, hora, valor e forma de pagamento e confirme sua consulta.
-                    </p>
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className={'content-container'} data-aos="fade-up">
-                  <img loading={'lazy'} src={Three} alt={'num-three'}/>
-                  <div className={'text-wrapper'}>
-                    <p>
+                  <div className={'content-container'} data-aos="fade-up">
+                    <img loading={'lazy'} src={Three} alt={'num-three'}/>
+                    <div className={'text-wrapper'}>
+                      <p>
                       Durante a consulta o profissional irá avaliar seu objetivo terapêutico e indicar a melhor opção
                       para
                       seu tratamento.
-                    </p>
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className={'content-container'} data-aos="fade-up">
-                  <img loading={'lazy'} src={Four} alt={'num-four'}/>
-                  <div className={'text-wrapper'}>
-                    <p>
+                  <div className={'content-container'} data-aos="fade-up">
+                    <img loading={'lazy'} src={Four} alt={'num-four'}/>
+                    <div className={'text-wrapper'}>
+                      <p>
                       Com a avaliação feita e prescrição em mãos, você receberá toda instrução via WhatsApp, E-mail e
                       SMS
                       para dar sequência na compra do medicamento.
-                    </p>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className={'bottom-wrapper'} data-aos="fade-up">
-            <h1>Você está a um passo do tratamento ideal</h1>
-            <button onClick={handleModalClick}>AGENDAR CONSULTA</button>
-          </div>
-        </div>
-      </FourthSection>
-      <FifthSection id={'depoimentos'}>
-        <div className={'fifth-wrapper'}>
-          <div className={'fifth-first-container'}>
-            <div className={'text-wrapper'}>
-              <h2>DEPOIMENTOS DE</h2>
-              <h1>PACIENTES SATISFEITOS</h1>
+            <div className={'bottom-wrapper'} data-aos="fade-up">
+              <h1>Você está a um passo do tratamento ideal</h1>
+              <button onClick={handleModalClick}>AGENDAR CONSULTA</button>
             </div>
           </div>
-          <div className={'fifth-second-container'} data-aos="fade-up">
-            <Carousel />
+        </FourthSection>
+        <FifthSection id={'depoimentos'}>
+          <div className={'fifth-wrapper'}>
+            <div className={'fifth-first-container'}>
+              <div className={'text-wrapper'}>
+                <h2>DEPOIMENTOS DE</h2>
+                <h1>PACIENTES SATISFEITOS</h1>
+              </div>
+            </div>
+            <div className={'fifth-second-container'} data-aos="fade-up">
+              <Carousel />
+            </div>
+            <div className={'fifth-third-container'} data-aos="fade-up">
+              <h1>Você está a um passo do tratamento ideal</h1>
+              <button onClick={handleModalClick}>QUERO INICIAR</button>
+            </div>
           </div>
-          <div className={'fifth-third-container'} data-aos="fade-up">
-            <h1>Você está a um passo do tratamento ideal</h1>
-            <button onClick={handleModalClick}>QUERO INICIAR</button>
-          </div>
-        </div>
-      </FifthSection>
-      <SixthSection id={'conheca'}>
-        <div className={'six-wrapper'}>
-          <div className={'six-left'} data-aos="fade-right">
-            <img loading={'lazy'} src={Woman} alt={'Ôta muié'}/>
-          </div>
-          <div className={'six-right'} data-aos="fade-left">
-            <div className={'six-text-wrapper'}>
-              <h4>QUEM SOMOS</h4>
-              <h1>Conheça a nossa empresa</h1>
-              <div
-                style={{
-                  height: '100%',
-                }}
-              >
-                <p>
+        </FifthSection>
+        <SixthSection id={'conheca'}>
+          <div className={'six-wrapper'}>
+            <div className={'six-left'} data-aos="fade-right">
+              <img loading={'lazy'} src={Woman} alt={'Ôta muié'}/>
+            </div>
+            <div className={'six-right'} data-aos="fade-left">
+              <div className={'six-text-wrapper'}>
+                <h4>QUEM SOMOS</h4>
+                <h1>Conheça a nossa empresa</h1>
+                <div
+                  style={{
+                    height: '100%',
+                  }}
+                >
+                  <p>
                   Somos a nativamed, uma empresa que surgiu da possibilidade de
                   melhorar a qualidade de vida das pessoas.
-                  <br/>
-                  <br/>
+                    <br/>
+                    <br/>
                   ‘’Depois que a mãe de uma criança pediu ajuda para importar a
                   medicação e vimos os benefícios e resultados positivos que esse
                   tipo de tratamento traz nós soubemos – temos que facilitar o
                   acesso da população a esse medicamento‘’.
-                  <br/>
-                  <br/>
+                    <br/>
+                    <br/>
                   Hoje já atendemos e ajudamos dezenas de pessoas a amezinar seus
                   sintomas crônicos e a melhorar sua qualidade de vida.
-                  <br/>
-                  <br/>
+                    <br/>
+                    <br/>
                   Através do nosso ecossistema de profissionais contamos com
                   diversos médicos especialistas para lhe orientar, consultar e
                   prescrever os medicamentos de acordo com sua condição e patologia,
                   facilitando o acesso ao tratamento e seus benefícios.
-                </p>
+                  </p>
+                </div>
               </div>
             </div>
+            {/*<img src={Folhas} alt={'folhas'} className={'folhas'}/>*/}
           </div>
-          {/*<img src={Folhas} alt={'folhas'} className={'folhas'}/>*/}
-        </div>
-      </SixthSection>
-      <SeventhSection id={'faq'}>
-        <div className={'seven-wrapper'}>
-          <div className={'seven-left'}>
-            <div className={'text-n-text-wrapper'}>
-              <p className={'seven-pre-title'}>FAQ</p>
-              <h1 className={'seven-title'}>Perguntas Frequentes</h1>
-              <div className={'faq-wrapper'}>
-                <Faq faqs={faqs}/>
+        </SixthSection>
+        <SeventhSection id={'faq'}>
+          <div className={'seven-wrapper'}>
+            <div className={'seven-left'}>
+              <div className={'text-n-text-wrapper'}>
+                <p className={'seven-pre-title'}>FAQ</p>
+                <h1 className={'seven-title'}>Perguntas Frequentes</h1>
+                <div className={'faq-wrapper'}>
+                  <Faq faqs={faqs}/>
+                </div>
+              </div>
+              <div >
+                <img loading={'lazy'} src={ContaGota} alt={'frasco-conta-gota'}/>
               </div>
             </div>
-            <div >
-              <img loading={'lazy'} src={ContaGota} alt={'frasco-conta-gota'}/>
-            </div>
-          </div>
-          <div className={'seven-text-wrapper'}>
-            <h1>
+            <div className={'seven-text-wrapper'}>
+              <h1>
               Possui alguma dúvida?
-            </h1>
-            <p>Entre em contato que lhe explicaremos como funciona todo o processo de maneira simples e prática.</p>
-            <button onClick={handleLinkClick}>
-              <i>
-                <ImWhatsapp style={{width: '100%', height: '100%'}}/>
-              </i>
+              </h1>
+              <p>Entre em contato que lhe explicaremos como funciona todo o processo de maneira simples e prática.</p>
+              <button onClick={handleLinkClick}>
+                <i>
+                  <ImWhatsapp style={{width: '100%', height: '100%'}}/>
+                </i>
               Fale conosco
-            </button>
+              </button>
+            </div>
           </div>
-        </div>
 
-      </SeventhSection>
-      <Footer>
-        <div className={'footer-wrapper'}>
-          <div className={'logo-container'}>
-            <img loading={'lazy'} src={LogoBranco} alt={'logo'} style={{width: '100%'}}/>
-            <div className={'respons-icon-container'}>
+        </SeventhSection>
+        <Footer>
+          <div className={'footer-wrapper'}>
+            <div className={'logo-container'}>
+              <img loading={'lazy'} src={LogoBranco} alt={'logo'} style={{width: '100%'}}/>
+              <div className={'respons-icon-container'}>
+                <a style={{cursor: 'pointer'}} onClick={handleLinkClick}>
+                  <FaWhatsapp/>
+                </a>
+                <a style={{cursor: 'pointer'}} onClick={handleInstaClick}>
+                  <FaInstagram/>
+                </a>
+                <a style={{cursor: 'pointer'}} onClick={handleMailClick}>
+                  <MdOutlineEmail/>
+                </a>
+              </div>
+            </div>
+            <div className={'option-container-1'}>
+              <a onClick={handleLinkClick} style={{cursor: 'pointer'}}>Tenho prescrição</a>
+              <Link to={'faq'} smooth={true} duration={1000}>
+                <a style={{cursor: 'pointer'}}>Perguntas frequentes</a>
+              </Link>
+              <a>Blog</a>
+            </div>
+            <div className={'option-container-2'}>
+              <a style={{cursor: 'pointer'}} onClick={handleModalClick}>Agendamento de consulta</a>
+              <Link to={'sobre'} smooth={true} duration={1000}>
+                <a style={{cursor: 'pointer'}}>Nosso tratamento</a>
+              </Link>
+              <Link to={'conheca'} smooth={true} duration={1000}>
+                <a style={{cursor: 'pointer'}}>Conheça nossa empresa</a>
+              </Link>
+              <Link to={'depoimentos'} smooth={true} duration={1000}>
+                <a style={{cursor: 'pointer'}}>Depoimentos</a>
+              </Link>
+            </div>
+            <div className={'icons-container'}>
               <a style={{cursor: 'pointer'}} onClick={handleLinkClick}>
                 <FaWhatsapp/>
               </a>
@@ -388,53 +418,23 @@ function Home(): JSX.Element {
               </a>
             </div>
           </div>
-          <div className={'option-container-1'}>
-            <a onClick={handleLinkClick} style={{cursor: 'pointer'}}>Tenho prescrição</a>
-            <Link to={'faq'} smooth={true} duration={1000}>
-              <a style={{cursor: 'pointer'}}>Perguntas frequentes</a>
-            </Link>
-            <a>Blog</a>
-          </div>
-          <div className={'option-container-2'}>
-            <a style={{cursor: 'pointer'}} onClick={handleModalClick}>Agendamento de consulta</a>
-            <Link to={'sobre'} smooth={true} duration={1000}>
-              <a style={{cursor: 'pointer'}}>Nosso tratamento</a>
-            </Link>
-            <Link to={'conheca'} smooth={true} duration={1000}>
-              <a style={{cursor: 'pointer'}}>Conheça nossa empresa</a>
-            </Link>
-            <Link to={'depoimentos'} smooth={true} duration={1000}>
-              <a style={{cursor: 'pointer'}}>Depoimentos</a>
-            </Link>
-          </div>
-          <div className={'icons-container'}>
-            <a style={{cursor: 'pointer'}} onClick={handleLinkClick}>
-              <FaWhatsapp/>
-            </a>
-            <a style={{cursor: 'pointer'}} onClick={handleInstaClick}>
-              <FaInstagram/>
-            </a>
-            <a style={{cursor: 'pointer'}} onClick={handleMailClick}>
-              <MdOutlineEmail/>
-            </a>
-          </div>
-        </div>
-        <hr className={'line'}/>
-        <div className={'links-wrapper'}>
-          <div style={{display: 'flex', gap: '10px'}}>
-            <div className={'respons-divider'}>
-              <a>Política de Privacidade</a>
-              <a>Política de Cookies</a>
+          <hr className={'line'}/>
+          <div className={'links-wrapper'}>
+            <div style={{display: 'flex', gap: '10px'}}>
+              <div className={'respons-divider'}>
+                <a>Política de Privacidade</a>
+                <a>Política de Cookies</a>
+              </div>
+              <div className={'respons-divider'}>
+                <a>Termos de Uso</a>
+                <a>CNPJ: 48.029.775/0001-16</a>
+              </div>
             </div>
-            <div className={'respons-divider'}>
-              <a>Termos de Uso</a>
-              <a>CNPJ: 48.029.775/0001-16</a>
-            </div>
+            <a>Todos os direitos reservados © nativamed.com.br</a>
           </div>
-          <a>Todos os direitos reservados © nativamed.com.br</a>
-        </div>
-      </Footer>
-    </Container>
+        </Footer>
+      </Container>
+    </>
   );
 }
 
