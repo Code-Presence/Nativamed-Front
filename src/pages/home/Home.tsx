@@ -121,9 +121,9 @@ function Home(): JSX.Element {
 
   return (
     <>
-      <div id={'form'}>
+      {/* <div id={'form'}>
         {showForm && <RDStationForm onClose={() => setShowForm(false)}/>}
-      </div>
+      </div> */}
       <Container>
         <Nav />
         <FirstSection id={'tenho-prescricao'} >
